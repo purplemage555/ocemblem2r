@@ -3255,20 +3255,20 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
     {
         .baseHP        = 90,
         .baseAttack    = 50,
-        .baseDefense   = 34,
+        .baseDefense   = 35,
         .baseSpeed     = 70,
         .baseSpAttack  = 60,
-        .baseSpDefense = 44,
+        .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_GHOST, TYPE_FLYING),
         .catchRate = 125,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 70 : 127,
+        .expYield = 127,
         .evYield_HP = 1,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FLUCTUATING,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_AFTERMATH, ABILITY_UNBURDEN, ABILITY_FLARE_BOOST },
+        .abilities = { ABILITY_FLASH_FIRE, ABILITY_UNBURDEN, ABILITY_FLARE_BOOST },
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = TRUE,
         .speciesName = _("Drifloon"),
@@ -3281,7 +3281,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             "Because of the way it floats aimlessly,\n"
             "an old folktale calls it a “Signpost for\n"
             "Wandering Spirits.” Children holding\n"
-            "them sometimes vanish."),
+            "them might vanish. 90/50/35/60/45/70"),
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -3317,30 +3317,30 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Drifloon,
             gShinyOverworldPalette_Drifloon
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sDrifloonLevelUpLearnset,
         .teachableLearnset = sDrifloonTeachableLearnset,
         .eggMoveLearnset = sDrifloonEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_DRIFBLIM}),
     },
-
     [SPECIES_DRIFBLIM] =
     {
         .baseHP        = 150,
         .baseAttack    = 80,
-        .baseDefense   = 44,
+        .baseDefense   = 45,
         .baseSpeed     = 80,
         .baseSpAttack  = 90,
-        .baseSpDefense = 54,
+        .baseSpDefense = 55,
         .types = MON_TYPES(TYPE_GHOST, TYPE_FLYING),
         .catchRate = 60,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 174 : 204,
+        .expYield = 204,
         .evYield_HP = 2,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 30,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FLUCTUATING,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_AFTERMATH, ABILITY_UNBURDEN, ABILITY_FLARE_BOOST },
+        .abilities = { ABILITY_FLASH_FIRE, ABILITY_UNBURDEN, ABILITY_FLARE_BOOST },
         .bodyColor = BODY_COLOR_PURPLE,
         .noFlip = TRUE,
         .speciesName = _("Drifblim"),
@@ -3353,7 +3353,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             "Even while under careful observation,\n"
             "large flocks of Drifblim flying at dusk\n"
             "will inexplicably disappear from view.\n"
-            "No one knows where they go."),
+            "150/80/45/90/55/80"),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -3391,8 +3391,9 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Drifblim,
             gShinyOverworldPalette_Drifblim
         )
-        .levelUpLearnset = sDrifblimLevelUpLearnset,
-        .teachableLearnset = sDrifblimTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sDrifloonLevelUpLearnset,
+        .teachableLearnset = sDrifloonTeachableLearnset,
     },
 #endif //P_FAMILY_DRIFLOON
 
@@ -4598,11 +4599,11 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .baseAttack    = 70,
         .baseDefense   = 40,
         .baseSpeed     = 60,
-        .baseSpAttack  = 35,
+        .baseSpAttack  = 50,
         .baseSpDefense = 40,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 75,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 57 : 72,
+        .expYield = 72,
         .evYield_Attack = 1,
         .genderRatio = PERCENT_FEMALE(12.5),
         .eggCycles = 25,
@@ -4621,7 +4622,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             "It can discern the physical and emotional\n"
             "states of people, Pokémon, and other\n"
             "natural things from the shape of their\n"
-            "aura waves."),
+            "aura waves. 40/70/40/50/40/60"),
         .pokemonScale = 365,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -4656,12 +4657,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Riolu,
             gShinyOverworldPalette_Riolu
         )
-        .levelUpLearnset = sRioluLevelUpLearnset,
-        .teachableLearnset = sRioluTeachableLearnset,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sLucarioLevelUpLearnset,
+        .teachableLearnset = sLucarioTeachableLearnset,
         .eggMoveLearnset = sRioluEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_LUCARIO, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD},{IF_NOT_TIME, TIME_NIGHT})}),
     },
-
     [SPECIES_LUCARIO] =
     {
         .baseHP        = 70,
@@ -4672,7 +4673,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_FIGHTING, TYPE_STEEL),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 184 : 204,
+        .expYield = 204,
         .evYield_Attack = 1,
         .evYield_SpAttack = 1,
         .genderRatio = PERCENT_FEMALE(12.5),
@@ -4691,8 +4692,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .description = COMPOUND_STRING(
             "It understands human speech.\n"
             "It is said that no foe can remain invisible\n"
-            "to Lucario, since it can detect Auras.\n"
-            "Even foes it could not otherwise see."),
+            "to Lucario, since it can detect Aura.\n"
+            "70/110/70/115/70/90"),
         .pokemonScale = 282,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -4725,12 +4726,12 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_Lucario,
             gShinyOverworldPalette_Lucario
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sLucarioLevelUpLearnset,
         .teachableLearnset = sLucarioTeachableLearnset,
         .formSpeciesIdTable = sLucarioFormSpeciesIdTable,
         .formChangeTable = sLucarioFormChangeTable,
     },
-
 #if P_MEGA_EVOLUTIONS
     [SPECIES_LUCARIO_MEGA] =
     {

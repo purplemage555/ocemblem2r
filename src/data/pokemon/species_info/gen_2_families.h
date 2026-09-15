@@ -1475,7 +1475,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 56,
         .types = MON_TYPES(TYPE_WATER, TYPE_ELECTRIC),
         .catchRate = 190,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 66 : 90,
+        .expYield = 90,
         .evYield_HP = 1,
         .itemRare = ITEM_DEEP_SEA_SCALE,
         .genderRatio = PERCENT_FEMALE(50),
@@ -1483,7 +1483,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_ILLUMINATE, ABILITY_WATER_ABSORB },
+        .abilities = { ABILITY_WATER_ABSORB, ABILITY_VOLT_ABSORB },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Chinchou"),
         .cryId = CRY_CHINCHOU,
@@ -1495,7 +1495,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "When it senses danger, it discharges\n"
             "positive and negative electricity from its\n"
             "two antennae. It lives in depths beyond\n"
-            "sunlight's reach."),
+            "sunlight's reach. 75/38/38/56/56/67"),
         .pokemonScale = 424,
         .pokemonOffset = -2,
         .trainerScale = 256,
@@ -1531,23 +1531,23 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Chinchou,
             gShinyOverworldPalette_Chinchou
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sChinchouLevelUpLearnset,
         .teachableLearnset = sChinchouTeachableLearnset,
         .eggMoveLearnset = sChinchouEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 27, SPECIES_LANTURN}),
     },
-
     [SPECIES_LANTURN] =
     {
         .baseHP        = 125,
         .baseAttack    = 58,
         .baseDefense   = 58,
-        .baseSpeed     = 67,
-        .baseSpAttack  = 76,
-        .baseSpDefense = 76,
+        .baseSpeed     = 77,
+        .baseSpAttack  = 81,
+        .baseSpDefense = 81,
         .types = MON_TYPES(TYPE_WATER, TYPE_ELECTRIC),
         .catchRate = 75,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 161 : 156,
+        .expYield = 161,
         .evYield_HP = 2,
         .itemRare = ITEM_DEEP_SEA_SCALE,
         .genderRatio = PERCENT_FEMALE(50),
@@ -1555,7 +1555,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
-        .abilities = { ABILITY_VOLT_ABSORB, ABILITY_ILLUMINATE, ABILITY_WATER_ABSORB },
+        .abilities = { ABILITY_WATER_ABSORB, ABILITY_VOLT_ABSORB },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Lanturn"),
         .cryId = CRY_LANTURN,
@@ -1565,9 +1565,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .weight = 225,
         .description = COMPOUND_STRING(
             "The light-emitting orbs on its back are\n"
-            "very bright. They are formed from a part of\n"
-            "its dorsal fin. This Pokémon illuminates\n"
-            "the inky darkness of deep seas."),
+            "very bright. They are formed from a part\n"
+            "of its dorsal fin. This Pokémon illuminates\n"
+            "the deep darkness. 125/58/58/81/81/77"),
         .pokemonScale = 269,
         .pokemonOffset = 6,
         .trainerScale = 256,
@@ -1603,14 +1603,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Lanturn,
             gShinyOverworldPalette_Lanturn
         )
-        .levelUpLearnset = sLanturnLevelUpLearnset,
-        .teachableLearnset = sLanturnTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sChinchouLevelUpLearnset,
+        .teachableLearnset = sChinchouTeachableLearnset,
     },
 #endif //P_FAMILY_CHINCHOU
-
 #if P_FAMILY_TOGEPI
-#define TOGEPI_FAMILY_TYPE1 (P_UPDATED_TYPES >= GEN_6 ? TYPE_FAIRY : TYPE_NORMAL)
-
     [SPECIES_TOGEPI] =
     {
         .baseHP        = 35,
@@ -1618,17 +1616,17 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseDefense   = 65,
         .baseSpeed     = 20,
         .baseSpAttack  = 40,
-        .baseSpDefense = 65,
-        .types = MON_TYPES(TOGEPI_FAMILY_TYPE1),
+        .baseSpDefense = 70,
+        .types = MON_TYPES(TYPE_FAIRY),
         .catchRate = 190,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 49 : 74,
+        .expYield = 74,
         .evYield_SpDefense = 1,
         .genderRatio = PERCENT_FEMALE(12.5),
         .eggCycles = 10,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_HUSTLE, ABILITY_SERENE_GRACE, ABILITY_SUPER_LUCK },
+        .abilities = { ABILITY_SUPER_LUCK, ABILITY_SERENE_GRACE, ABILITY_SUPER_LUCK },
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
         .speciesName = _("Togepi"),
@@ -1640,8 +1638,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .description = COMPOUND_STRING(
             "As its energy, it uses the feelings of\n"
             "compassion and pleasure exuded by\n"
-            "people and Pokémon. It stores up happy\n"
-            "feelings in its shell, then shares them out."),
+            "people and Pokémon. It stores up joy in\n"
+            "its shell to share. 35/20/65/40/70/20"),
         .pokemonScale = 507,
         .pokemonOffset = 23,
         .trainerScale = 256,
@@ -1675,12 +1673,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Togepi,
             gShinyOverworldPalette_Togepi
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTogepiLevelUpLearnset,
         .teachableLearnset = sTogepiTeachableLearnset,
         .eggMoveLearnset = sTogepiEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_TOGETIC, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
     },
-
     [SPECIES_TOGETIC] =
     {
         .baseHP        = 55,
@@ -1689,16 +1687,16 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpeed     = 40,
         .baseSpAttack  = 80,
         .baseSpDefense = 105,
-        .types = MON_TYPES(TOGEPI_FAMILY_TYPE1, TYPE_FLYING),
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_FLYING),
         .catchRate = 75,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 142 : 114,
+        .expYield = 142,
         .evYield_SpDefense = 2,
         .genderRatio = PERCENT_FEMALE(12.5),
         .eggCycles = 10,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_HUSTLE, ABILITY_SERENE_GRACE, ABILITY_SUPER_LUCK },
+        .abilities = { ABILITY_SUPER_LUCK, ABILITY_SERENE_GRACE, ABILITY_SUPER_LUCK },
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
         .speciesName = _("Togetic"),
@@ -1711,7 +1709,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "It is said to be a Pokémon that brings good\n"
             "fortune. When it spots someone who is pure\n"
             "of heart, a Togetic appears and shares its\n"
-            "happiness with that person."),
+            "joy with that person. 55/40/85/80/105/40"),
         .pokemonScale = 424,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1745,31 +1743,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Togetic,
             gShinyOverworldPalette_Togetic
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTogeticLevelUpLearnset,
-        .teachableLearnset = sTogeticTeachableLearnset,
-    #if P_GEN_4_CROSS_EVOS
+        .teachableLearnset = sTogepiTeachableLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_SHINY_STONE, SPECIES_TOGEKISS}),
-    #endif
     },
-
-#if P_GEN_4_CROSS_EVOS
     [SPECIES_TOGEKISS] =
     {
         .baseHP        = 85,
-        .baseAttack    = 50,
+        .baseAttack    = 45,
         .baseDefense   = 95,
         .baseSpeed     = 80,
         .baseSpAttack  = 120,
         .baseSpDefense = 115,
-        .types = MON_TYPES(TOGEPI_FAMILY_TYPE1, TYPE_FLYING),
+        .types = MON_TYPES(TYPE_FAIRY, TYPE_FLYING),
         .catchRate = 30,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 273,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 245,
-    #else
-        .expYield = 220,
-    #endif
         .evYield_SpAttack = 2,
         .evYield_SpDefense = 1,
         .genderRatio = PERCENT_FEMALE(12.5),
@@ -1777,7 +1766,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_FAIRY),
-        .abilities = { ABILITY_HUSTLE, ABILITY_SERENE_GRACE, ABILITY_SUPER_LUCK },
+        .abilities = { ABILITY_SUPER_LUCK, ABILITY_SERENE_GRACE, ABILITY_SUPER_LUCK },
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
         .speciesName = _("Togekiss"),
@@ -1790,7 +1779,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "As everyone knows, it visits peaceful\n"
             "regions, bringing them gifts of kindness\n"
             "and sweet blessings. It will never appear\n"
-            "where there is strife."),
+            "in ravaged places. 85/45/95/120/115/80"),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,
@@ -1829,12 +1818,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Togekiss,
             gShinyOverworldPalette_Togekiss
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTogekissLevelUpLearnset,
-        .teachableLearnset = sTogekissTeachableLearnset,
+        .teachableLearnset = sTogepiTeachableLearnset,
     },
-#endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_TOGEPI
-
 #if P_FAMILY_NATU
     [SPECIES_NATU] =
     {
@@ -2004,14 +1992,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 45,
         .types = MON_TYPES(TYPE_ELECTRIC),
         .catchRate = 235,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 56 : 59,
+        .expYield = 59,
         .evYield_SpAttack = 1,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_PLUS },
+        .abilities = { ABILITY_STATIC, ABILITY_FLUFFY },
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = TRUE,
         .speciesName = _("Mareep"),
@@ -2021,10 +2009,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 6,
         .weight = 78,
         .description = COMPOUND_STRING(
-            "Its fluffy wool rubs together and builds\n"
-            "a static charge. The more energy is\n"
-            "charged, the more brightly the lightbulb\n"
-            "at the tip of its tail glows."),
+            "Its fluffy wool rubs together and\n"
+            "builds up static charge. The more energy\n"
+            "it has charged up, the brighter its\n"
+            "tail bulb glows. 55/40/40/65/45/35"),
         .pokemonScale = 379,
         .pokemonOffset = 18,
         .trainerScale = 256,
@@ -2062,30 +2050,29 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Mareep,
             gShinyOverworldPalette_Mareep
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMareepLevelUpLearnset,
-        .teachableLearnset = sMareepTeachableLearnset,
-        .eggMoveLearnset = sMareepEggMoveLearnset,
+        .teachableLearnset = sAmpharosTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_FLAAFFY}),
     },
-
     [SPECIES_FLAAFFY] =
     {
         .baseHP        = 70,
         .baseAttack    = 55,
-        .baseDefense   = 55,
+        .baseDefense   = 60,
         .baseSpeed     = 45,
-        .baseSpAttack  = 80,
+        .baseSpAttack  = 85,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_ELECTRIC),
-        .catchRate = 120,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 128 : 117,
+        .catchRate = 90,
+        .expYield = 128,
         .evYield_SpAttack = 2,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_PLUS },
+        .abilities = { ABILITY_STATIC, ABILITY_FLUFFY },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Flaaffy"),
         .cryId = CRY_FLAAFFY,
@@ -2096,8 +2083,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .description = COMPOUND_STRING(
             "Its fleece quality changes to generate\n"
             "strong static electricity with a small\n"
-            "amount of wool. The bare, slick parts of its\n"
-            "hide are shielded against electricity."),
+            "amount of wool. It is insulated by its\n"
+            "pink hide. 70/55/60/85/60/45"),
         .pokemonScale = 372,
         .pokemonOffset = 15,
         .trainerScale = 256,
@@ -2133,8 +2120,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Flaaffy,
             gShinyOverworldPalette_Flaaffy
         )
-        .levelUpLearnset = sFlaaffyLevelUpLearnset,
-        .teachableLearnset = sFlaaffyTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sMareepLevelUpLearnset,
+        .teachableLearnset = sAmpharosTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_AMPHAROS}),
     },
 
@@ -2142,40 +2130,32 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     {
         .baseHP        = 90,
         .baseAttack    = 75,
-        .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 85 : 75,
+        .baseDefense   = 85,
         .baseSpeed     = 55,
         .baseSpAttack  = 115,
         .baseSpDefense = 90,
-        .types = MON_TYPES(TYPE_ELECTRIC),
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_DRAGON),
         .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 255,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_6
-        .expYield = 230,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 225,
-    #else
-        .expYield = 194,
-    #endif
         .evYield_SpAttack = 3,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MONSTER, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_PLUS },
+        .abilities = { ABILITY_THICK_FAT, ABILITY_FUR_COAT },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Ampharos"),
         .cryId = CRY_AMPHAROS,
         .natDexNum = NATIONAL_DEX_AMPHAROS,
-        .categoryName = _("Light"),
+        .categoryName = _("Beacon"),
         .height = 14,
         .weight = 615,
         .description = COMPOUND_STRING(
             "It gives off so much light that it can be\n"
             "seen even from space. People in the old\n"
-            "days used its light to send signals back\n"
-            "and forth with others far away."),
+            "days used its light to communicate from\n"
+            "far away. 90/75/85/115/90/55"),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -2210,12 +2190,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Ampharos,
             gShinyOverworldPalette_Ampharos
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sAmpharosLevelUpLearnset,
         .teachableLearnset = sAmpharosTeachableLearnset,
         .formSpeciesIdTable = sAmpharosFormSpeciesIdTable,
         .formChangeTable = sAmpharosFormChangeTable,
     },
-
 #if P_MEGA_EVOLUTIONS
     [SPECIES_AMPHAROS_MEGA] =
     {
@@ -3590,8 +3570,6 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sQuagsireLevelUpLearnset,
         .teachableLearnset = sQuagsireTeachableLearnset,
     },
-
-#if P_PALDEAN_FORMS
     [SPECIES_WOOPER_PALDEA] =
     {
         .baseHP        = 55,
@@ -3602,7 +3580,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 25,
         .types = MON_TYPES(TYPE_POISON, TYPE_GROUND),
         .catchRate = 255,
-        .expYield = 42,
+        .expYield = 52,
         .evYield_HP = 1,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
@@ -3619,9 +3597,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .weight = 110,
         .description = COMPOUND_STRING(
             "After losing a territorial struggle,\n"
-            "Wooper began living on land.\n"
-            "The Pokémon changed over time, developing\n"
-            "a poisonous film to protect its body."),
+            "Wooper began living on land, developing\n"
+            "a poisonous film to protect its body.\n"
+            "It loves chocolate. 55/45/45/25/25/15"),
         .pokemonScale = 479,
         .pokemonOffset = 21,
         .trainerScale = 256,
@@ -3651,10 +3629,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_WooperPaldea,
             gShinyOverworldPalette_WooperPaldea
         )
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .isPaldeanForm = TRUE,
-        .levelUpLearnset = sWooperPaldeaLevelUpLearnset,
-        .teachableLearnset = sWooperPaldeaTeachableLearnset,
-        .eggMoveLearnset = sWooperPaldeaEggMoveLearnset,
+        .levelUpLearnset = sClodsireLevelUpLearnset,
+        .teachableLearnset = sWooperTeachableLearnset,
         .formSpeciesIdTable = sWooperFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_CLODSIRE}),
     },
@@ -3662,9 +3640,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     [SPECIES_CLODSIRE] =
     {
         .baseHP        = 130,
-        .baseAttack    = 75,
-        .baseDefense   = 60,
-        .baseSpeed     = 20,
+        .baseAttack    = 85,
+        .baseDefense   = 85,
+        .baseSpeed     = 35,
         .baseSpAttack  = 45,
         .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_POISON, TYPE_GROUND),
@@ -3676,7 +3654,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_FIELD),
-        .abilities = { ABILITY_POISON_POINT, ABILITY_WATER_ABSORB, ABILITY_UNAWARE },
+        .abilities = { ABILITY_WATER_ABSORB, ABILITY_UNAWARE, ABILITY_UNAWARE },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Clodsire"),
         .cryId = CRY_CLODSIRE,
@@ -3686,9 +3664,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .weight = 2230,
         .description = COMPOUND_STRING(
             "When attacked, this Pokémon will\n"
-            "retaliate by sticking thick spines out\n"
-            "from its body. It's a risky move\n"
-            "that puts everything on the line."),
+            "retaliate by riskily sticking thick\n"
+            "spines out from its body. It still\n"
+            "loves chocolate. 130/85/85/45/100/35"),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -3697,11 +3675,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 8,
         .frontAnimFrames = sAnims_TwoFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_H_STRETCH,
         .backPic = gMonBackPic_Clodsire,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 15,
-        //.backAnimId = BACK_ANIM_NONE,
+        .backAnimId = BACK_ANIM_H_SLIDE,
         .palette = gMonPalette_Clodsire,
         .shinyPalette = gMonShinyPalette_Clodsire,
         .iconSprite = gMonIcon_Clodsire,
@@ -3718,10 +3696,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Clodsire,
             gShinyOverworldPalette_Clodsire
         )
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sClodsireLevelUpLearnset,
-        .teachableLearnset = sClodsireTeachableLearnset,
+        .teachableLearnset = sWooperTeachableLearnset,
     },
-#endif //P_PALDEAN_FORMS
 #endif //P_FAMILY_WOOPER
 
 #if P_FAMILY_MURKROW
@@ -4314,14 +4292,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_PSYCHIC),
         .catchRate = 60,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 159 : 149,
+        .expYield = 159,
         .evYield_SpAttack = 2,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_INNER_FOCUS, ABILITY_EARLY_BIRD, ABILITY_SAP_SIPPER },
+        .abilities = { ABILITY_EARLY_BIRD, ABILITY_SAP_SIPPER, ABILITY_SAP_SIPPER },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("Girafarig"),
         .cryId = CRY_GIRAFARIG,
@@ -4333,7 +4311,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "A Girafarig is an herbivore--it eats\n"
             "grass and tree shoots. While it is eating,\n"
             "its tail makes chewing and swallowing\n"
-            "motions as if it were also eating."),
+            "motions as well. 70/80/65/90/65/85"),
         .pokemonScale = 281,
         .pokemonOffset = 1,
         .trainerScale = 256,
@@ -4380,21 +4358,17 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             TRACKS_FOOT,
             sAnimTable_Following
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sGirafarigLevelUpLearnset,
         .teachableLearnset = sGirafarigTeachableLearnset,
-        .eggMoveLearnset = sGirafarigEggMoveLearnset,
-    #if P_GEN_9_CROSS_EVOS
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_FARIGIRAF, CONDITIONS({IF_KNOWS_MOVE, MOVE_TWIN_BEAM})}),
-    #endif
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_FARIGIRAF}),
     },
-
-#if P_GEN_9_CROSS_EVOS
     [SPECIES_FARIGIRAF] =
     {
-        .baseHP        = 120,
+        .baseHP        = 115,
         .baseAttack    = 90,
         .baseDefense   = 70,
-        .baseSpeed     = 60,
+        .baseSpeed     = 85,
         .baseSpAttack  = 110,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_NORMAL, TYPE_PSYCHIC),
@@ -4406,7 +4380,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_CUD_CHEW, ABILITY_ARMOR_TAIL, ABILITY_SAP_SIPPER },
+        .abilities = { ABILITY_EARLY_BIRD, ABILITY_SAP_SIPPER, ABILITY_SAP_SIPPER },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Farigiraf"),
         .cryId = CRY_FARIGIRAF,
@@ -4416,9 +4390,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .weight = 1600,
         .description = COMPOUND_STRING(
             "Now that the brain waves from the\n"
-            "head and tail are synced up, the\n"
-            "psychic power of this Pokémon is 10\n"
-            "times stronger than Girafarig's."),
+            "head and tail are synced up, its\n"
+            "psychic power is 10x that of\n"
+            "Girafarig's. 115/90/70/110/70/85"),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -4427,11 +4401,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
         .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .frontAnimId = ANIM_V_JUMPS_BIG,
         .backPic = gMonBackPic_Farigiraf,
         .backPicSize = MON_COORDS_SIZE(64, 64),
         .backPicYOffset = 0,
-        //.backAnimId = BACK_ANIM_NONE,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
         .palette = gMonPalette_Farigiraf,
         .shinyPalette = gMonShinyPalette_Farigiraf,
         .iconSprite = gMonIcon_Farigiraf,
@@ -4448,12 +4422,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Farigiraf,
             gShinyOverworldPalette_Farigiraf
         )
-        .levelUpLearnset = sFarigirafLevelUpLearnset,
-        .teachableLearnset = sFarigirafTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sGirafarigLevelUpLearnset,
+        .teachableLearnset = sGirafarigTeachableLearnset,
     },
-#endif //P_GEN_9_CROSS_EVOS
 #endif //P_FAMILY_GIRAFARIG
-
 #if P_FAMILY_PINECO
     [SPECIES_PINECO] =
     {
@@ -5423,26 +5396,26 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 95,
         .types = MON_TYPES(TYPE_BUG, TYPE_FIGHTING),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 175 : 200,
+        .expYield = 200,
         .evYield_Attack = 2,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 25,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_SWARM, ABILITY_GUTS, ABILITY_MOXIE },
+        .abilities = { ABILITY_MOXIE, ABILITY_GUTS, ABILITY_MOXIE },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Heracross"),
         .cryId = CRY_HERACROSS,
         .natDexNum = NATIONAL_DEX_HERACROSS,
-        .categoryName = _("Single Horn"),
+        .categoryName = _("Mega Horn"),
         .height = 15,
         .weight = 540,
         .description = COMPOUND_STRING(
             "They gather in forests seeking the sweet\n"
-            "sap of trees. It is completely clad in a\n"
-            "steel-hard shell. It is proud of its horn,\n"
-            "which it uses to fling foes."),
+            "sap of trees. Its shell is hard as steel.\n"
+            "It is proud of its horn, which it rams\n"
+            "into foes. 80/125/75/40/95/85"),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5491,7 +5464,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sHeracrossLevelUpLearnset,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+		.levelUpLearnset = sHeracrossLevelUpLearnset,
         .teachableLearnset = sHeracrossTeachableLearnset,
         .eggMoveLearnset = sHeracrossEggMoveLearnset,
         .formSpeciesIdTable = sHeracrossFormSpeciesIdTable,
@@ -5585,7 +5559,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 75,
         .types = MON_TYPES(TYPE_DARK, TYPE_ICE),
         .catchRate = 60,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 86 : 132,
+        .expYield = 132,
         .evYield_Speed = 1,
         .itemRare = ITEM_QUICK_CLAW,
         .genderRatio = PERCENT_FEMALE(50),
@@ -5599,14 +5573,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Sneasel"),
         .cryId = CRY_SNEASEL,
         .natDexNum = NATIONAL_DEX_SNEASEL,
-        .categoryName = _("Sharp Claw"),
+        .categoryName = _("Sneaky Claw"),
         .height = 9,
         .weight = 280,
         .description = COMPOUND_STRING(
             "A Sneasel scales trees by punching its\n"
             "hooked claws into the bark. It seeks out\n"
             "unguarded nests and steals eggs for food\n"
-            "while the parents are away."),
+            "when it can. 55/95/55/35/75/115"),
         .pokemonScale = 413,
         .pokemonOffset = -3,
         .trainerScale = 256,
@@ -5656,17 +5630,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             TRACKS_FOOT,
             sAnimTable_Following_Asym
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sSneaselLevelUpLearnset,
         .teachableLearnset = sSneaselTeachableLearnset,
-        .eggMoveLearnset = sSneaselEggMoveLearnset,
         .formSpeciesIdTable = sSneaselFormSpeciesIdTable,
-    #if P_GEN_4_CROSS_EVOS
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_WEAVILE, CONDITIONS({IF_TIME, TIME_NIGHT}, {IF_HOLD_ITEM, ITEM_RAZOR_CLAW})},
-                                {EVO_ITEM, ITEM_RAZOR_CLAW, SPECIES_WEAVILE, CONDITIONS({IF_TIME, TIME_NIGHT})}),
-    #endif
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_WEAVILE}),
     },
-
-#if P_GEN_4_CROSS_EVOS
     [SPECIES_WEAVILE] =
     {
         .baseHP        = 70,
@@ -5677,7 +5646,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 85,
         .types = MON_TYPES(TYPE_DARK, TYPE_ICE),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 179 : 199,
+        .expYield = 199,
         .evYield_Attack = 1,
         .evYield_Speed = 1,
         .itemRare = ITEM_QUICK_CLAW,
@@ -5691,14 +5660,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Weavile"),
         .cryId = CRY_WEAVILE,
         .natDexNum = NATIONAL_DEX_WEAVILE,
-        .categoryName = _("Sharp Claw"),
+        .categoryName = _("Vile Claw"),
         .height = 11,
         .weight = 340,
         .description = COMPOUND_STRING(
             "They travel in groups of four or five,\n"
             "leaving signs for one another on trees\n"
             "and rocks. They bring down their prey\n"
-            "with coordinated attacks."),
+            "by coordinating. 70/120/65/45/85/125"),
         .pokemonScale = 320,
         .pokemonOffset = 7,
         .trainerScale = 256,
@@ -5744,11 +5713,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sWeavileLevelUpLearnset,
-        .teachableLearnset = sWeavileTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sSneaselLevelUpLearnset,
+        .teachableLearnset = sSneaselTeachableLearnset,
     },
-#endif //P_GEN_4_CROSS_EVOS
-
 #if P_HISUIAN_FORMS
     [SPECIES_SNEASEL_HISUI] =
     {
@@ -6353,18 +6321,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 30,
         .types = MON_TYPES(TYPE_ICE, TYPE_GROUND),
         .catchRate = 225,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 50 : 78,
+        .expYield = 78,
         .evYield_Attack = 1,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-    #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_OBLIVIOUS, ABILITY_SNOW_CLOAK, ABILITY_THICK_FAT },
-    #else
-        .abilities = { ABILITY_OBLIVIOUS, ABILITY_NONE, ABILITY_THICK_FAT },
-    #endif
+        .abilities = { ABILITY_ICE_BODY, ABILITY_THICK_FAT },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Swinub"),
         .cryId = CRY_SWINUB,
@@ -6374,9 +6338,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .weight = 65,
         .description = COMPOUND_STRING(
             "It roots for food by rubbing its snout\n"
-            "against the ground. Its favorite food is a\n"
-            "mushroom that grows under dried grass.\n"
-            "It occasionally roots out hot springs."),
+            "against the ground. Its favorite food\n"
+            "is truffles. It occasionally roots out\n"
+            "hot springs. 50/50/40/30/30/50"),
         .pokemonScale = 324,
         .pokemonOffset = 20,
         .trainerScale = 256,
@@ -6411,12 +6375,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Swinub,
             gShinyOverworldPalette_Swinub
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sSwinubLevelUpLearnset,
         .teachableLearnset = sSwinubTeachableLearnset,
-        .eggMoveLearnset = sSwinubEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_PILOSWINE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_PILOSWINE}),
     },
-
     [SPECIES_PILOSWINE] =
     {
         .baseHP        = 100,
@@ -6427,7 +6390,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_ICE, TYPE_GROUND),
         .catchRate = 75,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 158 : 160,
+        .expYield = 160,
         .evYield_HP = 1,
         .evYield_Attack = 1,
         .genderRatio = PERCENT_FEMALE(50),
@@ -6435,11 +6398,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-    #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_OBLIVIOUS, ABILITY_SNOW_CLOAK, ABILITY_THICK_FAT },
-    #else
-        .abilities = { ABILITY_OBLIVIOUS, ABILITY_NONE, ABILITY_THICK_FAT },
-    #endif
+        .abilities = { ABILITY_ICE_BODY, ABILITY_THICK_FAT },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Piloswine"),
         .cryId = CRY_PILOSWINE,
@@ -6450,8 +6409,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .description = COMPOUND_STRING(
             "A Piloswine is covered by a thick coat\n"
             "of long hair for enduring freezing cold.\n"
-            "It uses its tusks to dig up food that has\n"
-            "been buried under ice."),
+            "It uses its tusks to dig up food buried\n"
+            "under ice. 100/100/80/60/60/50"),
         .pokemonScale = 306,
         .pokemonOffset = 10,
         .trainerScale = 256,
@@ -6499,50 +6458,41 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sPiloswineLevelUpLearnset,
-        .teachableLearnset = sPiloswineTeachableLearnset,
-    #if P_GEN_4_CROSS_EVOS
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_MAMOSWINE, CONDITIONS({IF_KNOWS_MOVE, MOVE_ANCIENT_POWER})}),
-    #endif
-    },
-
-#if P_GEN_4_CROSS_EVOS
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sSwinubLevelUpLearnset,
+        .teachableLearnset = sSwinubTeachableLearnset,
+	    .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_MAMOSWINE}),
+	    },
     [SPECIES_MAMOSWINE] =
     {
         .baseHP        = 110,
         .baseAttack    = 130,
         .baseDefense   = 80,
-        .baseSpeed     = 80,
+        .baseSpeed     = 85,
         .baseSpAttack  = 70,
         .baseSpDefense = 60,
         .types = MON_TYPES(TYPE_ICE, TYPE_GROUND),
         .catchRate = 50,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 265,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 239,
-    #else
-        .expYield = 207,
-    #endif
         .evYield_Attack = 3,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_OBLIVIOUS, ABILITY_SNOW_CLOAK, ABILITY_THICK_FAT },
+        .abilities = { ABILITY_ICE_BODY, ABILITY_THICK_FAT },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Mamoswine"),
         .cryId = CRY_MAMOSWINE,
         .natDexNum = NATIONAL_DEX_MAMOSWINE,
-        .categoryName = _("Twin Tusk"),
+        .categoryName = _("Mammoth"),
         .height = 25,
         .weight = 2910,
         .description = COMPOUND_STRING(
             "A frozen Mamoswine was dug from ice\n"
             "dating back 10,000 years. It woke up to\n"
-            "much amazement. This Pokémon has been\n"
-            "around for a long, long, long time."),
+            "much awe. This Pokémon has existed since\n"
+            "the Pleistocene. 110/130/80/70/60/85"),
         .pokemonScale = 257,
         .pokemonOffset = 6,
         .trainerScale = 423,
@@ -6587,10 +6537,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sMamoswineLevelUpLearnset,
-        .teachableLearnset = sMamoswineTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sSwinubLevelUpLearnset,
+        .teachableLearnset = sSwinubTeachableLearnset,
     },
-#endif //P_GEN_4_CROSS_EVOS
 #endif //P_FAMILY_SWINUB
 
 #if P_FAMILY_CORSOLA
@@ -6817,31 +6767,27 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpAttack  = 65,
         .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 190,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 78,
+        .catchRate = 192,
+        .expYield = 80,
         .evYield_SpAttack = 1,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_2),
-    #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_HUSTLE, ABILITY_SNIPER, ABILITY_MOODY },
-    #else
-        .abilities = { ABILITY_HUSTLE, ABILITY_NONE, ABILITY_MOODY },
-    #endif
+        .abilities = { ABILITY_HUSTLE, ABILITY_SNIPER },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Remoraid"),
         .cryId = CRY_REMORAID,
         .natDexNum = NATIONAL_DEX_REMORAID,
-        .categoryName = _("Jet"),
+        .categoryName = _("Gun Fish"),
         .height = 6,
         .weight = 120,
         .description = COMPOUND_STRING(
             "A Remoraid uses its abdominal muscles\n"
             "to forcefully expel swallowed water, then\n"
-            "shoot down flying prey. When evolution\n"
-            "approaches, it travels down rivers."),
+            "shoot down flying prey. It travels down\n"
+            "rivers before evolving. 35/65/35/65/35/65"),
         .pokemonScale = 316,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -6875,23 +6821,22 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Remoraid,
             gShinyOverworldPalette_Remoraid
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sRemoraidLevelUpLearnset,
         .teachableLearnset = sRemoraidTeachableLearnset,
-        .eggMoveLearnset = sRemoraidEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_OCTILLERY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_OCTILLERY}),
     },
-
     [SPECIES_OCTILLERY] =
     {
-        .baseHP        = 75,
-        .baseAttack    = 105,
-        .baseDefense   = 75,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 105,
-        .baseSpDefense = 75,
-        .types = MON_TYPES(TYPE_WATER),
-        .catchRate = 75,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 168 : 164,
+        .baseHP        = 80,
+        .baseAttack    = 104,
+        .baseDefense   = 80,
+        .baseSpeed     = 32,
+        .baseSpAttack  = 104,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_WATER, TYPE_ROCK),
+        .catchRate = 80,
+        .expYield = 168,
         .evYield_Attack = 1,
         .evYield_SpAttack = 1,
         .genderRatio = PERCENT_FEMALE(50),
@@ -6899,23 +6844,19 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_2),
-    #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_SUCTION_CUPS, ABILITY_SNIPER, ABILITY_MOODY },
-    #else
-        .abilities = { ABILITY_SUCTION_CUPS, ABILITY_NONE, ABILITY_MOODY },
-    #endif
+        .abilities = { ABILITY_SUCTION_CUPS, ABILITY_ANALYTIC },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Octillery"),
         .cryId = CRY_OCTILLERY,
         .natDexNum = NATIONAL_DEX_OCTILLERY,
-        .categoryName = _("Jet"),
+        .categoryName = _("Octorok"),
         .height = 9,
         .weight = 285,
         .description = COMPOUND_STRING(
-            "It ensnares its foe with its suction-\n"
-            "cupped tentacles before delivering the\n"
-            "finishing blow. If the foe turns out to be\n"
-            "too strong, it spews ink to escape."),
+            "It ensnares its foe with its tentacles\n"
+            "before delivering the finishing blow.\n"
+            "If the foe is too strong, it shoots\n"
+            "rocks as it flees. 80/104/80/104/80/32"),
         .pokemonScale = 296,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -6964,8 +6905,9 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             TRACKS_SLITHER,
             sAnimTable_Following
         )
-        .levelUpLearnset = sOctilleryLevelUpLearnset,
-        .teachableLearnset = sOctilleryTeachableLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sRemoraidLevelUpLearnset,
+        .teachableLearnset = sRemoraidTeachableLearnset,
     },
 #endif //P_FAMILY_REMORAID
 
@@ -7335,26 +7277,26 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_DARK, TYPE_FIRE),
         .catchRate = 120,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 66 : 114,
+        .expYield = 114,
         .evYield_SpAttack = 1,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_EARLY_BIRD, ABILITY_FLASH_FIRE, ABILITY_UNNERVE },
+        .abilities = { ABILITY_SOLAR_POWER, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Houndour"),
         .cryId = CRY_HOUNDOUR,
         .natDexNum = NATIONAL_DEX_HOUNDOUR,
-        .categoryName = _("Dark"),
+        .categoryName = _("Dire Hound"),
         .height = 6,
         .weight = 108,
         .description = COMPOUND_STRING(
             "Houndour communicate with each other\n"
             "using a variety of cries to corner their\n"
             "prey. This Pokémon's remarkable teamwork\n"
-            "is simply unparalleled."),
+            "is unparalleled. 45/60/30/80/50/65"),
         .pokemonScale = 393,
         .pokemonOffset = 16,
         .trainerScale = 256,
@@ -7387,10 +7329,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Houndour,
             gShinyOverworldPalette_Houndour
         )
-        .levelUpLearnset = sHoundourLevelUpLearnset,
-        .teachableLearnset = sHoundourTeachableLearnset,
-        .eggMoveLearnset = sHoundourEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_HOUNDOOM}),
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sHoundoomLevelUpLearnset,
+        .teachableLearnset = sHoundoomTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_HOUNDOOM}),
     },
 
     [SPECIES_HOUNDOOM] =
@@ -7403,26 +7345,26 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 80,
         .types = MON_TYPES(TYPE_DARK, TYPE_FIRE),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 175 : 204,
+        .expYield = 204,
         .evYield_SpAttack = 2,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 20,
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_EARLY_BIRD, ABILITY_FLASH_FIRE, ABILITY_UNNERVE },
+        .abilities = { ABILITY_SOLAR_POWER, ABILITY_UNNERVE },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("Houndoom"),
         .cryId = CRY_HOUNDOOM,
         .natDexNum = NATIONAL_DEX_HOUNDOOM,
-        .categoryName = _("Dark"),
+        .categoryName = _("Doom Hound"),
         .height = 14,
         .weight = 350,
         .description = COMPOUND_STRING(
             "In a Houndoom pack, the one with its horns\n"
             "raked sharply back serves a leadership\n"
             "role. They choose their leader by fighting\n"
-            "among themselves."),
+            "among themselves. 75/90/50/110/80/95"),
         .pokemonScale = 256,
         .pokemonOffset = 4,
         .trainerScale = 256,
@@ -7468,12 +7410,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             TRACKS_FOOT,
             sAnimTable_Following
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sHoundoomLevelUpLearnset,
         .teachableLearnset = sHoundoomTeachableLearnset,
         .formSpeciesIdTable = sHoundoomFormSpeciesIdTable,
         .formChangeTable = sHoundoomFormChangeTable,
     },
-
 #if P_MEGA_EVOLUTIONS
     [SPECIES_HOUNDOOM_MEGA] =
     {
@@ -7925,15 +7867,15 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
 #if P_FAMILY_MILTANK
     [SPECIES_MILTANK] =
     {
-        .baseHP        = 95,
+        .baseHP        = 105,
         .baseAttack    = 80,
-        .baseDefense   = 105,
+        .baseDefense   = 115,
         .baseSpeed     = 100,
-        .baseSpAttack  = 40,
+        .baseSpAttack  = 70,
         .baseSpDefense = 70,
         .types = MON_TYPES(TYPE_NORMAL),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 172 : 200,
+        .expYield = 200,
         .evYield_Defense = 2,
         .itemCommon = ITEM_MOOMOO_MILK,
         .itemRare = ITEM_MOOMOO_MILK,
@@ -7942,23 +7884,19 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-    #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_THICK_FAT, ABILITY_SCRAPPY, ABILITY_SAP_SIPPER },
-    #else
-        .abilities = { ABILITY_THICK_FAT, ABILITY_NONE, ABILITY_SAP_SIPPER },
-    #endif
+        .abilities = { ABILITY_THICK_FAT, ABILITY_INTIMIDATE },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("Miltank"),
         .cryId = CRY_MILTANK,
         .natDexNum = NATIONAL_DEX_MILTANK,
-        .categoryName = _("Milk Cow"),
+        .categoryName = _("Muffalo"),
         .height = 12,
         .weight = 755,
         .description = COMPOUND_STRING(
-            "It gives over five gallons of milk daily.\n"
-            "Its sweet milk is enjoyed by children and\n"
-            "grown-ups alike. People who can't drink\n"
-            "milk turn it into yogurt and eat it instead."),
+            "It gives over 20 liters of milk daily.\n"
+            "Milk used to be dismissed as only for kids\n"
+            "until Empress Selene championed its status\n"
+            "as nutrient-rich. 105/80/115/70/70/100"),
         .pokemonScale = 280,
         .pokemonOffset = 5,
         .trainerScale = 256,
@@ -7991,6 +7929,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Miltank,
             gShinyOverworldPalette_Miltank
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMiltankLevelUpLearnset,
         .teachableLearnset = sMiltankTeachableLearnset,
         .eggMoveLearnset = sMiltankEggMoveLearnset,
@@ -8017,7 +7956,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #endif
         .evYield_Speed = 2,
         .evYield_SpAttack = 1,
-        .genderRatio = MON_GENDERLESS,
+        .genderRatio = MON_MALE,
         .eggCycles = 80,
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
@@ -8099,7 +8038,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #endif
         .evYield_HP = 1,
         .evYield_Attack = 2,
-        .genderRatio = MON_GENDERLESS,
+        .genderRatio = MON_MALE,
         .eggCycles = 80,
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
@@ -8180,7 +8119,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
     #endif
         .evYield_Defense = 1,
         .evYield_SpDefense = 2,
-        .genderRatio = MON_GENDERLESS,
+        .genderRatio = MON_FEMALE,
         .eggCycles = 80,
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
@@ -8252,7 +8191,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 50,
         .types = MON_TYPES(TYPE_ROCK, TYPE_GROUND),
         .catchRate = 45,
-        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 60 : 67,
+        .expYield = 67,
         .evYield_Attack = 1,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 40,
@@ -8271,7 +8210,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "A Larvitar is born deep under the ground.\n"
             "It must eat its way through the soil above\n"
             "and reach the surface for it to see its\n"
-            "parents' faces."),
+            "parents' faces. 50/64/50/45/50/41"),
         .pokemonScale = 472,
         .pokemonOffset = 18,
         .trainerScale = 256,
@@ -8306,12 +8245,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Larvitar,
             gShinyOverworldPalette_Larvitar
         )
-        .levelUpLearnset = sLarvitarLevelUpLearnset,
-        .teachableLearnset = sLarvitarTeachableLearnset,
-        .eggMoveLearnset = sLarvitarEggMoveLearnset,
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sTyranitarLevelUpLearnset,
+        .teachableLearnset = sTyranitarTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_PUPITAR}),
     },
-
     [SPECIES_PUPITAR] =
     {
         .baseHP        = 70,
@@ -8341,7 +8279,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             "A Pupitar creates a gas inside its body\n"
             "that it ejects under compression to propel\n"
             "itself like a jet. Its body can withstand\n"
-            "a collision with solid steel."),
+            "colliding with steel. 70/84/70/65/70/51"),
         .pokemonScale = 292,
         .pokemonOffset = 8,
         .trainerScale = 256,
@@ -8374,11 +8312,11 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Pupitar,
             gShinyOverworldPalette_Pupitar
         )
-        .levelUpLearnset = sPupitarLevelUpLearnset,
-        .teachableLearnset = sPupitarTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 55, SPECIES_TYRANITAR}),
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .levelUpLearnset = sTyranitarLevelUpLearnset,
+        .teachableLearnset = sTyranitarTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_LEVEL, 50, SPECIES_TYRANITAR}),
     },
-
     [SPECIES_TYRANITAR] =
     {
         .baseHP        = 100,
@@ -8389,13 +8327,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_ROCK, TYPE_DARK),
         .catchRate = 45,
-    #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 300,
-    #elif P_UPDATED_EXP_YIELDS >= GEN_5
-        .expYield = 270,
-    #else
-        .expYield = 218,
-    #endif
         .evYield_Attack = 3,
         .genderRatio = PERCENT_FEMALE(50),
         .eggCycles = 40,
@@ -8407,14 +8339,14 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .speciesName = _("Tyranitar"),
         .cryId = CRY_TYRANITAR,
         .natDexNum = NATIONAL_DEX_TYRANITAR,
-        .categoryName = _("Armor"),
+        .categoryName = _("Tyrant"),
         .height = 20,
         .weight = 2020,
         .description = COMPOUND_STRING(
             "A Tyranitar is so overwhelmingly powerful,\n"
             "it can bring down a whole mountain to make\n"
             "its nest. It roams in mountains seeking\n"
-            "new opponents to fight."),
+            "enemies to fight. 100/134/110/95/100/61"),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 345,
@@ -8449,12 +8381,12 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             gOverworldPalette_Tyranitar,
             gShinyOverworldPalette_Tyranitar
         )
+		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sTyranitarLevelUpLearnset,
         .teachableLearnset = sTyranitarTeachableLearnset,
         .formSpeciesIdTable = sTyranitarFormSpeciesIdTable,
         .formChangeTable = sTyranitarFormChangeTable,
     },
-
 #if P_MEGA_EVOLUTIONS
     [SPECIES_TYRANITAR_MEGA] =
     {
@@ -8549,7 +8481,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .expYield = 220,
     #endif
         .evYield_SpDefense = 3,
-        .genderRatio = MON_GENDERLESS,
+        .genderRatio = MON_FEMALE,
         .eggCycles = 120,
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
@@ -8640,7 +8572,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .evYield_SpDefense = 3,
         .itemCommon = ITEM_SACRED_ASH,
         .itemRare   = ITEM_SACRED_ASH,
-        .genderRatio = MON_GENDERLESS,
+        .genderRatio = MON_FEMALE,
         .eggCycles = 120,
         .friendship = 0,
         .growthRate = GROWTH_SLOW,
