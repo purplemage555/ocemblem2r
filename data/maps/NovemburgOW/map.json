@@ -1,0 +1,211 @@
+{
+  "id": "MAP_NOVEMBURG_OW",
+  "name": "NovemburgOW",
+  "layout": "LAYOUT_NOVEMBURG_OW",
+  "music": "MUS_RG_VERMILLION",
+  "region_map_section": "MAPSEC_SAFFRON_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_SELENIA_ROUTE6",
+      "offset": 0,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_BIG_BRIDGE",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_SELENIA_ROUTE7",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_SELENIA_ROUTE8EAST",
+      "offset": 0,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ROCKER",
+      "x": 22,
+      "y": 35,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 7,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Novemburg_ES_NPC2",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 36,
+      "y": 25,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 7,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Novemburg_ES_NPC1",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
+      "x": 31,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_DOWN_LEFT_UP",
+      "movement_range_x": 3,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Novemburg_ES_NPC3",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LABRYS",
+      "x": 25,
+      "y": 24,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Novemburg_ES_Labrys",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "x": 2,
+      "y": 33,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 7,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Novemburg_ES_NPC4",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 26,
+      "y": 30,
+      "elevation": 0,
+      "dest_map": "MAP_NOVEMBURG_POKE_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 18,
+      "y": 30,
+      "elevation": 0,
+      "dest_map": "MAP_NOVEMBURG_MART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_NOVEMBURG_NPCS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_NOVEMBURG_NPCS",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 29,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_NOVEMBURG_NPCS",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 36,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_NOVEMBURG_NPCS",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 11,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_NOVEMBURG_NPCS",
+      "dest_warp_id": "8"
+    },
+    {
+      "x": 19,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_NOVEMBURG_NPCS",
+      "dest_warp_id": "10"
+    },
+    {
+      "x": 25,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_NOVEMBURG_NPCS",
+      "dest_warp_id": "12"
+    },
+    {
+      "x": 31,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_NOVEMBURG_NPCS",
+      "dest_warp_id": "14"
+    },
+    {
+      "x": 10,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_NOVEMBURG_BADGE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 2,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_SHULK_HOUSE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 34,
+      "y": 26,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "OC_Novemburg_ES_TownSign"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 25,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "OC_Novemburg_ES_BadgeSign"
+    }
+  ]
+}

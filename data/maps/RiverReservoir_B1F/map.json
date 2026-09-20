@@ -1,0 +1,92 @@
+{
+  "id": "MAP_RIVER_RESERVOIR_B1F",
+  "name": "RiverReservoir_B1F",
+  "layout": "LAYOUT_RIVER_RESERVOIR_B1F",
+  "music": "MUS_UNDERWATER",
+  "region_map_section": "MAPSEC_DOTTED_HOLE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_KNIGHT",
+      "x": 30,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
+      "movement_range_x": 5,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "RR_ES_Knight2",
+      "flag": "FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_KNIGHT",
+      "x": 25,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
+      "movement_range_x": 5,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "RR_ES_Knight3",
+      "flag": "FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_KNIGHT",
+      "x": 30,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
+      "movement_range_x": 5,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "RR_ES_Knight4",
+      "flag": "FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 8,
+      "y": 23,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_BULLET_SEED",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ITEM_EBONHEART_PEASHOOTER"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 28,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_RIVER_RESERVOIR_1F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 27,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_RIVER_RESERVOIR_1F",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "MAP_SELENIA_ROUTE8WEST",
+  "name": "SeleniaRoute8West",
+  "layout": "LAYOUT_SELENIA_ROUTE8WEST",
+  "music": "MUS_ROUTE113",
+  "region_map_section": "MAPSEC_METEOR_FALLS2",
+  "requires_flash": false,
+  "weather": "WEATHER_VOLCANIC_ASH",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_SELENIA_ROUTE8EAST",
+      "offset": 0,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_NEW_EBONHEART_OW",
+      "offset": 0,
+      "direction": "left"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "x": 66,
+      "y": 5,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "OC_R8W_ES_Lava",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 24,
+      "y": 17,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 7,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "OC_R8W_ES_Iron",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "x": 45,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "OC_R8W_ES_Gian",
+      "flag": "0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 92,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_MAGMA_TUNNEL_1F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 24,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_QUARRY_JUNCTION",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 43,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_SELENIA_ROUTE8_SCHOOL",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "OC_R8_ES_RouteSign"
+    },
+    {
+      "type": "sign",
+      "x": 93,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "OC_MT_ES_CaveSign"
+    },
+    {
+      "type": "sign",
+      "x": 40,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "OC_R8W_ES_SchoolSign"
+    }
+  ]
+}

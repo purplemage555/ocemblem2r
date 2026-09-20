@@ -812,7 +812,7 @@ enum __attribute__((packed)) Item
     ITEM_TM98 = 679,
     ITEM_TM99 = 680,
     ITEM_TM100 = 681,
-
+	ITEM_TM00 = ITEM_TM100,
     ITEM_HM01 = 682,
     ITEM_HM02 = 683,
     ITEM_HM03 = 684,
