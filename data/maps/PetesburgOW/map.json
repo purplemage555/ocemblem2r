@@ -36,7 +36,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SAILOR",
+      "graphics_id": "OBJ_EVENT_GFX_SAILOR_FRLG",
       "x": 7,
       "y": 14,
       "elevation": 3,
@@ -49,7 +49,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "graphics_id": "OBJ_EVENT_GFX_PICNICKER_FRLG",
       "x": 23,
       "y": 8,
       "elevation": 3,
