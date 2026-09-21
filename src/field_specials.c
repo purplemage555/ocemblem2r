@@ -5766,3 +5766,12 @@ bool8 CheckAddCoins(void)
     else
         return TRUE;
 }
+
+void FoodFriendship(void)
+{
+	u32 partyIndex;
+    for (partyIndex = 0; partyIndex < CalculatePlayerPartyCount(); partyIndex++)
+    {
+        AdjustFriendship(&gPlayerParty[partyIndex], FRIENDSHIP_EVENT_LEAGUE_BATTLE);
+    }
+}

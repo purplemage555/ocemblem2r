@@ -1,21 +1,21 @@
 gText_WouldYouLikeToRestYourPkmn::
-	.string "Hello, and welcome to\n"
-	.string "the POKéMON CENTER.\p"
-	.string "We restore your tired POKéMON\n"
-	.string "to full health.\p"
-	.string "Would you like to rest your POKéMON?$"
+	.string "Hey there! Welcome to\n"
+	.string "the Pokémon Center!\p"
+	.string "We heal up all ya Pokémon to\n"
+	.string "tip-top shape, all for free!\p"
+	.string "Need any healin'?$"
 
 gText_IllTakeYourPkmn::
-	.string "Okay, I'll take your POKéMON\n"
-	.string "for a few seconds.$"
+	.string "Awright, I'll take your Pokémon\n"
+	.string "for a lil' bit. Take it easy!$"
 
 gText_RestoredPkmnToFullHealth::
-	.string "Thank you for waiting.\p"
-	.string "We've restored your POKéMON\n"
-	.string "to full health.$"
+	.string "Thanks for waitin'!\p"
+	.string "All ya Pokémon are\n"
+	.string "now fully healed!$"
 
 gText_WeHopeToSeeYouAgain::
-	.string "We hope to see you again!$"
+	.string "See ya soon!$"
 
 gText_WelcomeCutShort::
 	.string "Hello, and welcome to\n"
@@ -41,11 +41,11 @@ gText_YouWantTheUsual::
 	.string "You want the usual, am I right?$"
 
 gText_IllTakeYourPkmn2::
-	.string "Okay, I'll take your POKéMON\n"
-	.string "for a few seconds.$"
+	.string "Awright, I'll take your Pokémon\n"
+	.string "for a lil' bit. Take it easy!$"
 
 gText_ThankYouForWaiting::
-	.string "Thank you for waiting.$"
+	.string "Thanks for waitin'!$"
 
 gText_WeHopeToSeeYouAgain2::
-	.string "We hope to see you again!$"
+	.string "See ya soon!$"
