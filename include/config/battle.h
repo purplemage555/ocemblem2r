@@ -148,7 +148,7 @@
 #define B_FORESIGHT_FAIL                GEN_LATEST // In Gen2 and Gen5+, Foresight fails if used against a target already under its effect.
 #define B_MIRACLE_EYE_FAIL              GEN_LATEST // In Gen5+, Miracle Eye fails if used against a target already under its effect.
 #define B_PURSUIT_TARGET                GEN_LATEST // In Gen4+, Pursuit automatically targets and attacks any switching opponent. Previously, it only attacked a switching opponent if they were chose as the target.
-#define B_SKIP_RECHARGE                 GEN_LATEST // In Gen1 only, moves with recharge turns do not need to recharge if they knock out the target.
+#define B_SKIP_RECHARGE                 GEN_1 // In Gen1 only, moves with recharge turns do not need to recharge if they knock out the target.
 #define B_ENCORE_TARGET                 GEN_LATEST // In Gen5+, an encored Pokémon can select the target of its move.
 #define B_TIME_OF_DAY_HEALING_MOVES     GEN_LATEST // In Gen2 only, the amount of HP restored by Morning Sun, Synthesis, and Moonlight doubles during the morning, day, and night, respectively.
                                                    // If OW_TIMES_OF_DAY is set to GEN_3, Morning Sun is boosted during the day instead of the morning. If it is set to GEN_4 or higher, Moonlight is also boosted in the evening.
