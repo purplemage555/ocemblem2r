@@ -1,6 +1,6 @@
 const u8 gItemEffect_Potion[7] = {
     [4] = ITEM4_HEAL_HP,
-    [6] = 20, // Amount of HP to recover
+    [6] = 50, // Amount of HP to recover
 };
 
 const u8 gItemEffect_Antidote[6] = {
@@ -36,12 +36,12 @@ const u8 gItemEffect_MaxPotion[7] = {
 
 const u8 gItemEffect_HyperPotion[7] = {
     [4] = ITEM4_HEAL_HP,
-    [6] = I_HEALTH_RECOVERY >= GEN_7 ? 120 : 200, // Amount of HP to recover
+    [6] = 200, // Amount of HP to recover
 };
 
 const u8 gItemEffect_SuperPotion[7] = {
     [4] = ITEM4_HEAL_HP,
-    [6] = I_HEALTH_RECOVERY >= GEN_7 ? 60 : 50, // Amount of HP to recover
+    [6] = 100, // Amount of HP to recover
 };
 
 const u8 gItemEffect_FullHeal[6] = {
@@ -58,24 +58,95 @@ const u8 gItemEffect_MaxRevive[7] = {
     [6] = ITEM6_HEAL_HP_FULL,
 };
 
-const u8 gItemEffect_FreshWater[7] = {
+const u8 gItemEffect_FreshWater[10] = {
     [4] = ITEM4_HEAL_HP,
-    [6] = I_HEALTH_RECOVERY >= GEN_7 ? 30 : 50, // Amount of HP to recover
+	[5] = ITEM5_FRIENDSHIP_ALL,
+    [6] = 50, // Amount of HP to recover
+	[7] = 2, // Friendship change, low
+    [8] = 1, // Friendship change, mid
+    [9] = 1, // Friendship change, high
 };
 
-const u8 gItemEffect_SodaPop[7] = {
+const u8 gItemEffect_SodaPop[10] = {
     [4] = ITEM4_HEAL_HP,
-    [6] = I_HEALTH_RECOVERY >= GEN_7 ? 50 : 60, // Amount of HP to recover
+	[5] = ITEM5_FRIENDSHIP_ALL,
+    [6] = 60, // Amount of HP to recover
+	[7] = 3, // Friendship change, low
+    [8] = 2, // Friendship change, mid
+    [9] = 1, // Friendship change, high
 };
 
-const u8 gItemEffect_Lemonade[7] = {
+const u8 gItemEffect_Lemonade[10] = {
     [4] = ITEM4_HEAL_HP,
-    [6] = I_HEALTH_RECOVERY >= GEN_7 ? 70 : 80, // Amount of HP to recover
+	[5] = ITEM5_FRIENDSHIP_ALL,
+    [6] = 80, // Amount of HP to recover
+	[7] = 4, // Friendship change, low
+    [8] = 2, // Friendship change, mid
+    [9] = 2, // Friendship change, high
 };
 
-const u8 gItemEffect_MoomooMilk[7] = {
+const u8 gItemEffect_MoomooMilk[10] = {
     [4] = ITEM4_HEAL_HP,
+	[5] = ITEM5_FRIENDSHIP_ALL,
     [6] = 100, // Amount of HP to recover
+	[7] = 5, // Friendship change, low
+    [8] = 3, // Friendship change, mid
+    [9] = 2, // Friendship change, high
+};
+
+const u8 gItemEffect_SweetRoll[10] = {
+    [4] = ITEM4_HEAL_HP,
+	[5] = ITEM5_FRIENDSHIP_ALL,
+    [6] = 125, // Amount of HP to recover
+	[7] = 6, // Friendship change, low
+    [8] = 3, // Friendship change, mid
+    [9] = 3, // Friendship change, high
+};
+
+const u8 gItemEffect_ChocoMilk[10] = {
+    [4] = ITEM4_HEAL_HP,
+	[5] = ITEM5_FRIENDSHIP_ALL,
+    [6] = 150, // Amount of HP to recover
+	[7] = 8, // Friendship change, low
+    [8] = 4, // Friendship change, mid
+    [9] = 4, // Friendship change, high
+};
+
+const u8 gItemEffect_Burger[10] = {
+    [4] = ITEM4_HEAL_HP,
+	[5] = ITEM5_FRIENDSHIP_ALL,
+    [6] = 200, // Amount of HP to recover
+	[7] = 10, // Friendship change, low
+    [8] = 5, // Friendship change, mid
+    [9] = 5, // Friendship change, high
+};
+
+const u8 gItemEffect_WallMeat[10] = {
+    [4] = ITEM4_HEAL_HP,
+	[5] = ITEM5_FRIENDSHIP_ALL,
+    [6] = 250, // Amount of HP to recover
+	[7] = 13, // Friendship change, low
+    [8] = 6, // Friendship change, mid
+    [9] = 6, // Friendship change, high
+};
+
+const u8 gItemEffect_Milkshake[10] = {
+    [3] = ITEM3_STATUS_ALL,
+	[4] = ITEM4_HEAL_HP,
+	[5] = ITEM5_FRIENDSHIP_ALL,
+    [6] = ITEM6_HEAL_HP_FULL,
+	[7] = 16, // Friendship change, low
+    [8] = 8, // Friendship change, mid
+    [9] = 8, // Friendship change, high
+};
+
+const u8 gItemEffect_Pizza[10] = {
+    [4] = ITEM4_HEAL_HP,
+	[5] = ITEM5_FRIENDSHIP_ALL,
+    [6] = ITEM6_HEAL_HP_FULL,
+	[7] = 16, // Friendship change, low
+    [8] = 8, // Friendship change, mid
+    [9] = 8, // Friendship change, high
 };
 
 const u8 gItemEffect_EnergyPowder[10] = {
@@ -175,6 +246,11 @@ const u8 gItemEffect_SacredAsh[7] = {
 };
 
 #define VITAMIN_FRIENDSHIP_CHANGE(i)             \
+    [(i) + 0] = -5, /* Friendship change, low */  \
+    [(i) + 1] = -3, /* Friendship change, mid */  \
+    [(i) + 2] = -2  /* Friendship change, high */
+
+#define VITAFOOD_FRIENDSHIP_CHANGE(i)             \
     [(i) + 0] = 5, /* Friendship change, low */  \
     [(i) + 1] = 3, /* Friendship change, mid */  \
     [(i) + 2] = 2  /* Friendship change, high */
@@ -220,6 +296,50 @@ const u8 gItemEffect_Zinc[11] = {
     [5] = ITEM5_EV_SPDEF | ITEM5_FRIENDSHIP_ALL,
     [6] = ITEM6_ADD_EV,
     VITAMIN_FRIENDSHIP_CHANGE(7),
+    [10] = ITEM10_IS_VITAMIN,
+};
+
+const u8 gItemEffect_Sandvich[11] = {
+    [4] = ITEM4_EV_HP,
+    [5] = ITEM5_FRIENDSHIP_ALL,
+    [6] = ITEM6_ADD_EV_FOOD,
+    VITAFOOD_FRIENDSHIP_CHANGE(7),
+    [10] = ITEM10_IS_VITAMIN,
+};
+
+const u8 gItemEffect_PowerBeans[11] = {
+    [4] = ITEM4_EV_ATK,
+    [5] = ITEM5_FRIENDSHIP_ALL,
+    [6] = ITEM6_ADD_EV_FOOD,
+    VITAFOOD_FRIENDSHIP_CHANGE(7),
+    [10] = ITEM10_IS_VITAMIN,
+};
+
+const u8 gItemEffect_WallNut[11] = {
+    [5] = ITEM5_EV_DEF | ITEM5_FRIENDSHIP_ALL,
+    [6] = ITEM6_ADD_EV_FOOD,
+    VITAFOOD_FRIENDSHIP_CHANGE(7),
+    [10] = ITEM10_IS_VITAMIN,
+};
+
+const u8 gItemEffect_Cheese[11] = {
+    [5] = ITEM5_EV_SPEED | ITEM5_FRIENDSHIP_ALL,
+    [6] = ITEM6_ADD_EV_FOOD,
+    VITAFOOD_FRIENDSHIP_CHANGE(7),
+    [10] = ITEM10_IS_VITAMIN,
+};
+
+const u8 gItemEffect_ChocolateBar[11] = {
+    [5] = ITEM5_EV_SPATK | ITEM5_FRIENDSHIP_ALL,
+    [6] = ITEM6_ADD_EV_FOOD,
+    VITAFOOD_FRIENDSHIP_CHANGE(7),
+    [10] = ITEM10_IS_VITAMIN,
+};
+
+const u8 gItemEffect_Cake[11] = {
+    [5] = ITEM5_EV_SPDEF | ITEM5_FRIENDSHIP_ALL,
+    [6] = ITEM6_ADD_EV_FOOD,
+    VITAFOOD_FRIENDSHIP_CHANGE(7),
     [10] = ITEM10_IS_VITAMIN,
 };
 
@@ -381,7 +501,7 @@ const u8 gItemEffect_LeppaBerry[7] = {
 
 const u8 gItemEffect_OranBerry[7] = {
     [4] = ITEM4_HEAL_HP,
-    [6] = 10, // Amount of HP to recover
+    [6] = 20, // Amount of HP to recover
 };
 
 const u8 gItemEffect_PersimBerry[6] = {
