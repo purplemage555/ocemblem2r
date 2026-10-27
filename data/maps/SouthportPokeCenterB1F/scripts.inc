@@ -31,7 +31,7 @@ Rail_ES_3to1Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailRight2
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_SOUTHPORT_POKE_CENTER_B1F
 	closedoor 4, 1
 	waitdooranim
 	release
@@ -68,7 +68,7 @@ Rail_ES_3to2Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailRight1
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_SOUTHPORT_POKE_CENTER_B1F
 	closedoor 4, 1
 	waitdooranim
 	release
@@ -106,7 +106,7 @@ Rail_ES_3to4Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailLeft1
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_SOUTHPORT_POKE_CENTER_B1F
 	closedoor 4, 1
 	waitdooranim
 	release
@@ -144,7 +144,7 @@ Rail_ES_3to5Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailLeft2
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_SOUTHPORT_POKE_CENTER_B1F
 	closedoor 4, 1
 	waitdooranim
 	release
@@ -182,7 +182,7 @@ Rail_ES_3to6Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailLeft3
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_SOUTHPORT_POKE_CENTER_B1F
 	closedoor 4, 1
 	waitdooranim
 	release
@@ -220,7 +220,7 @@ Rail_ES_3to7Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailLeft4
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_SOUTHPORT_POKE_CENTER_B1F
 	closedoor 4, 1
 	waitdooranim
 	release

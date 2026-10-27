@@ -31,7 +31,7 @@ Rail_ES_4to1Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailRight3
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_ACSPOKE_CENTER_B1F
 	closedoor 5, 1
 	waitdooranim
 	release
@@ -68,7 +68,7 @@ Rail_ES_4to2Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailRight2
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_ACSPOKE_CENTER_B1F
 	closedoor 5, 1
 	waitdooranim
 	release
@@ -105,7 +105,7 @@ Rail_ES_4to3Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailRight1
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_ACSPOKE_CENTER_B1F
 	closedoor 5, 1
 	waitdooranim
 	release
@@ -143,7 +143,7 @@ Rail_ES_4to5Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailLeft1
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_ACSPOKE_CENTER_B1F
 	closedoor 5, 1
 	waitdooranim
 	release
@@ -181,7 +181,7 @@ Rail_ES_4to6Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailLeft2
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_ACSPOKE_CENTER_B1F
 	closedoor 5, 1
 	waitdooranim
 	release
@@ -219,7 +219,7 @@ Rail_ES_4to7Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailLeft3
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_ACSPOKE_CENTER_B1F
 	closedoor 5, 1
 	waitdooranim
 	release

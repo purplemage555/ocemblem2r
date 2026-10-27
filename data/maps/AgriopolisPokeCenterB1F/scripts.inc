@@ -31,7 +31,7 @@ Rail_ES_7to1Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailRight6
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_AGRIOPOLIS_POKE_CENTER_B1F
 	closedoor 8, 1
 	waitdooranim
 	release
@@ -68,7 +68,7 @@ Rail_ES_7to2Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailRight5
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_AGRIOPOLIS_POKE_CENTER_B1F
 	closedoor 8, 1
 	waitdooranim
 	release
@@ -105,7 +105,7 @@ Rail_ES_7to3Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailRight4
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_AGRIOPOLIS_POKE_CENTER_B1F
 	closedoor 8, 1
 	waitdooranim
 	release
@@ -142,7 +142,7 @@ Rail_ES_7to4Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailRight3
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_AGRIOPOLIS_POKE_CENTER_B1F
 	closedoor 8, 1
 	waitdooranim
 	release
@@ -179,7 +179,7 @@ Rail_ES_7to5Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailRight2
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_AGRIOPOLIS_POKE_CENTER_B1F
 	closedoor 8, 1
 	waitdooranim
 	release
@@ -216,7 +216,7 @@ Rail_ES_7to6Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailRight1
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_AGRIOPOLIS_POKE_CENTER_B1F
 	closedoor 8, 1
 	waitdooranim
 	release

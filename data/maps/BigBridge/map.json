@@ -2,7 +2,7 @@
   "id": "MAP_BIG_BRIDGE",
   "name": "BigBridge",
   "layout": "LAYOUT_BIG_BRIDGE",
-  "music": "OC_BRIDGE",
+  "music": "MUS_ROUTE110",
   "region_map_section": "MAPSEC_BOND_BRIDGE",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",
@@ -86,12 +86,8 @@
       "flag": "0"
     }
   ],
-  "warp_events": [
-
-  ],
-  "coord_events": [
-
-  ],
+  "warp_events": [],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

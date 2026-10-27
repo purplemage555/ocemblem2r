@@ -2,7 +2,7 @@
   "id": "MAP_SELENIA_ROUTE9",
   "name": "SeleniaRoute9",
   "layout": "LAYOUT_SELENIA_ROUTE9",
-  "music": "OC_GRASSWALK",
+  "music": "MUS_ROUTE104",
   "region_map_section": "MAPSEC_ROUTE_9",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -248,9 +248,7 @@
       "dest_warp_id": "6"
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

@@ -2,7 +2,7 @@
   "id": "MAP_SANCTUM_OW",
   "name": "SanctumOW",
   "layout": "LAYOUT_SANCTUM_OW",
-  "music": "OC_ROOF",
+  "music": "MUS_RG_LAVENDER",
   "region_map_section": "MAPSEC_CERULEAN_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",
@@ -109,9 +109,7 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

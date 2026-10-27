@@ -1311,7 +1311,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_CARBOS] =
     {
         .name = ITEM_NAME("Carbos"),
-        .pluralName = _("Carbos"),
+        .pluralName = ITEM_PLURAL_NAME("Carbos"),
         .price = 9800,
         .description = COMPOUND_STRING(
             "Raises Speed EVs\n"
@@ -12265,7 +12265,7 @@ const struct ItemInfo gItemsInfo[] =
 
 // TMs/HMs. They don't have a set flingPower, as that's handled by GetFlingPowerFromItemId.
 
-     [ITEM_TM_PIN_MISSILE] =
+    [ITEM_TM_PIN_MISSILE] =
     {
         .name = ITEM_NAME("TM01"),
         .price = 3000,
@@ -15953,6 +15953,266 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
+    },
+	[ITEM_BREAD] =
+    {
+        .name = ITEM_NAME("Bread"),
+        .price = 250,
+        .holdEffectParam = 50,
+        .description = COMPOUND_STRING(
+            "A loaf of bread\n"
+            "that restores HP\n"
+            "by 50 points."),
+        .pocket = POCKET_ITEMS,
+		.sortType = ITEM_TYPE_HEALTH_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_FreshWater,
+        .flingPower = 20,
+        .iconPic = gItemIcon_Bread,
+        .iconPalette = gItemIconPalette_OCItems,
+    },
+	[ITEM_NUGGETS] =
+    {
+        .name = ITEM_NAME("Poultry Nuggets"),
+		.pluralName = ITEM_PLURAL_NAME("Poultry Nuggets"),
+        .price = 300,
+        .holdEffectParam = 60,
+        .description = COMPOUND_STRING(
+            "Fried poultry bits\n"
+            "that restore HP\n"
+            "by 60 points."),
+        .pocket = POCKET_ITEMS,
+		.sortType = ITEM_TYPE_HEALTH_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_SodaPop,
+        .flingPower = 24,
+        .iconPic = gItemIcon_Nuggets,
+        .iconPalette = gItemIconPalette_OCItems,
+    },
+	[ITEM_SWEET_ROLL] =
+    {
+        .name = ITEM_NAME("Sweet Roll"),
+        .price = 625,
+        .holdEffectParam = 125,
+        .description = COMPOUND_STRING(
+            "An iconic pastry\n"
+            "that restores HP\n"
+            "by 125 points."),
+        .pocket = POCKET_ITEMS,
+		.sortType = ITEM_TYPE_HEALTH_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_SweetRoll,
+        .flingPower = 50,
+        .iconPic = gItemIcon_SweetRoll,
+        .iconPalette = gItemIconPalette_OCItems,
+    },
+	[ITEM_CHOCO_MILK] =
+    {
+        .name = ITEM_NAME("Chocolate Milk"),
+        .price = 750,
+        .holdEffectParam = 150,
+        .description = COMPOUND_STRING(
+            "Chocolate milk\n"
+            "that restores HP\n"
+            "by 150 points."),
+        .pocket = POCKET_ITEMS,
+		.sortType = ITEM_TYPE_HEALTH_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_ChocoMilk,
+        .flingPower = 60,
+        .iconPic = gItemIcon_ChocoMilk,
+        .iconPalette = gItemIconPalette_OCItems,
+    },
+	[ITEM_BURGER] =
+    {
+        .name = ITEM_NAME("Burger Meal"),
+        .price = 1000,
+        .holdEffectParam = 200,
+        .description = COMPOUND_STRING(
+            "A hamburger meal\n"
+            "that restores HP\n"
+            "by 200 points."),
+        .pocket = POCKET_ITEMS,
+		.sortType = ITEM_TYPE_HEALTH_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_Burger,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Burger,
+        .iconPalette = gItemIconPalette_OCItems,
+    },
+	[ITEM_WALL_MEAT] =
+    {
+        .name = ITEM_NAME("Wall Poultry"),
+        .price = 1250,
+        .holdEffectParam = 250,
+        .description = COMPOUND_STRING(
+            "An entire roast\n"
+            "that restores HP\n"
+            "by 250 points."),
+        .pocket = POCKET_ITEMS,
+		.sortType = ITEM_TYPE_HEALTH_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_WallMeat,
+        .flingPower = 100,
+        .iconPic = gItemIcon_WallMeat,
+        .iconPalette = gItemIconPalette_OCItems,
+    },
+	[ITEM_MILKSHAKE] =
+    {
+        .name = ITEM_NAME("Milkshake"),
+        .price = 3750,
+        .holdEffectParam = 255,
+        .description = COMPOUND_STRING(
+            "A delicious drink.\n"
+            "Fully restores HP\n"
+            "and status!"),
+        .pocket = POCKET_ITEMS,
+		.sortType = ITEM_TYPE_HEALTH_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_HEAL_AND_CURE_STATUS,
+        .effect = gItemEffect_Milkshake,
+        .flingPower = 128,
+        .iconPic = gItemIcon_Milkshake,
+        .iconPalette = gItemIconPalette_OCItems,
+    },
+	[ITEM_SANDVICH] =
+    {
+        .name = ITEM_NAME("Sandvich"),
+        .price = 8000,
+        .description = COMPOUND_STRING(
+            "Raises HP EVs\n"
+            "and friendship\n"
+			"of one Pokémon."),
+        .pocket = POCKET_ITEMS,
+		.sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .effect = gItemEffect_Sandvich,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Sandvich,
+        .iconPalette = gItemIconPalette_OCItems,
+    },
+
+    [ITEM_POWER_BEANS] =
+    {
+        .name = ITEM_NAME("Power Beans"),
+        .price = 8000,
+        .description = COMPOUND_STRING(
+            "Raises Attack EVs\n"
+            "and friendship\n"
+            "of one Pokémon."),
+        .pocket = POCKET_ITEMS,
+		.sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .effect = gItemEffect_PowerBeans,
+        .flingPower = 30,
+        .iconPic = gItemIcon_PowerBeans,
+        .iconPalette = gItemIconPalette_OCItems,
+    },
+
+    [ITEM_WALL_NUT] =
+    {
+        .name = ITEM_NAME("Wall-Nut"),
+        .price = 8000,
+        .description = COMPOUND_STRING(
+            "Raises Defense EVs\n"
+            "and friendship\n"
+            "of one Pokémon."),
+        .pocket = POCKET_ITEMS,
+		.sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .effect = gItemEffect_WallNut,
+        .flingPower = 30,
+        .iconPic = gItemIcon_WallNut,
+        .iconPalette = gItemIconPalette_OCItems,
+    },
+
+    [ITEM_CHOCOLATE_BAR] =
+    {
+        .name = ITEM_NAME("Chocolate Bar"),
+        .price = 8000,
+        .description = COMPOUND_STRING(
+            "Raises Sp. Atk EVs\n"
+            "and friendship\n"
+            "of one Pokémon."),
+        .pocket = POCKET_ITEMS,
+		.sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .effect = gItemEffect_ChocolateBar,
+        .flingPower = 30,
+        .iconPic = gItemIcon_ChocolateBar,
+        .iconPalette = gItemIconPalette_OCItems,
+    },
+
+    [ITEM_CAKE] =
+    {
+        .name = ITEM_NAME("Cake"),
+        .price = 8000,
+        .description = COMPOUND_STRING(
+            "Raises Sp. Def EVs\n"
+            "and friendship\n"
+            "of one Pokémon."),
+        .pocket = POCKET_ITEMS,
+		.sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .effect = gItemEffect_Cake,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Cake,
+        .iconPalette = gItemIconPalette_OCItems,
+    },
+
+    [ITEM_CHEESE] =
+    {
+        .name = ITEM_NAME("Cheese"),
+        .price = 8000,
+        .description = COMPOUND_STRING(
+            "Raises Speed EVs\n"
+            "and friendship\n"
+            "of one Pokémon."),
+        .pocket = POCKET_ITEMS,
+		.sortType = ITEM_TYPE_STAT_BOOST_DRINK,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .effect = gItemEffect_Cheese,
+        .flingPower = 30,
+        .iconPic = gItemIcon_Cheese,
+        .iconPalette = gItemIconPalette_OCItems,
+    },
+	[ITEM_PIZZA] =
+    {
+        .name = ITEM_NAME("Pizza"),
+        .price = 3000,
+        .holdEffectParam = 255,
+        .description = COMPOUND_STRING(
+            "An entire pizza\n"
+            "that fully heals\n"
+            "a Pokémon's HP."),
+        .pocket = POCKET_ITEMS,
+		.sortType = ITEM_TYPE_HEALTH_RECOVERY,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
+        .battleUsage = EFFECT_ITEM_RESTORE_HP,
+        .effect = gItemEffect_Pizza,
+        .flingPower = 128,
+        .iconPic = gItemIcon_Pizza,
+        .iconPalette = gItemIconPalette_OCItems,
     },
 };
 

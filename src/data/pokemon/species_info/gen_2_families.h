@@ -3485,7 +3485,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sWooperLevelUpLearnset,
+        .levelUpLearnset = sClodsireLevelUpLearnset,
         .teachableLearnset = sWooperTeachableLearnset,
         .eggMoveLearnset = sWooperEggMoveLearnset,
         .formSpeciesIdTable = sWooperFormSpeciesIdTable,
@@ -3567,8 +3567,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
             TRACKS_FOOT,
             sAnimTable_Following
         )
-        .levelUpLearnset = sQuagsireLevelUpLearnset,
-        .teachableLearnset = sQuagsireTeachableLearnset,
+        .levelUpLearnset = sClodsireLevelUpLearnset,
+        .teachableLearnset = sWooperTeachableLearnset,
     },
     [SPECIES_WOOPER_PALDEA] =
     {

@@ -1777,6 +1777,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/SouthportBadge/scripts.inc"
 	.include "data/maps/ACSPokeCenter/scripts.inc"
 	.include "data/maps/ACSMart/scripts.inc"
+	.include "data/maps/SpiderCave_1F/scripts.inc"
 	.include "data/maps/SpiderCave_B1F/scripts.inc"
 	.include "data/maps/SpiderCave_B2F/scripts.inc"
 	.include "data/maps/Route4DigHouse/scripts.inc"

@@ -368,8 +368,10 @@ const u8 *GetMonIconTilesByIconType(enum Species species, enum SpeciesIconType i
 {
     if (iconType == EGG_ICON)
         return gEggDatas[gSpeciesInfo[species].eggId].eggIcon;
+#if P_GENDER_DIFFERENCES
     if (iconType == FEMALE_ICON)
         return gSpeciesInfo[species].iconSpriteFemale;
+#endif
     return gSpeciesInfo[species].iconSprite;
 }
 

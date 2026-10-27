@@ -2,7 +2,7 @@
   "id": "MAP_SOUTHPORT_OW",
   "name": "SouthportOW",
   "layout": "LAYOUT_SOUTHPORT_OW",
-  "music": "OC_POOL",
+  "music": "MUS_RG_VERMILLION",
   "region_map_section": "MAPSEC_VERMILION_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -145,9 +145,7 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

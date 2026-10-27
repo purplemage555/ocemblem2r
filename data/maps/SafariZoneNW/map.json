@@ -2,7 +2,7 @@
   "id": "MAP_SAFARI_ZONE_NW",
   "name": "SafariZoneNW",
   "layout": "LAYOUT_SAFARI_ZONE_NW",
-  "music": "OC_ROOF",
+  "music": "MUS_ROUTE104",
   "region_map_section": "MAPSEC_KANTO_SAFARI_ZONE",
   "requires_flash": false,
   "weather": "WEATHER_RAIN_THUNDERSTORM",
@@ -48,9 +48,7 @@
       "dest_warp_id": "3"
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",

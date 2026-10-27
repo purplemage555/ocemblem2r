@@ -248,7 +248,7 @@
 #define FLAG_OC_GOT_HITMONCHAN				 0xC3
 #define FLAG_OC_GOT_HITMONTOP				 0xC4
 #define FLAG_OC_QJ_BLACKBELT			     0xC5 
-#define FLAG_OC_FOUR_ITEM					 0xC6 // Leftover from the RS version of Puzzle Room 7, functionally unused
+#define FLAG_OC_FOUR_ITEM_OLD				 0xC6 // Leftover from the RS version of Puzzle Room 7, functionally unused
 #define FLAG_RUSTURF_TUNNEL_OPENED           0xC7
 #define FLAG_RECEIVED_RED_SCARF              0xC8
 #define FLAG_RECEIVED_BLUE_SCARF             0xC9
@@ -577,6 +577,7 @@
 #define FLAG_HIDDEN_ITEMS_START                                                         0x1F4
 #define FLAG_HIDDEN_OC_NUGGET					             (FLAG_HIDDEN_ITEMS_START + 0x00)
 #define FLAG_HIDDEN_ITEM_LAVARIDGE_TOWN_ICE_HEAL             (FLAG_HIDDEN_ITEMS_START + 0x00)
+#define FLAG_OC_FOUR_ITEM					                 (FLAG_HIDDEN_ITEMS_START + 0x01)
 #define FLAG_HIDDEN_ITEM_TRICK_HOUSE_NUGGET                  (FLAG_HIDDEN_ITEMS_START + 0x01)
 #define FLAG_HIDDEN_ITEM_ROUTE_111_STARDUST                  (FLAG_HIDDEN_ITEMS_START + 0x02)
 #define FLAG_HIDDEN_ITEM_ROUTE_113_ETHER                     (FLAG_HIDDEN_ITEMS_START + 0x03)

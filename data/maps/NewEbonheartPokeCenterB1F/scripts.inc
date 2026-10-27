@@ -31,7 +31,7 @@ Rail_ES_6to1Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailRight5
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_NEW_EBONHEART_POKE_CENTER_B1F
 	closedoor 7, 1
 	waitdooranim
 	release
@@ -68,7 +68,7 @@ Rail_ES_6to2Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailRight4
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_NEW_EBONHEART_POKE_CENTER_B1F
 	closedoor 7, 1
 	waitdooranim
 	release
@@ -105,7 +105,7 @@ Rail_ES_6to3Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailRight3
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_NEW_EBONHEART_POKE_CENTER_B1F
 	closedoor 7, 1
 	waitdooranim
 	release
@@ -142,7 +142,7 @@ Rail_ES_6to4Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailRight2
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_NEW_EBONHEART_POKE_CENTER_B1F
 	closedoor 7, 1
 	waitdooranim
 	release
@@ -179,7 +179,7 @@ Rail_ES_6to5Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailRight1
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_NEW_EBONHEART_POKE_CENTER_B1F
 	closedoor 7, 1
 	waitdooranim
 	release
@@ -217,7 +217,7 @@ Rail_ES_6to7Yes::
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerRailLeft1
 	waitmovement 0
-	hideobjectat OBJ_EVENT_ID_PLAYER, 0
+	hideobjectat OBJ_EVENT_ID_PLAYER, MAP_NEW_EBONHEART_POKE_CENTER_B1F
 	closedoor 7, 1
 	waitdooranim
 	release

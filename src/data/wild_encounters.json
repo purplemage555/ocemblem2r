@@ -36574,8 +36574,11 @@
                 "min_level": 26,
                 "max_level": 26,
                 "species": "SPECIES_SMEARGLE"
-              },
-			  {
+              }
+            ]
+          }
+        },
+        {
           "map": "MAP_SELENIA_ROUTE1",
           "base_label": "gSeleniaRoute1",
           "land_mons": {

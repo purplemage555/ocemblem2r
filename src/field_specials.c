@@ -5772,6 +5772,6 @@ void FoodFriendship(void)
 	u32 partyIndex;
     for (partyIndex = 0; partyIndex < CalculatePlayerPartyCount(); partyIndex++)
     {
-        AdjustFriendship(&gPlayerParty[partyIndex], FRIENDSHIP_EVENT_LEAGUE_BATTLE);
+        AdjustFriendship(&gParties[B_TRAINER_PLAYER][partyIndex], FRIENDSHIP_EVENT_LEAGUE_BATTLE);
     }
 }

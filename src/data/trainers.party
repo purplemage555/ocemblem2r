@@ -104,7 +104,7 @@ Mugshot: Purple
 Artoria (Swablu) (F)
 Level: 4
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Ball: Moon Ball
+Ball: Moon
 Nature: Bashful
 
 /*Route 1 only has 3 trainers. Ian and Anthony are Smosh, Hedge is just an old man with Grass types that have poor offensive capabilities*/
@@ -140,12 +140,12 @@ AI: Check Bad Move
 Shroomish (M)
 Level: 6
 Ability: Poison Heal
-Ball: Nest Ball
+Ball: Nest
 
 Cottonee (F)
 Level: 6
 Ability: Infiltrator
-Ball: Nest Ball
+Ball: Nest
 
 /*Pirate Bridge has the FE1 axe gang. Bord and Cord have Wingull and Vulpix since they're the pre-evos of the resident Drizzle and Drought mons, while Darros has Meowth and Lotad for theming. Barst is an optional fight who gives you his Timburr once you beat him.*/
 
@@ -158,7 +158,7 @@ Music: Male
 
 Wingull (M)
 Level: 6
-Ball: Net Ball
+Ball: Net
 
 === TRAINER_OC_PIRATEBRIDGE_SAILOR2 ===
 Name: Cord
@@ -170,7 +170,7 @@ AI: Check Bad Move
 
 Vulpix (M)
 Level: 6
-Ball: Net Ball
+Ball: Net
 
 === TRAINER_OC_PIRATEBRIDGE_SAILOR3 ===
 Name: Barst
@@ -183,7 +183,7 @@ AI: Check Bad Move
 Timburr (M) @ ITEM_ORAN_BERRY
 Level: 10
 Ability: Guts
-Ball: Net Ball
+Ball: Net
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
 
@@ -197,11 +197,11 @@ Music: Male
 Meowth (M)
 Level: 5
 Ability: Pickup
-Ball: Net Ball
+Ball: Net
 
 Lotad (M)
 Level: 7
-Ball: Net Ball
+Ball: Net
 
 /*I may have gotten overboard with Route 2. It has the FE7 lord trio forming a Fire-Water-Grass trifecta, Error and Bagu being the resident bug catchers, Cotton-Eye Joe with his Cottonees, George Fan and Laura Shigihara for more Grass types, and the first Forever Knight grunt with an Aron, who gets countered by Barst's Timburr. Also Bart at the end has a Slakoth, based on a friend of mine.*/
 
@@ -215,7 +215,7 @@ AI: Check Bad Move
 
 Vulpix (F)
 Level: 21
-Ball: Luxury Ball
+Ball: Luxury
 
 === TRAINER_OC_R2_HECTOR ===
 Name: Hector
@@ -227,7 +227,7 @@ AI: Check Bad Move
 
 Corphish (M)
 Level: 21
-Ball: Luxury Ball
+Ball: Luxury
 
 === TRAINER_OC_R2_LYNDIS ===
 Name: Lyndis
@@ -239,7 +239,7 @@ AI: Check Bad Move
 
 Shroomish (F)
 Level: 21
-Ball: Safari Ball
+Ball: Safari
 
 === TRAINER_OC_R2_ERROR ===
 Name: Error
@@ -250,11 +250,11 @@ Music: Male
 
 Venipede
 Level: 8
-Ball: Net Ball
+Ball: Net
 
 Venipede
 Level: 7
-Ball: Net Ball
+Ball: Net
 
 === TRAINER_OC_R2_BAGU ===
 Name: Bagu
@@ -265,11 +265,11 @@ Music: Male
 
 Sewaddle
 Level: 8
-Ball: Net Ball
+Ball: Net
 
 Sewaddle
 Level: 7
-Ball: Net Ball
+Ball: Net
 
 === TRAINER_OC_R2_JOE ===
 Name: Joe
@@ -334,7 +334,7 @@ AI: Check Bad Move
 
 Slakoth
 Level: 13
-Ball: ITEM_GREAT_BALL
+Ball: Great
 
 /*The Sanctum has Nat as an optional battle, an apprentice sorceress too lazy to research Venonat. If you beat her, she gives you a Venonat which isn't available any other way for quite some time.*/
 
@@ -507,19 +507,19 @@ AI: Check Bad Move / Ace Pokemon
 
 Aardman (Baltoy) @ ITEM_SITRUS_BERRY
 Level: 8
-Ball: Premier Ball
+Ball: Premier
 Nature: Quirky
 
 Shaun (Mareep) (M) @ ITEM_PECHA_BERRY
 Level: 9
 Ability: Fluffy
-Ball: Premier Ball
+Ball: Premier
 Nature: Quirky
 
 Gromit (Houndour) (M) @ ITEM_LUM_BERRY
 Level: 12
 Ability: Early Bird
-Ball: Premier Ball
+Ball: Premier
 Nature: Quirky
 
 /*Route 3 is a long coastal bridge which sorta houses the "gym trainers" of the first badge, so expect plenty of Water types here. A fisherman in a nearby house will give you the Old Rod, which yields 70% Magikarp and 30% Tentacool. Ariel is of course a reference to the mermaid, while Sebastian is a reference to the crab and the Stardew emo. Elliott from Stardew is also here as a Swimmer. Lastly, there's an ice cream vendor who will give you a Vanillite if you beat him. I love ice cream.*/
@@ -534,11 +534,11 @@ AI: Check Bad Move
 
 Magikarp
 Level: 15
-Ball: Dive Ball
+Ball: Dive
 
 Corphish
 Level: 14
-Ball: Dive Ball
+Ball: Dive
 
 === TRAINER_OC_R3_ARIEL ===
 Name: Ariel
@@ -572,11 +572,11 @@ AI: Check Bad Move
 
 Tentacool
 Level: 13
-Ball: Net Ball
+Ball: Net
 
 Corphish
 Level: 14
-Ball: Net Ball
+Ball: Net
 
 === TRAINER_OC_R3_VENDOR ===
 Name: Hielo
@@ -588,15 +588,15 @@ AI: Check Bad Move
 
 Soft-Serve (Vanillite)
 Level: 13
-Ball: Great Ball
+Ball: Great
 
 Gelato (Vanillite) (M)
 Level: 14
-Ball: Great Ball
+Ball: Great
 
 Sorbetes (Vanillite)
 Level: 15
-Ball: Great Ball
+Ball: Great
 
 /*First Admin fight is in the middle of Route 3. The player is given the opportunity to heal beforehand. King Knight's gimmick is that his ace Slaking only has Giga Beam (reflavored Giga Impact) as its sole move, meaning despite hitting like a truck, it can be cheesed by a handful of methods. In particular, Route 3 has a Protect TM and a slight chance of Gastly.*/
 
@@ -614,7 +614,7 @@ Level: 16
 Ability: Sheer Force
 IVs: 31 HP / 0 Atk / 31 Def / 0 SpA / 0 SpD / 0 Spe
 EVs: 4 HP / 4 Def
-Ball: Luxury Ball
+Ball: Luxury
 Nature: Brave
 -Poison Sting
 -Bulldoze
@@ -623,7 +623,7 @@ Slaking @ Macho Brace
 Level: 18
 IVs: 0 HP / 31 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 EVs: 4 Atk
-Ball: Luxury Ball
+Ball: Luxury
 Nature: Brave
 -Giga Beam
 
@@ -676,7 +676,7 @@ Level: 14
 === TRAINER_OC_BADGE1HINT ===
 Name: Guide
 Class: Cooltrainer
-Pic: Super Nerd
+Pic: Super Nerd Frlg
 Gender: Male
 Music: Cool
 AI: Basic Trainer
@@ -686,7 +686,7 @@ Level: 16
 Ability: Shell Armor
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 252 Def
-Ball: Net Ball
+Ball: Net
 Nature: Bold
 -Bubble
 -Withdraw
@@ -709,7 +709,7 @@ Wingull (F) @ Oran Berry
 Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 4 Spe
 EVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-Ball: Net Ball
+Ball: Net
 Nature: Modest
 -Water Pulse
 -Air Cutter
@@ -721,7 +721,7 @@ Level: 18
 Ability: Volt Absorb
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 4 Spe
 EVs: 8 HP / 8 Def / 8 SpA / 8 SpD / 8 Spe
-Ball: Net Ball
+Ball: Net
 Nature: Sassy
 -Water Pulse
 -Shock Wave
@@ -733,7 +733,7 @@ Level: 19
 Ability: Shell Armor
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
 EVs: 252 HP / 252 Def
-Ball: Net Ball
+Ball: Net
 Nature: Bold
 -Water Pulse
 -Withdraw
@@ -754,7 +754,7 @@ Mugshot: Purple
 Terra (Eevee) (F) @ Oran Berry
 Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Ball: Luxury Ball
+Ball: Luxury
 Nature: Adamant
 -Quick Attack
 -Bite
@@ -765,7 +765,7 @@ Snowcone (Vanillite) (M) @ Oran Berry
 Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 3 HP / 9 Atk / 6 Def / 3 SpA / 2 SpD / 3 Spe
-Ball: Great Ball
+Ball: Great
 Nature: Modest
 -Aurora Beam
 -Icy Wind
@@ -776,7 +776,7 @@ Artoria (Swablu) (F) @ Oran Berry
 Level: 20
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 7 HP / 15 Atk / 18 Def / 15 SpA / 6 SpD / 15 Spe
-Ball: Moon Ball
+Ball: Moon
 Nature: Bashful
 -Air Cutter
 -Twister
@@ -788,7 +788,7 @@ Nature: Bashful
 === TRAINER_OC_R4_NEIL ===
 Name: Neil
 Class: Engineer
-Pic: Engineer
+Pic: Engineer Frlg
 Gender: Male
 Music: Cool
 Items: Potion
@@ -796,11 +796,11 @@ AI: Check Bad Move / Ace Pokemon
 
 Baltoy
 Level: 15
-Ball: Moon Ball
+Ball: Moon
 
 Magnemite
 Level: 17
-Ball: Moon Ball
+Ball: Moon
 -Shock Wave
 -Magnet Bomb
 -Thunder Wave
@@ -808,12 +808,12 @@ Ball: Moon Ball
 
 Makuhita (M)
 Level: 19
-Ball: Moon Ball
+Ball: Moon
 
 === TRAINER_OC_R4_BUZZ ===
 Name: Buzz
 Class: Engineer
-Pic: Engineer
+Pic: Engineer Frlg
 Gender: Male
 Music: Cool
 Items: Potion
@@ -821,11 +821,11 @@ AI: Check Bad Move / Ace Pokemon
 
 Baltoy
 Level: 15
-Ball: Moon Ball
+Ball: Moon
 
 Magnemite
 Level: 17
-Ball: Moon Ball
+Ball: Moon
 -Shock Wave
 -Magnet Bomb
 -Thunder Wave
@@ -833,12 +833,12 @@ Ball: Moon Ball
 
 Meowth (M)
 Level: 19
-Ball: Moon Ball
+Ball: Moon
 
 === TRAINER_OC_R4_MIKE ===
 Name: Mike
 Class: Scientist
-Pic: Scientist
+Pic: Scientist Frlg
 Gender: Male
 Music: Cool
 Items: Potion
@@ -846,11 +846,11 @@ AI: Check Bad Move / Ace Pokemon
 
 Baltoy
 Level: 15
-Ball: Moon Ball
+Ball: Moon
 
 Magnemite
 Level: 17
-Ball: Moon Ball
+Ball: Moon
 -Shock Wave
 -Magnet Bomb
 -Thunder Wave
@@ -858,7 +858,7 @@ Ball: Moon Ball
 
 Voltorb
 Level: 19
-Ball: Moon Ball
+Ball: Moon
 
 === TRAINER_OC_R4_WOODY ===
 Name: Woody
@@ -871,7 +871,7 @@ AI: Check Bad Move / Ace Pokemon
 
 Lombre (M)
 Level: 15
-Ball: Safari Ball
+Ball: Safari
 -Bubble
 -Absorb
 -Fake Out
@@ -879,15 +879,15 @@ Ball: Safari Ball
 
 Timburr (M)
 Level: 16
-Ball: Safari Ball
+Ball: Safari
 
 Onix (M)
 Level: 18
-Ball: Safari Ball
+Ball: Safari
 
 Sandile (M)
 Level: 19
-Ball: Safari Ball
+Ball: Safari
 
 === TRAINER_OC_R4_JESSIE ===
 Name: Jessie
@@ -900,7 +900,7 @@ AI: Check Bad Move / Ace Pokemon
 
 Lombre (F)
 Level: 15
-Ball: Safari Ball
+Ball: Safari
 -Bubble
 -Absorb
 -Fake Out
@@ -909,15 +909,15 @@ Ball: Safari Ball
 Zubat (F)
 Level: 16
 Ability: Inner Focus
-Ball: Safari Ball
+Ball: Safari
 
 Meowth (F)
 Level: 18
-Ball: Safari Ball
+Ball: Safari
 
 Sandile (F)
 Level: 19
-Ball: Safari Ball
+Ball: Safari
 
 /*Here comes the first actual dungeon in the game: Spider Cave. The Forever Knights are tunneling through it, so aside from the usual Steel types they've also brought Ground types to dig through the earth and Electric types to disrupt technology in the lower levels. Here, the player really gets to see the different roles the Grunts have, with Scouts at the very front performing reconaissance, Guards being the standard guys, Tunnelers having Ground types, and Sappers having Electric types.*/
 
@@ -1074,7 +1074,7 @@ Lampent (M) @ Shuca Berry
 Level: 23
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 6 Spe
 EVs: 12 HP / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Ball: Dusk Ball
+Ball: Dusk
 Nature: Careful
 -Mystical Fire
 -Confuse Ray
@@ -1084,7 +1084,7 @@ Nature: Careful
 /*Golett @ Passho Berry
 Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 6 Spe
-Ball: Dusk Ball
+Ball: Dusk
 Nature: Careful
 -Mud-Slap
 -Shadow Punch
@@ -1095,7 +1095,7 @@ Yamask (M) @ Oran Berry
 Level: 25
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 6 Spe
 EVs: 12 HP / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Ball: Dusk Ball
+Ball: Dusk
 Nature: Calm
 -Hex
 -Shock Wave
@@ -1106,7 +1106,7 @@ Honedge (M) @ Shuca Berry
 Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 6 Spe
 EVs: 252 HP / 252 Spe
-Ball: Dusk Ball
+Ball: Dusk
 Nature: Careful
 -Cut
 -Pursuit
@@ -1153,7 +1153,7 @@ Level: 23
 === TRAINER_OC_R6_TETRIS ===
 Name: Alexey
 Class: Engineer
-Pic: Engineer
+Pic: Engineer Frlg
 Gender: Male
 Music: Cool
 Items: Soda Pop / Soda Pop
@@ -1264,7 +1264,7 @@ Ability: Thick Fat
 === TRAINER_OC_BADGE2HINT ===
 Name: Guide
 Class: Cooltrainer
-Pic: Super Nerd
+Pic: Super Nerd Frlg
 Gender: Male
 Music: Cool
 AI: Basic Trainer
@@ -1274,7 +1274,7 @@ Level: 25
 Ability: Soundproof
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 252 Spe
-Ball: Net Ball
+Ball: Net
 Nature: Adamant
 -Self-Destruct
 
@@ -1369,7 +1369,7 @@ Level: 23
 Ability: Analytic
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 7 Spe
 EVs: 16 HP / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Ball: Repeat Ball
+Ball: Repeat
 -Charge Beam
 -Shock Wave
 -Magnet Bomb
@@ -1380,7 +1380,7 @@ Level: 25
 Ability: Poison Touch
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 7 Spe
 EVs: 16 HP / 16 Atk / 16 Def / 16 SpD / 16 Spe
-Ball: Repeat Ball
+Ball: Repeat
 -Poison Fang
 -Bite
 -Minimize
@@ -1391,7 +1391,7 @@ Level: 27
 Ability: Soundproof
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 SpA / 252 Spe
-Ball: Repeat Ball
+Ball: Repeat
 Nature: Modest
 -EMP-splosion
 
@@ -1408,7 +1408,7 @@ AI: Check Bad Move / Ace Pokemon
 
 Axew (F)
 Level: 21
-Ball: Repeat Ball
+Ball: Repeat
 Nature: Gentle
 Ability: Unnerve
 -Twister
@@ -1418,18 +1418,18 @@ Ability: Unnerve
 
 Scraggy (F)
 Level: 23
-Ball: Repeat Ball
+Ball: Repeat
 Nature: Hasty
 
 Krokorok (F)
 Level: 25
-Ball: Repeat Ball
+Ball: Repeat
 Nature: Adamant
 
 === TRAINER_OC_R7_SAND ===
 Name: Flint
 Class: Engineer
-Pic: Engineer
+Pic: Engineer Frlg
 Gender: Male
 Music: Male
 Items: Fresh Water / Potion / Antidote / X Defense
@@ -1437,12 +1437,12 @@ AI: Ace Pokemon
 
 Golett (M) @ Soft Sand
 Level: 21
-Ball: Heavy Ball
+Ball: Heavy
 Nature: Serious
 
 Baltoy (M) @ Soft Sand
 Level: 23
-Ball: Heavy Ball
+Ball: Heavy
 Nature: Rash
 -Magnitude
 -Psybeam
@@ -1451,7 +1451,7 @@ Nature: Rash
 
 Graveler (M) @ Soft Sand
 Level: 25
-Ball: Heavy Ball
+Ball: Heavy
 Nature: Lonely
 -Magnitude
 -Mud-Slap
@@ -1473,7 +1473,7 @@ Level: 24
 Ability: Leaf Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Ball: Net Ball
+Ball: Net
 Nature: Adamant
 -Razor Leaf
 -Leech Seed
@@ -1485,7 +1485,7 @@ Level: 24
 Ability: Steadfast
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Ball: Great Ball
+Ball: Great
 Nature: Brave
 -Karate Chop
 -Metal Claw
@@ -1497,7 +1497,7 @@ Level: 25
 Ability: Compound Eyes
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Ball: Net Ball
+Ball: Net
 Nature: Modest
 -Flash
 -Shock Wave
@@ -1515,13 +1515,13 @@ AI: Check Bad Move / Will Suicide / HP Aware / Ace Pokemon
 
 Koffing (M)
 Level: 21
-Ball: Luxury Ball
+Ball: Luxury
 Nature: Naughty
 
 Pawniard (M)
 Level: 22
 Ability: Pressure
-Ball: Luxury Ball
+Ball: Luxury
 Nature: Naughty
 -Metal Claw
 -Feint Attack
@@ -1531,13 +1531,13 @@ Nature: Naughty
 Tyrunt (M)
 Level: 23
 Ability: Strong Jaw
-Ball: Luxury Ball
+Ball: Luxury
 Nature: Naughty
 
 Electrode
 Level: 25
 Ability: Soundproof
-Ball: Luxury Ball
+Ball: Luxury
 Nature: Naughty
 -Shock Wave
 -Mega Drain
@@ -1555,7 +1555,7 @@ AI: Check Bad Move / Ace Pokemon
 
 Vulpix (F)
 Level: 21
-Ball: Repeat Ball
+Ball: Repeat
 Nature: Serious
 -Mystical Fire
 -Psybeam
@@ -1565,19 +1565,19 @@ Nature: Serious
 Tentacool (F)
 Level: 22
 Ability: Rain Dish
-Ball: Repeat Ball
+Ball: Repeat
 Nature: Serious
 
 Omanyte (F)
 Level: 23
 Ability: Swift Swim
-Ball: Repeat Ball
+Ball: Repeat
 Nature: Sassy
 
 Octillery (F)
 Level: 25
 Ability: Analytic
-Ball: Repeat Ball
+Ball: Repeat
 Nature: Sassy
 -Octazooka
 -Bubble Beam
@@ -1596,7 +1596,7 @@ AI: Check Bad Move / Ace Pokemon
 Magnemite
 Level: 22
 Ability: Magnet Pull
-Ball: Repeat Ball
+Ball: Repeat
 Nature: Quirky
 -Shock Wave
 -Thunder Wave
@@ -1606,7 +1606,7 @@ Nature: Quirky
 Chinchou (M)
 Level: 24
 Ability: Volt Absorb
-Ball: Repeat Ball
+Ball: Repeat
 Nature: Docile
 -Shock Wave
 -Thunder Wave
@@ -1615,7 +1615,7 @@ Nature: Docile
 
 Eelektrik (M)
 Level: 26
-Ball: Repeat Ball
+Ball: Repeat
 Nature: Rash
 -Shock Wave
 -Thunder Wave
@@ -2000,7 +2000,7 @@ Items: Lava Cookie / Lava Cookie / Lava Cookie
 
 Zigzagoon (M)
 Level: 19
-Ball: Luxury Ball
+Ball: Luxury
 -Headbutt
 -Bite
 -Lick
@@ -2009,7 +2009,7 @@ Ball: Luxury Ball
 Meowth (M)
 Level: 20
 Ability: Technician
-Ball: Luxury Ball
+Ball: Luxury
 -Fake Out
 -Pay Day
 -Quick Attack
@@ -2018,7 +2018,7 @@ Ball: Luxury Ball
 Houndour (M)
 Level: 24
 Ability: Unnerve
-Ball: Luxury Ball
+Ball: Luxury
 -Bite
 -Ember
 -Smog
@@ -2073,7 +2073,7 @@ Level: 22
 Ability: Poison Touch
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 EVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-Ball: Ultra Ball
+Ball: Ultra
 -Poison Fang
 -Bite
 -Water Pulse
@@ -2083,7 +2083,7 @@ Kernel-Pult (M) @ Miracle Seed
 Level: 22
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 EVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-Ball: Ultra Ball
+Ball: Ultra
 -Butter
 -Mega Drain
 -Sleep Powder
@@ -2101,7 +2101,7 @@ Vulpix (M) @ Wise Glasses
 Level: 22
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 EVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-Ball: Ultra Ball
+Ball: Ultra
 -Mystical Fire
 -Psybeam
 -Sunny Day
@@ -2112,7 +2112,7 @@ Level: 22
 Ability: Chlorophyll
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 EVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-Ball: Ultra Ball
+Ball: Ultra
 -Pin Missile
 -Razor Leaf
 -Swords Dance
@@ -2131,7 +2131,7 @@ Gyarados
 Level: 22
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 EVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-Ball: Ultra Ball
+Ball: Ultra
 -Water Pulse
 -Bite
 -Thrash
@@ -2141,7 +2141,7 @@ Spheal
 Level: 22
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 EVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-Ball: Ultra Ball
+Ball: Ultra
 -Ice Ball
 -Powder Snow
 -Bubble
@@ -2151,7 +2151,7 @@ Togetic
 Level: 22
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 EVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-Ball: Ultra Ball
+Ball: Ultra
 -Disarming Voice
 -Air Cutter
 -Ancient Power
@@ -2161,13 +2161,13 @@ Bagon
 Level: 22
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 EVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-Ball: Ultra Ball
+Ball: Ultra
 
 Deino
 Level: 22
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 EVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-Ball: Ultra Ball
+Ball: Ultra
 
 === TRAINER_OC_SCHOOL_NICK ===
 Name: Nick
@@ -2182,19 +2182,19 @@ Trapinch
 Level: 22
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 EVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-Ball: Luxury Ball
+Ball: Luxury
 
 Gastly
 Level: 22
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 EVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-Ball: Luxury Ball
+Ball: Luxury
 
 Spheal
 Level: 22
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 EVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-Ball: Luxury Ball
+Ball: Luxury
 -Ice Ball
 -Powder Snow
 -Bubble
@@ -2213,7 +2213,7 @@ Sneasel
 Level: 22
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 EVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-Ball: Heal Ball
+Ball: Heal
 -Feint Attack
 -Icy Wind
 -Metal Claw
@@ -2223,7 +2223,7 @@ Cottonee
 Level: 22
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 EVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-Ball: Heal Ball
+Ball: Heal
 -Magical Leaf
 -Disarming Voice
 -Stun Spore
@@ -2233,7 +2233,7 @@ Corphish
 Level: 22
 IVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
 EVs: 22 HP / 22 Atk / 22 Def / 22 SpA / 22 SpD / 22 Spe
-Ball: Heal Ball
+Ball: Heal
 -Bubble Beam
 -Bite
 -Iron Defense
@@ -2255,7 +2255,7 @@ Hitmonlee @ Coba Berry
 Level: 25
 Nature: Impish
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Ball: Great Ball
+Ball: Great
 -Brick Break
 -Blaze Kick
 -Low Kick
@@ -2274,7 +2274,7 @@ Hitmonchan @ Payapa Berry
 Level: 25
 Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Ball: Great Ball
+Ball: Great
 -Drain Punch
 -Ice Punch
 -Mach Punch
@@ -2293,7 +2293,7 @@ Hitmontop @ Roseli Berry
 Level: 25
 Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Ball: Great Ball
+Ball: Great
 -Triple Kick
 -Mach Punch
 -Bullet Punch
@@ -2418,7 +2418,7 @@ Shellder (M) @ Apicot Berry
 Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 9 Spe
 EVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-Ball: Dive Ball
+Ball: Dive
 Nature: Hardy
 -Water Pulse
 -Clamp
@@ -2429,7 +2429,7 @@ Tentacool (M) @ Oran Berry
 Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 9 Spe
 EVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
-Ball: Dive Ball
+Ball: Dive
 Nature: Hardy
 -Bubble Beam
 -Sludge
@@ -2440,7 +2440,7 @@ Lanturn (M) @ Rindo Berry
 Level: 27
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 9 Spe
 EVs: 20 HP / 20 Def / 20 SpA / 20 SpD / 20 Spe
-Ball: Dive Ball
+Ball: Dive
 Nature: Bold
 -Bubble Beam
 -Shock Wave
@@ -2451,7 +2451,7 @@ Crawdaunt (M) @ Sitrus Berry
 Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 0 SpD / 9 Spe
 EVs: 252 HP / 252 Def
-Ball: Dive Ball
+Ball: Dive
 Nature: Naughty
 -Crabhammer
 -Bite
@@ -2461,7 +2461,7 @@ Nature: Naughty
 === TRAINER_OC_BADGE3HINT ===
 Name: Guide
 Class: Cooltrainer
-Pic: Super Nerd
+Pic: Super Nerd Frlg
 Gender: Male
 Music: Cool
 AI: Prefer Status Moves / Basic Trainer
@@ -2471,7 +2471,7 @@ Level: 28
 Ability: Guts
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 252 Def
-Ball: Heavy Ball
+Ball: Heavy
 Nature: Serious
 -Low Kick
 -Curse
@@ -2589,7 +2589,7 @@ Level: 25
 Ability: Hustle
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 10 Spe
 EVs: 24 HP / 24 Atk / 24 Def / 24 SpD / 24 Spe
-Ball: Heavy Ball
+Ball: Heavy
 -Fire Punch
 -Headbutt
 -Rollout
@@ -2600,7 +2600,7 @@ Level: 27
 Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 10 Spe
 EVs: 24 HP / 24 Atk / 24 Def / 24 SpD / 24 Spe
-Ball: Heavy Ball
+Ball: Heavy
 -Rock Tomb
 -Magnitude
 -Bulldoze
@@ -2610,7 +2610,7 @@ Vulpix (M) @ Oran Berry
 Level: 29
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 10 Spe
 EVs: 24 HP / 24 Def / 24 SpA / 24 SpD / 24 Spe
-Ball: Heavy Ball
+Ball: Heavy
 -Flamethrower
 -Psybeam
 -Sunny Day
@@ -2621,7 +2621,7 @@ Level: 30
 Ability: Battle Armor
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 10 Spe
 EVs: 252 HP / 252 Def
-Ball: Heavy Ball
+Ball: Heavy
 Nature: Serious
 -Brick Break
 -No Retreat
@@ -2644,7 +2644,7 @@ Level: 34
 Ability: Compound Eyes
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 48 HP / 48 Atk / 48 Def / 48 SpA / 48 SpD / 48 Spe
-Ball: Net Ball
+Ball: Net
 Nature: Modest
 -Electroweb
 -Signal Beam
@@ -2656,7 +2656,7 @@ Level: 27
 Ability: Ice Body
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 48 SpA / 48 Spe
-Ball: Poke Ball
+Ball: Poke
 Nature: Modest
 -Ice Beam
 -Mirror Shot
@@ -2668,7 +2668,7 @@ Level: 30
 Ability: Steadfast
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 48 Atk / 48 SpA
-Ball: Great Ball
+Ball: Great
 Nature: Brave
 -Karate Chop
 -Metal Claw
@@ -2680,7 +2680,7 @@ Level: 34
 Ability: Sun Soak
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 48 Atk / 48 Spe
-Ball: Net Ball
+Ball: Net
 Nature: Adamant
 -Leaf Blade
 -Leech Seed
@@ -2698,18 +2698,18 @@ AI: Basic Trainer / Smart Switching / Ace Pokemon
 Weepinbell (F)
 Level: 24
 Ability: Chlorophyll
-Ball: Love Ball
+Ball: Love
 Nature: Gentle
 
 Swablu (F)
 Level: 26
 Ability: Natural Cure
-Ball: Nest Ball
+Ball: Nest
 Nature: Quirky
 
 Lumiere (Lampent) (M)
 Level: 28
-Ball: Luxury Ball
+Ball: Luxury
 Nature: Hasty
 
 === TRAINER_OC_R9_GASTON ===
@@ -2721,7 +2721,7 @@ Music: Cool
 
 A Dozen Eggs (Exeggcute) (M)
 Level: 24
-Ball: Great Ball
+Ball: Great
 Nature: Bold
 -Mega Drain
 -Confusion
@@ -2730,7 +2730,7 @@ Nature: Bold
 
 A Dozen Eggs (Exeggcute) (M)
 Level: 24
-Ball: Great Ball
+Ball: Great
 Nature: Bold
 -Mega Drain
 -Confusion
@@ -2739,7 +2739,7 @@ Nature: Bold
 
 A Dozen Eggs (Exeggcute) (M)
 Level: 24
-Ball: Great Ball
+Ball: Great
 Nature: Bold
 -Mega Drain
 -Confusion
@@ -2748,7 +2748,7 @@ Nature: Bold
 
 A Dozen Eggs (Exeggcute) (M)
 Level: 24
-Ball: Great Ball
+Ball: Great
 Nature: Bold
 -Mega Drain
 -Confusion
@@ -2757,7 +2757,7 @@ Nature: Bold
 
 A Dozen Eggs (Exeggcute) (M)
 Level: 24
-Ball: Great Ball
+Ball: Great
 Nature: Bold
 -Mega Drain
 -Confusion
@@ -2846,7 +2846,7 @@ Items: Fresh Water / Burger / Moomoo Milk / Seleniacone
 Bird (Doduo) (M) @ Yache Berry
 Level: 26
 Ability: Guts
-Ball: Great Ball
+Ball: Great
 Nature: Adamant
 -Bulldoze
 -Aerial Ace
@@ -2856,7 +2856,7 @@ Nature: Adamant
 Plane (Togetic) (M) @ Salac Berry
 Level: 27
 Ability: Super Luck
-Ball: Great Ball
+Ball: Great
 Nature: Bold
 -Air Cutter
 -Soft-Boiled
@@ -2866,7 +2866,7 @@ Nature: Bold
 Steel (Steelix) (M) @ Air Balloon
 Level: 28
 Ability: Sheer Force
-Ball: Great Ball
+Ball: Great
 Nature: Brave
 -Iron Head
 -Bulldoze
@@ -2876,7 +2876,7 @@ Nature: Brave
 Krypto (Houndour) (M) @ Air Balloon
 Level: 27
 Ability: Solar Power
-Ball: Great Ball
+Ball: Great
 Nature: Naughty
 -Bite
 -Flame Wheel
@@ -2885,7 +2885,7 @@ Nature: Naughty
 
 Corn (Kernel-Pult) (M) @ Air Balloon
 Level: 25
-Ball: Great Ball
+Ball: Great
 -Mega Drain
 -Butter
 -Bullet Seed
@@ -2894,7 +2894,7 @@ Ball: Great Ball
 Bourguignon (Tauros) (M) @ Heavy-Duty Boots
 Level: 30
 Ability: Stamina
-Ball: Great Ball
+Ball: Great
 Nature: Gentle
 -Body Slam
 -Bulldoze
@@ -2913,14 +2913,14 @@ Items: Fresh Water / Soda Pop / Lemonade / Casteliacone
 Cotton Candy (Mareep) (F) @ Pecha Berry
 Level: 26
 Ability: Fluffy
-Ball: Poke Ball
+Ball: Poke
 Shiny: Yes
 Happiness: 128
 
 Yugamu (Joltik) (M) @ Oran Berry
 Level: 26
 Ability: Unnerve
-Ball: Poke Ball
+Ball: Poke
 Shiny: No
 Happiness: 128
 -Pin Missile
@@ -2931,7 +2931,7 @@ Happiness: 128
 Felice (Sewaddle) (F) @ Oran Berry
 Level: 27
 Ability: Swarm
-Ball: Poke Ball
+Ball: Poke
 Shiny: No
 Happiness: 128
 -Pin Missile
@@ -2942,7 +2942,7 @@ Happiness: 128
 Jack-Jack (Swablu) (M) @ Sitrus Berry
 Level: 27
 Ability: Natural Cure
-Ball: Poke Ball
+Ball: Poke
 Nature: Naughty
 Shiny: No
 Happiness: 255
@@ -2954,7 +2954,7 @@ Happiness: 255
 Fergus (Eevee) (M) @ Silk Scarf
 Level: 28
 Ability: Adaptability
-Ball: Poke Ball
+Ball: Poke
 Nature: Jolly
 Shiny: No
 Happiness: 255
@@ -2975,18 +2975,18 @@ AI: Will Suicide / HP Aware / Basic Trainer
 Land Boat (Lombre) (M)
 Level: 23
 Ability: Rain Dish
-Ball: Great Ball
+Ball: Great
 Nature: Quirky
 
 Piggy (Piloswine) (M)
 Level: 24
 Ability: Thick Fat
-Ball: Great Ball
+Ball: Great
 Nature: Naughty
 
 Potato (Baketater) (M)
 Level: 24
-Ball: Great Ball
+Ball: Great
 Nature: Naughty
 -Bulldoze
 -Flame Wheel
@@ -3005,7 +3005,7 @@ AI: Basic Trainer / Smart Switching / HP Aware / Prefer Status Moves / Ace Pokem
 Pawn (Pawniard) (F)
 Level: 29
 Ability: Defiant
-Ball: Great Ball
+Ball: Great
 -Metal Claw
 -Feint Attack
 -Pursuit
@@ -3014,12 +3014,12 @@ Ball: Great Ball
 Rook-Knight (Lairon) (F)
 Level: 29
 Ability: Rock Head
-Ball: Great Ball
+Ball: Great
 
 Queen (Nidoqueen) (F)
 Level: 30
 Ability: Serene Grace
-Ball: Great Ball
+Ball: Great
 
 === TRAINER_OC_SAFARI_SW ===
 Name: Marisa
@@ -3032,19 +3032,19 @@ Items: Moomoo Milk / Seleniacone / Choco Milk
 
 Lampent (F) @ Oran Berry
 Level: 25
-Ball: Safari Ball
+Ball: Safari
 Nature: Rash
 Ability: Infiltrator
 
 Rhyhorn (F) @ Oran Berry
 Level: 26
-Ball: Safari Ball
+Ball: Safari
 Nature: Adamant
 Ability: Reckless
 
 Darumaka (F) @ Oran Berry
 Level: 27
-Ball: Safari Ball
+Ball: Safari
 Nature: Adamant
 Ability: Hustle
 -Fire Punch
@@ -3054,19 +3054,19 @@ Ability: Hustle
 
 Falinks (F) @ Oran Berry
 Level: 28
-Ball: Safari Ball
+Ball: Safari
 Nature: Adamant
 Ability: Defiant
 
 Miltank @ Oran Berry
 Level: 29
-Ball: Safari Ball
+Ball: Safari
 Nature: Adamant
 Ability: Intimidate
 
 Heracross (F) @ Sitrus Berry
 Level: 30
-Ball: Safari Ball
+Ball: Safari
 Nature: Adamant
 Ability: Moxie
 -Brick Break
@@ -3085,7 +3085,7 @@ Items: Moomoo Milk / Seleniacone / Choco Milk
 
 Eelektrik (F) @ Oran Berry
 Level: 25
-Ball: Safari Ball
+Ball: Safari
 Nature: Timid
 -Charge Beam
 -Shock Wave
@@ -3094,12 +3094,12 @@ Nature: Timid
 
 Wingull (F) @ Oran Berry
 Level: 26
-Ball: Safari Ball
+Ball: Safari
 Nature: Timid
 
 Swablu (F) @ Oran Berry
 Level: 27
-Ball: Safari Ball
+Ball: Safari
 Nature: Timid
 Ability: Natural Cure
 -Air Cutter
@@ -3109,7 +3109,7 @@ Ability: Natural Cure
 
 Nidorina @ Oran Berry
 Level: 28
-Ball: Safari Ball
+Ball: Safari
 Nature: Bashful
 Ability: Poison Point
 -Sludge
@@ -3119,7 +3119,7 @@ Ability: Poison Point
 
 Flaaffy (F) @ Oran Berry
 Level: 29
-Ball: Safari Ball
+Ball: Safari
 Nature: Timid
 Ability: Fluffy
 -Discharge
@@ -3129,7 +3129,7 @@ Ability: Fluffy
 
 Eevee (F) @ Sitrus Berry
 Level: 30
-Ball: Safari Ball
+Ball: Safari
 Nature: Jolly
 Ability: Adaptability
 
@@ -3144,7 +3144,7 @@ Items: Moomoo Milk / Seleniacone / Choco Milk
 
 Vanillish (M) @ Oran Berry
 Level: 25
-Ball: Safari Ball
+Ball: Safari
 Nature: Timid
 Ability: Ice Body
 -Ice Beam
@@ -3154,7 +3154,7 @@ Ability: Ice Body
 
 Kadabra (M) @ Oran Berry
 Level: 26
-Ball: Safari Ball
+Ball: Safari
 Nature: Modest
 Ability: Magic Guard
 -Psybeam
@@ -3164,7 +3164,7 @@ Ability: Magic Guard
 
 Venonat (M) @ Oran Berry
 Level: 27
-Ball: Safari Ball
+Ball: Safari
 Nature: Timid
 Ability: Compound Eyes
 -Signal Beam
@@ -3174,7 +3174,7 @@ Ability: Compound Eyes
 
 Nidorino @ Oran Berry
 Level: 28
-Ball: Safari Ball
+Ball: Safari
 Nature: Modest
 Ability: Poison Point
 -Sludge
@@ -3184,7 +3184,7 @@ Ability: Poison Point
 
 Tauros @ Oran Berry
 Level: 29
-Ball: Safari Ball
+Ball: Safari
 Nature: Quirky
 Ability: Stamina
 -Body Slam
@@ -3194,7 +3194,7 @@ Ability: Stamina
 
 Sigilyph (M) @ Sitrus Berry
 Level: 30
-Ball: Safari Ball
+Ball: Safari
 Nature: Modest
 Ability: Magic Guard
 
@@ -3209,7 +3209,7 @@ Items: Moomoo Milk / Seleniacone / Choco Milk
 
 Krokorok (F) @ Oran Berry
 Level: 25
-Ball: Safari Ball
+Ball: Safari
 Nature: Jolly
 Ability: Intimidate
 -Magnitude
@@ -3219,13 +3219,13 @@ Ability: Intimidate
 
 Doduo (F) @ Oran Berry
 Level: 26
-Ball: Safari Ball
+Ball: Safari
 Nature: Adamant
 Ability: Guts
 
 Exeggcute (F) @ Oran Berry
 Level: 27
-Ball: Safari Ball
+Ball: Safari
 Nature: Timid
 Ability: Harvest
 -Psybeam
@@ -3235,12 +3235,12 @@ Ability: Harvest
 
 Slakoth (F) @ Oran Berry
 Level: 28
-Ball: Safari Ball
+Ball: Safari
 Nature: Jolly
 
 Girafarig (F) @ Oran Berry
 Level: 29
-Ball: Safari Ball
+Ball: Safari
 Nature: Serious
 Ability: Sap Sipper
 -Headbutt
@@ -3250,7 +3250,7 @@ Ability: Sap Sipper
 
 Scyther (F) @ Sitrus Berry
 Level: 30
-Ball: Safari Ball
+Ball: Safari
 Nature: Adamant
 Ability: Technician
 
@@ -3264,12 +3264,12 @@ AI: Basic Trainer / Smart Switching
 
 Metang
 Level: 24
-Ball: Heavy Ball
+Ball: Heavy
 Nature: Serious
 
 Zweilous (M)
 Level: 28
-Ball: Heavy Ball
+Ball: Heavy
 Nature: Serious
 
 === TRAINER_OC_TVA_2 ===
@@ -3495,7 +3495,7 @@ EVs: 252 Spe
 === TRAINER_OC_BADGE4HINT ===
 Name: Guide
 Class: Cooltrainer
-Pic: Super Nerd
+Pic: Super Nerd Frlg
 Gender: Male
 Music: Cool
 AI: Will Suicide / Basic Trainer
@@ -3505,7 +3505,7 @@ Level: 33
 Ability: Guts
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 252 SpA
-Ball: Safari Ball
+Ball: Safari
 Nature: Quirky
 -Confusion
 -Absorb
@@ -3525,7 +3525,7 @@ Bellsprout (M)
 Level: 27
 Ability: Skill Link
 EVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Ball: Nest Ball
+Ball: Nest
 -Bullet Seed
 -Sludge
 -Stun Spore
@@ -3535,7 +3535,7 @@ Breloom (F)
 Level: 28
 Ability: Technician
 EVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Ball: Nest Ball
+Ball: Nest
 -Mega Drain
 -Mach Punch
 -Counter
@@ -3545,7 +3545,7 @@ Tyrunt
 Level: 31
 Ability: Strong Jaw
 EVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-Ball: Nest Ball
+Ball: Nest
 -Rock Tomb
 -Dragon Rage
 -Bite
@@ -3567,7 +3567,7 @@ Ability: Rain Dish
 Nature: Quirky
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 32 HP / 32 Atk / 32 Def / 32 SpA / 32 SpD / 32 Spe
-Ball: Nest Ball
+Ball: Nest
 -Bubble Beam
 -Giga Drain
 -Zen Headbutt
@@ -3579,7 +3579,7 @@ Ability: Technician
 Nature: Quirky
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 32 HP / 32 Atk / 32 Def / 32 SpA / 32 SpD / 32 Spe
-Ball: Nest Ball
+Ball: Nest
 -Grass Knot
 -Brick Break
 -Mach Punch
@@ -3591,7 +3591,7 @@ Ability: Chlorophyll
 Nature: Quirky
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 32 HP / 32 Atk / 32 Def / 32 SpA / 32 SpD / 32 Spe
-Ball: Nest Ball
+Ball: Nest
 -Mega Drain
 -Sludge Bomb
 -Bite
@@ -3603,7 +3603,7 @@ Ability: Sun Soak
 Nature: Quirky
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 252 SpA
-Ball: Nest Ball
+Ball: Nest
 -Psychic
 -Mega Drain
 -Sleep Powder
@@ -3623,7 +3623,7 @@ Terra (Leafeon) (F) @ Miracle Seed
 Level: 36
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 64 Atk / 64 Spe
-Ball: Luxury Ball
+Ball: Luxury
 Nature: Adamant
 -Razor Leaf
 -Bite
@@ -3634,7 +3634,7 @@ Eclair (Clodsire) (F) @ Magnet
 Level: 36
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 64 HP / 64 Atk
-Ball: Poke Ball
+Ball: Poke
 Nature: Lonely
 -Poison Jab
 -Magnitude
@@ -3645,7 +3645,7 @@ Artoria (Altaria) (F) @ Sitrus Berry
 Level: 38
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
-Ball: Moon Ball
+Ball: Moon
 Nature: Bashful
 -Dragon Pulse
 -Air Slash
@@ -3668,7 +3668,7 @@ Level: 37
 Ability: Compound Eyes
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 64 HP / 64 Atk / 64 Def / 64 SpA / 64 SpD / 64 Spe
-Ball: Net Ball
+Ball: Net
 Nature: Modest
 -Electroweb
 -Signal Beam
@@ -3680,7 +3680,7 @@ Level: 36
 Ability: Steadfast
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 64 Atk / 64 SpA
-Ball: Great Ball
+Ball: Great
 Nature: Brave
 -Aura Sphere
 -Metal Claw
@@ -3691,7 +3691,7 @@ Vanilluxe (M) @ Never-Melt Ice
 Level: 37
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 64 SpA / 64 Spe
-Ball: Poke Ball
+Ball: Poke
 Nature: Modest
 -Blizzard
 -Freeze-Dry

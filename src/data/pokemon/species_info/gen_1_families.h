@@ -5979,7 +5979,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
 		.perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sGolbatLevelUpLearnset,
-        .teachableLearnset = sGolbatTeachableLearnset,
+        .teachableLearnset = sZubatTeachableLearnset,
     #if P_GEN_2_CROSS_EVOS
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_CROBAT, CONDITIONS({IF_MIN_FRIENDSHIP, FRIENDSHIP_EVO_THRESHOLD})}),
     #endif
@@ -14644,7 +14644,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sRhyhornTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 42, SPECIES_RHYPERIOR},
                                 {EVO_ITEM, ITEM_PROTECTOR, SPECIES_RHYPERIOR}),
-    #endif
     },
 
 #if P_GEN_4_CROSS_EVOS

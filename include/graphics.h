@@ -1772,6 +1772,22 @@ extern const u16 gItemIconPalette_SwapSnack[];
 extern const u32 gItemIcon_TwiceSpicedRadish[];
 extern const u16 gItemIconPalette_TwiceSpicedRadish[];
 
+extern const u16 gItemIconPalette_OCItems[];
+extern const u32 gItemIcon_Bread[];
+extern const u32 gItemIcon_Nuggets[];
+extern const u32 gItemIcon_SweetRoll[];
+extern const u32 gItemIcon_ChocoMilk[];
+extern const u32 gItemIcon_Burger[];
+extern const u32 gItemIcon_WallMeat[];
+extern const u32 gItemIcon_Milkshake[];
+extern const u32 gItemIcon_Sandvich[];
+extern const u32 gItemIcon_PowerBeans[];
+extern const u32 gItemIcon_WallNut[];
+extern const u32 gItemIcon_Cheese[];
+extern const u32 gItemIcon_ChocolateBar[];
+extern const u32 gItemIcon_Cake[];
+extern const u32 gItemIcon_Pizza[];
+
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u16 gItemIconPalette_ReturnToFieldArrow[];
 

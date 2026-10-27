@@ -1207,7 +1207,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .type = TYPE_NORMAL,
         .accuracy = B_UPDATED_MOVE_DATA >= GEN_6 ? 0 : 100,
         .pp = 20,
-        .target = MOVE_TARGET_SELECTED,
+        .target = TARGET_SELECTED,
         .priority = -6,
         .category = DAMAGE_CATEGORY_STATUS,
         .zMove = { .effect = Z_EFFECT_DEF_UP_1 },
@@ -1537,7 +1537,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Hits both foes with an\n"
             "icy storm. 25% Freeze"),
-        .effect = EFFECT_BLIZZARD,
+        .effect = EFFECT_HIT,
         .power = 120,
         .type = TYPE_ICE,
         .accuracy = 80,
@@ -3948,7 +3948,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Looses a powerful blast of\n"
             "light that lowers accuracy."),
-        ..effect = EFFECT_HIT,
+        .effect = EFFECT_HIT,
         .power = 20,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
@@ -4254,8 +4254,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_Sharpen,
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = STAT_CHANGE_EFFECT_PLUS,
-            .spatk = 1,
-            .spdef = 1,
+            .spAtk = 1,
+            .spDef = 1,
         }),
         .validApprenticeMove = TRUE,
     },
@@ -4769,7 +4769,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = 40,
-        .target = MOVE_TARGET_BOTH,
+        .target = TARGET_BOTH,
         .priority = 0,
         .category = DAMAGE_CATEGORY_STATUS,
         .zMove = { .effect = Z_EFFECT_RESET_STATS },
@@ -19688,9 +19688,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .metronomeBanned = TRUE,
-        .moveEffect = MOVE_EFFECT_RANDOM_FROM_LIST,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+			.moveEffect = MOVE_EFFECT_RANDOM_FROM_LIST,
             .chance = 30,
-            .argument.randomMoveEffects = { MOVE_EFFECT_FREEZE_OR_FROSTBITE, MOVE_EFFECT_CONFUSION},),
+            .argument.randomMoveEffects = {MOVE_EFFECT_FREEZE_OR_FROSTBITE, MOVE_EFFECT_CONFUSION},
+		}),
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_CUTE,
         .contestComboStarterId = 0,
@@ -19716,7 +19718,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_RANDOM_FROM_LIST,
             .chance = 30,
-            .argument.randomMoveEffects = { MOVE_EFFECT_BURN, MOVE_EFFECT_FLINCH},
+            .argument.randomMoveEffects = {MOVE_EFFECT_BURN, MOVE_EFFECT_FLINCH},
         }),
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_BEAUTY,
@@ -19744,7 +19746,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_RANDOM_FROM_LIST,
             .chance = 30,
-            .argument.randomMoveEffects = { MOVE_EFFECT_PARALYZE, MOVE_EFFECT_THROAT_CHOP},
+            .argument.randomMoveEffects = {MOVE_EFFECT_PARALYSIS, MOVE_EFFECT_THROAT_CHOP},
         }),
         .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
         .contestCategory = CONTEST_CATEGORY_TOUGH,
@@ -23969,7 +23971,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .power = 120,
         .type = TYPE_ICE,
         .accuracy = 100,
-        .recoil = 33,
         .pp = 15,
         .target = TARGET_SELECTED,
         .priority = 0,

@@ -2,7 +2,7 @@
   "id": "MAP_SELENIA_ROUTE1",
   "name": "SeleniaRoute1",
   "layout": "LAYOUT_SELENIA_ROUTE1",
-  "music": "OC_GRASSWALK",
+  "music": "MUS_ROUTE104",
   "region_map_section": "MAPSEC_ROUTE_1",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",
@@ -83,12 +83,8 @@
       "flag": "FLAG_ITEM_ROUTE_1_ORAN"
     }
   ],
-  "warp_events": [
-
-  ],
-  "coord_events": [
-
-  ],
+  "warp_events": [],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",
