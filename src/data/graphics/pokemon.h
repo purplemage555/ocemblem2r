@@ -24537,7 +24537,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_GIGANTAMAX_FORMS
+//#if P_GIGANTAMAX_FORMS
     const u32 gMonFrontPic_AlcremieGmax[] = INCGFX_U32("graphics/pokemon/alcremie/gmax/front.png", ".4bpp.smol");
     const u32 gMonBackPic_AlcremieGmax[] = INCGFX_U32("graphics/pokemon/alcremie/gmax/back.png", ".4bpp.smol");
     const u16 gMonPalette_AlcremieGmax[] = INCGFX_U16("graphics/pokemon/alcremie/gmax/normal.pal", ".gbapal");
@@ -24550,7 +24550,7 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     // const u16 gShinyOverworldPalette_AlcremieGmax[] = INCGFX_U16("graphics/pokemon/alcremie/gmax/overworld_shiny.pal", ".gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_GIGANTAMAX_FORMS
+//#endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_MILCERY
 
 #if P_FAMILY_FALINKS
@@ -27561,3 +27561,8 @@ const u32 gObjectEventPic_Substitute[] = INCGFX_COMP("graphics/pokemon/question_
     const u32 gMonBackPic_Salmin[] = INCGFX_U32("graphics/pokemon/salmin/back.png", ".4bpp.smol");
     const u16 gMonPalette_Salmin[] = INCGFX_U16("graphics/pokemon/salmin/normal.pal", ".gbapal");
 	const u8 gMonIcon_Salmin[] = INCGFX_U8("graphics/pokemon/salmin/icon.png", ".4bpp");
+	const u32 gMonFrontPic_FrozenNeck[] = INCGFX_U32("graphics/pokemon/frozen_neck/front.png", ".4bpp.smol");
+    const u32 gMonBackPic_FrozenNeck[] = INCGFX_U32("graphics/pokemon/frozen_neck/back.png", ".4bpp.smol");
+    const u16 gMonPalette_FrozenNeck[] = INCGFX_U16("graphics/pokemon/frozen_neck/normal.pal", ".gbapal");
+	//const u8 gMonIcon_FrozenNeck[] = INCGFX_U8("graphics/pokemon/frozen_neck/icon.png", ".4bpp");
+	

@@ -1550,5 +1550,5 @@ const struct Tileset gTileset_snow =
     .palettes = gTilesetPalettes_snow,
     .metatiles = gMetatiles_snow,
     .metatileAttributes = gMetatileAttributes_snow,
-    .callback = NULL,
+    .callback = InitTilesetAnim_General,
 };

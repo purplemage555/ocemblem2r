@@ -573,7 +573,7 @@
 #define P_FAMILY_SLITHER_WING            P_GEN_9_POKEMON
 #define P_FAMILY_SANDY_SHOCKS            P_GEN_9_POKEMON
 #define P_FAMILY_IRON_TREADS             P_GEN_9_POKEMON
-#define P_FAMILY_IRON_BUNDLE             P_GEN_9_POKEMON
+#define P_FAMILY_IRON_BUNDLE             P_GEN_X_POKEMON
 #define P_FAMILY_IRON_HANDS              P_GEN_9_POKEMON
 #define P_FAMILY_IRON_JUGULIS            P_GEN_9_POKEMON
 #define P_FAMILY_IRON_MOTH               P_GEN_9_POKEMON
