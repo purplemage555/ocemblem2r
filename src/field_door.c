@@ -384,6 +384,38 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
         .tiles = sDoorAnimTiles_PokeMart,
         .palettes = sDoorAnimPalettes_PokeMart
     },
+	{
+        .metatileNum = METATILE_General_Door,
+        .tileset = &gTileset_snow,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x2,
+        .tiles = sDoorAnimTiles_General,
+        .palettes = sDoorAnimPalettes_General
+    },
+    {
+        .metatileNum = METATILE_General_Door_PokeCenter,
+        .tileset = &gTileset_snow,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x2,
+        .tiles = sDoorAnimTiles_PokeCenter,
+        .palettes = sDoorAnimPalettes_PokeCenter
+    },
+    {
+        .metatileNum = METATILE_General_Door_Gym,
+        .tileset = &gTileset_snow,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x2,
+        .tiles = sDoorAnimTiles_Gym,
+        .palettes = sDoorAnimPalettes_Gym
+    },
+    {
+        .metatileNum = METATILE_General_Door_PokeMart,
+        .tileset = &gTileset_snow,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x2,
+        .tiles = sDoorAnimTiles_PokeMart,
+        .palettes = sDoorAnimPalettes_PokeMart
+    },
     {
         .metatileNum = METATILE_Petalburg_Door_Littleroot,
         .tileset = &gTileset_Petalburg,

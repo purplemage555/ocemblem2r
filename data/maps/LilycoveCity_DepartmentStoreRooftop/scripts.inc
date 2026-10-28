@@ -73,12 +73,13 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_VendingMachine::
 	end
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_ChooseDrink::
-	multichoice 16, 0, MULTI_VENDING_MACHINE, FALSE
+	multichoice 19, 0, MULTI_VENDING_MACHINE, FALSE
 	copyvar VAR_TEMP_1, VAR_RESULT
 	switch VAR_TEMP_1
 	case 0, LilycoveCity_DepartmentStoreRooftop_EventScript_FreshWater
 	case 1, LilycoveCity_DepartmentStoreRooftop_EventScript_SodaPop
 	case 2, LilycoveCity_DepartmentStoreRooftop_EventScript_Lemonade
+	case 3, LilycoveCity_DepartmentStoreRooftop_EventScript_MoomooMilk
 	msgbox LilycoveCity_DepartmentStoreRooftop_Text_DecidedAgainstBuyingDrink, MSGBOX_DEFAULT
 	goto LilycoveCity_DepartmentStoreRooftop_EventScript_ExitVendingMachine
 	end
@@ -97,9 +98,12 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_Lemonade::
 	setvar VAR_TEMP_0, ITEM_LEMONADE
 	goto LilycoveCity_DepartmentStoreRooftop_EventScript_TryBuyDrink
 	end
-
+LilycoveCity_DepartmentStoreRooftop_EventScript_MoomooMilk::
+	setvar VAR_TEMP_0, ITEM_MOOMOO_MILK
+	goto LilycoveCity_DepartmentStoreRooftop_EventScript_TryBuyDrink
+	end
 LilycoveCity_DepartmentStoreRooftop_EventScript_CheckMoneyFreshWater::
-	checkmoney 200
+	checkmoney 250
 	return
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_CheckMoneySodaPop::
@@ -107,11 +111,14 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_CheckMoneySodaPop::
 	return
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_CheckMoneyLemonade::
-	checkmoney 350
+	checkmoney 400
+	return
+LilycoveCity_DepartmentStoreRooftop_EventScript_CheckMoneyMoomooMilk::
+	checkmoney 500
 	return
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_RemoveMoneyFreshWater::
-	removemoney 200
+	removemoney 250
 	return
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_RemoveMoneySodaPop::
@@ -119,19 +126,24 @@ LilycoveCity_DepartmentStoreRooftop_EventScript_RemoveMoneySodaPop::
 	return
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_RemoveMoneyLemonade::
-	removemoney 350
+	removemoney 400
+	return
+LilycoveCity_DepartmentStoreRooftop_EventScript_RemoveMoneyMoomooMilk::
+	removemoney 500
 	return
 
 LilycoveCity_DepartmentStoreRooftop_EventScript_TryBuyDrink::
 	call_if_eq VAR_TEMP_1, 0, LilycoveCity_DepartmentStoreRooftop_EventScript_CheckMoneyFreshWater
 	call_if_eq VAR_TEMP_1, 1, LilycoveCity_DepartmentStoreRooftop_EventScript_CheckMoneySodaPop
 	call_if_eq VAR_TEMP_1, 2, LilycoveCity_DepartmentStoreRooftop_EventScript_CheckMoneyLemonade
+	call_if_eq VAR_TEMP_1, 3, LilycoveCity_DepartmentStoreRooftop_EventScript_CheckMoneyMoomooMilk
 	goto_if_eq VAR_RESULT, FALSE, LilycoveCity_DepartmentStoreRooftop_EventScript_NotEnoughMoneyForDrink
 	checkitemspace VAR_TEMP_0
 	goto_if_eq VAR_RESULT, FALSE, LilycoveCity_DepartmentStoreRooftop_EventScript_NoRoomForDrink
 	call_if_eq VAR_TEMP_1, 0, LilycoveCity_DepartmentStoreRooftop_EventScript_RemoveMoneyFreshWater
 	call_if_eq VAR_TEMP_1, 1, LilycoveCity_DepartmentStoreRooftop_EventScript_RemoveMoneySodaPop
 	call_if_eq VAR_TEMP_1, 2, LilycoveCity_DepartmentStoreRooftop_EventScript_RemoveMoneyLemonade
+	call_if_eq VAR_TEMP_1, 3, LilycoveCity_DepartmentStoreRooftop_EventScript_RemoveMoneyMoomooMilk
 	updatemoneybox
 	bufferitemname STR_VAR_1, VAR_TEMP_0
 	playse SE_VEND
@@ -200,7 +212,7 @@ LilycoveCity_DepartmentStoreRooftop_Text_BoneDryThirsty:
 	.string "Ohh… I'm bone-dry thirsty!$"
 
 LilycoveCity_DepartmentStoreRooftop_Text_WhichDrinkWouldYouLike:
-	.string "It's a VENDING MACHINE.\n"
+	.string "It's a vending machine!\n"
 	.string "Which drink would you like?$"
 
 LilycoveCity_DepartmentStoreRooftop_Text_CanOfDrinkDroppedDown:

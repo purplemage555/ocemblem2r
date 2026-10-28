@@ -7,4 +7,4 @@ gText_PlayerUsedSurf::
 
 Text_CurrentTooFast::
 	.string "The current is much too fast!\n"
-	.string "SURF can't be used here…$"
+	.string "Surf can't be used here…$"

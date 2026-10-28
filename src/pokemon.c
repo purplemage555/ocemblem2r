@@ -5116,11 +5116,12 @@ u16 GetBattleBGM(void)
             return MUS_VS_AQUA_MAGMA_LEADER;
         case TRAINER_CLASS_TEAM_AQUA:
         case TRAINER_CLASS_TEAM_MAGMA:
+			return MUS_VS_AQUA_MAGMA;
         case TRAINER_CLASS_AQUA_ADMIN:
         case TRAINER_CLASS_MAGMA_ADMIN:
-            return MUS_VS_AQUA_MAGMA;
-        case TRAINER_CLASS_LEADER:
             return MUS_VS_GYM_LEADER;
+        case TRAINER_CLASS_LEADER:
+            return MUS_RG_VS_GYM_LEADER;
         case TRAINER_CLASS_CHAMPION:
             return MUS_VS_CHAMPION;
         case TRAINER_CLASS_RIVAL:
@@ -5148,13 +5149,13 @@ u16 GetBattleBGM(void)
             if (GetCurrentRegion() == REGION_KANTO)
                 return MUS_RG_VS_TRAINER;
             else
-                return MUS_VS_TRAINER;
+                return MUS_RG_VS_TRAINER;
         }
     }
     else
     {
         if (GetCurrentRegion() == REGION_KANTO)
-            return MUS_RG_VS_WILD;
+            return MUS_VS_WILD;
         else
             return MUS_VS_WILD;
     }
