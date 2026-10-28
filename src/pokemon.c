@@ -5098,6 +5098,10 @@ u16 GetBattleBGM(void)
     {
         return MUS_VS_TRAINER;
     }
+	else if (FlagGet(FLAG_SYS_SET_BATTLE_BGM)){
+        FlagClear(FLAG_SYS_SET_BATTLE_BGM);
+        return VarGet(VAR_TEMP_F);
+	}
     else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
     {
         enum TrainerClassID trainerClass;
