@@ -36,6 +36,7 @@ Rail_ES_4to1Yes::
 	waitdooranim
 	release
 	warp MAP_EASTFORD_POKE_CENTER_B1F, 7, 5
+	waitstate
 	end
 Rail_ES_4to2::
 	lock
@@ -73,6 +74,7 @@ Rail_ES_4to2Yes::
 	waitdooranim
 	release
 	warp MAP_SANCTUM_POKE_CENTER_B1F, 7, 5
+	waitstate
 	end
 Rail_ES_4to3::
 	lock
@@ -110,6 +112,7 @@ Rail_ES_4to3Yes::
 	waitdooranim
 	release
 	warp MAP_SOUTHPORT_POKE_CENTER_B1F, 7, 5
+	waitstate
 	end
 Rail_ES_4to5::
 	lock
@@ -148,6 +151,7 @@ Rail_ES_4to5Yes::
 	waitdooranim
 	release
 	warp MAP_NOVEMBURG_POKE_CENTER_B1F, 7, 5
+	waitstate
 	end
 Rail_ES_4to6::
 	lock
@@ -186,6 +190,7 @@ Rail_ES_4to6Yes::
 	waitdooranim
 	release
 	warp MAP_NEW_EBONHEART_POKE_CENTER_B1F, 7, 5
+	waitstate
 	end
 Rail_ES_4to7::
 	lock
@@ -224,6 +229,7 @@ Rail_ES_4to7Yes::
 	waitdooranim
 	release
 	warp MAP_AGRIOPOLIS_POKE_CENTER_B1F, 7, 5
+	waitstate
 	end
 RailGateOpen_ACS::
 	setmetatile 5, 2, METATILE_PokemonCenter_Floor_ShadowTop_Alt, FALSE

@@ -16197,11 +16197,11 @@ const struct ItemInfo gItemsInfo[] =
     },
 	[ITEM_PIZZA] =
     {
-        .name = ITEM_NAME("Pizza"),
+        .name = ITEM_NAME("Supreme Pizza"),
         .price = 3000,
         .holdEffectParam = 255,
         .description = COMPOUND_STRING(
-            "An entire pizza\n"
+            "A supreme pizza\n"
             "that fully heals\n"
             "a Pokémon's HP."),
         .pocket = POCKET_ITEMS,
