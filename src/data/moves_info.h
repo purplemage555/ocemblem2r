@@ -11540,7 +11540,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Defog"),
         .description = COMPOUND_STRING(
-            "Clears hazards and weather\n"
+            "Clears hazards and terrain\n"
             "and lowers evasion."),
         .effect = EFFECT_DEFOG,
         .power = 0,

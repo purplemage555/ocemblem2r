@@ -316,6 +316,7 @@ static bool32 TryHazardsOnSwitchIn(enum BattlerId battler, enum Ability ability,
         break;
     case HAZARDS_SPIKES:
         if (!IsAbilityAndRecord(battler, ability, ABILITY_MAGIC_GUARD)
+		 && !IsAbilityAndRecord(battler, ability, ABILITY_ALL_TERRAIN)
          && IsBattlerAffectedByHazards(battler, holdEffect, FALSE)
          && IsBattlerGrounded(battler, ability, holdEffect))
         {
@@ -326,7 +327,9 @@ static bool32 TryHazardsOnSwitchIn(enum BattlerId battler, enum Ability ability,
         }
         break;
     case HAZARDS_STICKY_WEB:
-        if (IsBattlerAffectedByHazards(battler, holdEffect, FALSE) && IsBattlerGrounded(battler, ability, holdEffect))
+        if (IsBattlerAffectedByHazards(battler, holdEffect, FALSE)
+		 && !IsAbilityAndRecord(battler, ability, ABILITY_ALL_TERRAIN)
+		 && IsBattlerGrounded(battler, ability, holdEffect))
         {
             gEffectBattler = battler;
             SetStatChange(battler, STAT_SPEED, -1);
@@ -335,7 +338,8 @@ static bool32 TryHazardsOnSwitchIn(enum BattlerId battler, enum Ability ability,
         }
         break;
     case HAZARDS_TOXIC_SPIKES:
-        if (!IsBattlerGrounded(battler, ability, holdEffect))
+        if (!IsBattlerGrounded(battler, ability, holdEffect)
+		 && !IsAbilityAndRecord(battler, ability, ABILITY_ALL_TERRAIN))
         {
             effect = FALSE;
         }
@@ -370,7 +374,7 @@ static bool32 TryHazardsOnSwitchIn(enum BattlerId battler, enum Ability ability,
         }
         break;
     case HAZARDS_STEALTH_ROCK:
-        if (IsBattlerAffectedByHazards(battler, holdEffect, FALSE) && ability != ABILITY_MAGIC_GUARD)
+        if (IsBattlerAffectedByHazards(battler, holdEffect, FALSE) && ability != ABILITY_MAGIC_GUARD && ability != ABILITY_ALL_TERRAIN)
         {
             gBattleStruct->passiveHpUpdate[battler] = GetStealthHazardDamage(TYPE_SIDE_HAZARD_POINTED_STONES, battler);
             if (gBattleStruct->passiveHpUpdate[battler] != 0)
@@ -381,7 +385,7 @@ static bool32 TryHazardsOnSwitchIn(enum BattlerId battler, enum Ability ability,
         }
         break;
     case HAZARDS_STEELSURGE:
-        if (IsBattlerAffectedByHazards(battler, holdEffect, FALSE) && ability != ABILITY_MAGIC_GUARD)
+        if (IsBattlerAffectedByHazards(battler, holdEffect, FALSE) && ability != ABILITY_MAGIC_GUARD && ability != ABILITY_ALL_TERRAIN)
         {
             gBattleStruct->passiveHpUpdate[battler] = GetStealthHazardDamage(TYPE_SIDE_HAZARD_SHARP_STEEL, battler);
             if (gBattleStruct->passiveHpUpdate[battler] != 0)
