@@ -11896,14 +11896,14 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Stealth Rock"),
         .description = COMPOUND_STRING(
-            "Sets floating stones that\n"
-            "hurt a foe switching in."),
-        .effect = EFFECT_STEALTH_ROCK,
+            "The worst move in\n"
+            "the entire franchise."),
+        .effect = EFFECT_DO_NOTHING,
         .power = 0,
         .type = TYPE_ROCK,
         .accuracy = 0,
-        .pp = 20,
-        .target = TARGET_OPPONENTS_FIELD,
+        .pp = 1,
+        .target = TARGET_USER,
         .priority = 0,
         .category = DAMAGE_CATEGORY_STATUS,
         .zMove = { .effect = Z_EFFECT_DEF_UP_1 },
@@ -11915,7 +11915,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
         .contestComboMoves = {COMBO_STARTER_STEALTH_ROCK},
-        .battleAnimScript = gBattleAnimMove_StealthRock,
+        .battleAnimScript = gBattleAnimMove_Splash,
     },
 
     [MOVE_GRASS_KNOT] =
