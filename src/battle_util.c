@@ -4863,9 +4863,38 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             }
             break;
         }
+		case ABILITY_CENOSOLARIS:
         case ABILITY_PROTOSYNTHESIS:
             if (!gBattleMons[battler].volatiles.weatherAbilityDone
              && (GetWeather() & B_WEATHER_SUN)
+             && !gBattleMons[battler].volatiles.transformed
+             && !gBattleMons[battler].volatiles.boosterEnergyActivated)
+            {
+                gBattleMons[battler].volatiles.weatherAbilityDone = TRUE;
+                gBattleMons[battler].volatiles.paradoxBoostedStat = GetParadoxHighestStatId(battler);
+                PREPARE_STAT_BUFFER(gBattleTextBuff1, gBattleMons[battler].volatiles.paradoxBoostedStat);
+                gBattleScripting.battler = battler;
+                BattleScriptCall(BattleScript_ProtosynthesisActivates);
+                effect++;
+            }
+            break;
+		case ABILITY_MESOGLACIES:
+            if (!gBattleMons[battler].volatiles.weatherAbilityDone
+             && (GetWeather() & B_WEATHER_ICY_ANY)
+             && !gBattleMons[battler].volatiles.transformed
+             && !gBattleMons[battler].volatiles.boosterEnergyActivated)
+            {
+                gBattleMons[battler].volatiles.weatherAbilityDone = TRUE;
+                gBattleMons[battler].volatiles.paradoxBoostedStat = GetParadoxHighestStatId(battler);
+                PREPARE_STAT_BUFFER(gBattleTextBuff1, gBattleMons[battler].volatiles.paradoxBoostedStat);
+                gBattleScripting.battler = battler;
+                BattleScriptCall(BattleScript_ProtosynthesisActivates);
+                effect++;
+            }
+            break;
+		case ABILITY_ZONAI_DRIVE:
+            if (!gBattleMons[battler].volatiles.weatherAbilityDone
+             && (GetWeather() & B_WEATHER_RAIN)
              && !gBattleMons[battler].volatiles.transformed
              && !gBattleMons[battler].volatiles.boosterEnergyActivated)
             {
@@ -4895,9 +4924,38 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 effect++;
             }
             break;
+		case ABILITY_ZONAI_DRIVE:
         case ABILITY_QUARK_DRIVE:
             if (!gBattleMons[battler].volatiles.terrainAbilityDone
              && gFieldTimers.terrain == B_TERRAIN_ELECTRIC
+             && !gBattleMons[battler].volatiles.transformed
+             && !gBattleMons[battler].volatiles.boosterEnergyActivated)
+            {
+                gBattleMons[battler].volatiles.terrainAbilityDone = TRUE;
+                gBattleMons[battler].volatiles.paradoxBoostedStat = GetParadoxHighestStatId(battler);
+                PREPARE_STAT_BUFFER(gBattleTextBuff1, gBattleMons[battler].volatiles.paradoxBoostedStat);
+                gBattlerAbility = gBattleScripting.battler = battler;
+                BattleScriptCall(BattleScript_QuarkDriveActivates);
+                effect++;
+            }
+            break;
+		case ABILITY_MESOGLACIES:
+            if (!gBattleMons[battler].volatiles.terrainAbilityDone
+             && gFieldTimers.terrain == B_TERRAIN_PSYCHIC
+             && !gBattleMons[battler].volatiles.transformed
+             && !gBattleMons[battler].volatiles.boosterEnergyActivated)
+            {
+                gBattleMons[battler].volatiles.terrainAbilityDone = TRUE;
+                gBattleMons[battler].volatiles.paradoxBoostedStat = GetParadoxHighestStatId(battler);
+                PREPARE_STAT_BUFFER(gBattleTextBuff1, gBattleMons[battler].volatiles.paradoxBoostedStat);
+                gBattlerAbility = gBattleScripting.battler = battler;
+                BattleScriptCall(BattleScript_QuarkDriveActivates);
+                effect++;
+            }
+            break;
+		case ABILITY_CENOSOLARIS:
+            if (!gBattleMons[battler].volatiles.terrainAbilityDone
+             && gFieldTimers.terrain == B_TERRAIN_GRASSY
              && !gBattleMons[battler].volatiles.transformed
              && !gBattleMons[battler].volatiles.boosterEnergyActivated)
             {

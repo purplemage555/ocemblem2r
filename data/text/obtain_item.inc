@@ -6,7 +6,7 @@ gText_TheBagIsFull::
 
 gText_PutItemInPocket::
 	.string "{PLAYER} put away the {STR_VAR_2}\n"
-	.string "in the {STR_VAR_3} POCKET.$"
+	.string "in the {STR_VAR_3} Pocket.$"
 
 gText_PlayerFoundOneItem::
 	.string "{PLAYER} found one {STR_VAR_2}!$"
@@ -36,8 +36,8 @@ gText_PlayerFoundItems::
 	.string "{PLAYER} found {STR_VAR_1} {STR_VAR_2}!$"
 
 gText_PutCoinsAwayInCoinCase::
-	.string "{PLAYER} put the COINS away in\n"
-	.string "the COIN CASE.$"
+	.string "{PLAYER} put the Coins away in\n"
+	.string "the Coin Case.$"
 
 gText_FoundXCoins::
 	.string "{PLAYER} found\n"

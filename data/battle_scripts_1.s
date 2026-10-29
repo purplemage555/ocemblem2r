@@ -3127,6 +3127,9 @@ BattleScript_WeatherAbilityActivates::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
 	jumpifability BS_SCRIPTING, ABILITY_SAND_SPIT, BattleScript_SandSpitActivates
+	jumpifability BS_SCRIPTING, ABILITY_AMIHAN, BattleScript_AmihanActivates
+	jumpifability BS_SCRIPTING, ABILITY_HABAGAT, BattleScript_HabagatActivates
+	jumpifability BS_SCRIPTING, ABILITY_RAMUH, BattleScript_RamuhActivates
 	printfromtable gAbilityWeatherChangeStringId
 BattleScript_WeatherAbilityActivatesContinue:
 	waitstate
@@ -3136,6 +3139,18 @@ BattleScript_WeatherAbilityActivatesContinue:
 
 BattleScript_SandSpitActivates::
 	printstring STRINGID_ASANDSTORMKICKEDUP
+	goto BattleScript_WeatherAbilityActivatesContinue
+
+BattleScript_AmihanActivates::
+	printstring STRINGID_SNOWWARNINGSNOW
+	goto BattleScript_WeatherAbilityActivatesContinue
+
+BattleScript_HabagatActivates::
+	printstring STRINGID_SUNLIGHTGOTBRIGHT
+	goto BattleScript_WeatherAbilityActivatesContinue
+	
+BattleScript_RamuhActivates::
+	printstring STRINGID_DOWNPOURSTARTED
 	goto BattleScript_WeatherAbilityActivatesContinue
 
 BattleScript_OrichalcumPulseActivates::

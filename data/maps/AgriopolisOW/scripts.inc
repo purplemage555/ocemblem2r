@@ -103,8 +103,8 @@ Agriopolis_Text_NPC3:
 	.string "Titles aren't really his thing,\n"
 	.string "so we just call him Crazy Dave.$"
 Agriopolis_Text_NPC4:
-	.string "Whee! It's really fun to play\n"
-	.string "in the green grass and trees!$"
+	.string "Whee! It's really fun to play in\n"
+	.string "this park! It even has a sand pit!$"
 Agriopolis_Text_NPC5:
 	.string "I'm training my body so I can\n"
 	.string "brave the snow on Route 10.$"

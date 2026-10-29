@@ -249,6 +249,22 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "OC_Agriopolis_ES_SafariSign"
+    },
+    {
+      "type": "sign",
+      "x": 47,
+      "y": 25,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "OC_ES_PennyTruck"
+    },
+    {
+      "type": "sign",
+      "x": 49,
+      "y": 25,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "OC_ES_PennyTruck"
     }
   ]
 }

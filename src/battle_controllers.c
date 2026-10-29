@@ -2024,7 +2024,7 @@ void StartSendOutAnim(enum BattlerId battler, bool32 dontClearTransform, bool32 
         BattleLoadMonSpriteGfx(mon, battler);
     SetMultiuseSpriteTemplateToPokemon(species, GetBattlerPosition(battler));
 
-    gBattlerSpriteIds[battler] = CreateSprite(&gMultiuseSpriteTemplate,
+    gBattlerSpriteIds[battler] = CreateSpriteUnchecked(&gMultiuseSpriteTemplate,
                                         GetBattlerSpriteCoord(battler, BATTLER_COORD_X_2),
                                         GetBattlerSpriteDefault_Y(battler),
                                         GetBattlerSpriteSubpriority(battler));
