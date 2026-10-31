@@ -105,7 +105,7 @@
       "x": 30,
       "y": 22,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
       "movement_range_x": 0,
       "movement_range_y": 6,
       "trainer_type": "TRAINER_TYPE_NORMAL",

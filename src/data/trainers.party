@@ -316,7 +316,7 @@ Level: 9
 === TRAINER_OC_R2_KNIGHT ===
 Name: Initiate
 Class: Forever Kn
-Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Pic: Knight
 Gender: Male
 Music: Magma
 
@@ -478,7 +478,7 @@ Level: 8
 === TRAINER_OC_DP_KNIGHT1 ===
 Name: Squire
 Class: Forever Kn
-Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Pic: Knight
 Gender: Male
 Music: Magma
 
@@ -488,7 +488,7 @@ Level: 13
 === TRAINER_OC_DP_KNIGHT2 ===
 Name: Scout
 Class: Forever Kn
-Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Pic: Knight
 Gender: Male
 Music: Magma
 
@@ -924,7 +924,7 @@ Ball: Safari
 === TRAINER_OC_SPIDERCAVE_KNIGHT1 ===
 Name: Scout
 Class: Forever Kn
-Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Pic: Knight
 Gender: Male
 Music: Magma
 
@@ -947,7 +947,7 @@ Ability: Defiant
 === TRAINER_OC_SPIDERCAVE_KNIGHT2 ===
 Name: Scout
 Class: Forever Kn
-Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Pic: Knight
 Gender: Male
 Music: Magma
 
@@ -960,7 +960,7 @@ Level: 20
 === TRAINER_OC_SPIDERCAVE_KNIGHT3 ===
 Name: Guard
 Class: Forever Kn
-Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Pic: Knight
 Gender: Male
 Music: Magma
 
@@ -975,7 +975,7 @@ Ability: Sturdy
 === TRAINER_OC_SPIDERCAVE_KNIGHT4 ===
 Name: Guard
 Class: Forever Kn
-Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Pic: Knight
 Gender: Male
 Music: Magma
 
@@ -990,7 +990,7 @@ Ability: Sturdy
 === TRAINER_OC_SPIDERCAVE_KNIGHT5 ===
 Name: Tunneler
 Class: Forever Kn
-Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Pic: Knight
 Gender: Male
 Music: Magma
 
@@ -1005,7 +1005,7 @@ Ability: Sturdy
 === TRAINER_OC_SPIDERCAVE_KNIGHT6 ===
 Name: Tunneler
 Class: Forever Kn
-Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Pic: Knight
 Gender: Male
 Music: Magma
 
@@ -1019,7 +1019,7 @@ Level: 21
 === TRAINER_OC_SPIDERCAVE_KNIGHT7 ===
 Name: Tunneler
 Class: Forever Kn
-Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Pic: Knight
 Gender: Male
 Music: Magma
 
@@ -1033,7 +1033,7 @@ Level: 21
 === TRAINER_OC_SPIDERCAVE_KNIGHT8 ===
 Name: Sapper
 Class: Forever Kn
-Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Pic: Knight
 Gender: Male
 Music: Magma
 
@@ -1047,7 +1047,7 @@ Ability: Magnet Pull
 === TRAINER_OC_SPIDERCAVE_KNIGHT9 ===
 Name: Sapper
 Class: Forever Kn
-Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Pic: Knight
 Gender: Male
 Music: Magma
 
@@ -2302,7 +2302,7 @@ Ball: Great
 === TRAINER_OC_B3_K1 ===
 Name: Scout
 Class: Forever Kn
-Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Pic: Knight
 Gender: Male
 Music: Magma
 
@@ -2319,7 +2319,7 @@ Level: 23
 === TRAINER_OC_B3_K2 ===
 Name: Guard
 Class: Forever Kn
-Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Pic: Knight
 Gender: Male
 Music: Magma
 
@@ -2336,7 +2336,7 @@ Level: 24
 === TRAINER_OC_B3_K3 ===
 Name: Diver
 Class: Forever Kn
-Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Pic: Knight
 Gender: Male
 Music: Magma
 Items: Fresh Water / Fresh Water
@@ -2357,7 +2357,7 @@ Level: 23
 === TRAINER_OC_B3_K4 ===
 Name: Diver
 Class: Forever Kn
-Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Pic: Knight
 Gender: Male
 Music: Magma
 Items: Fresh Water / Fresh Water
@@ -2378,7 +2378,7 @@ Level: 23
 === TRAINER_OC_B3_K5 ===
 Name: Lieutenant
 Class: Forever Kn
-Pic: TRAINER_PIC_MAGMA_GRUNT_M
+Pic: Knight
 Gender: Male
 Music: Magma
 Items: Fresh Water / Fresh Water

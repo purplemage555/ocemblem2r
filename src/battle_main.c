@@ -5583,6 +5583,7 @@ enum Type GetDynamicMoveType(struct Pokemon *mon, enum Move move, enum BattlerId
             switch (gWeatherPtr->currWeather)
             {
             case WEATHER_DROUGHT:
+			case WEATHER_VOLCANIC_ASH:
                 if (holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
                     return TYPE_FIRE;
                 break;

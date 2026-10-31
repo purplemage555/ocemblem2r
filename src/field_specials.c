@@ -1844,7 +1844,9 @@ static const u16 sElevatorWindowTiles_Descending[ELEVATOR_WINDOW_HEIGHT][ELEVATO
 
 void SetDeptStoreFloor(void)
 {
-    enum DeptStoreFloorNumber deptStoreFloor;
+    enum DeptStoreFloorNumber deptStoreFloor = DEPT_STORE_FLOORNUM_1F;
+	if (gSaveBlock1Ptr->dynamicWarp.mapGroup == MAP_GROUP(MAP_LILYCOVE_CITY_DEPARTMENT_STORE_1F))
+    {
     switch (gSaveBlock1Ptr->dynamicWarp.mapNum)
     {
     case MAP_NUM(MAP_LILYCOVE_CITY_DEPARTMENT_STORE_1F):
@@ -1865,10 +1867,32 @@ void SetDeptStoreFloor(void)
     case MAP_NUM(MAP_LILYCOVE_CITY_DEPARTMENT_STORE_ROOFTOP):
         deptStoreFloor = DEPT_STORE_FLOORNUM_ROOFTOP;
         break;
-    default:
+	}
+	}
+	if (gSaveBlock1Ptr->dynamicWarp.mapGroup == MAP_GROUP(MAP_AGRIOPOLIS_DEPT_STORE1F))
+	{
+	switch (gSaveBlock1Ptr->dynamicWarp.mapNum)
+    {
+	case MAP_NUM(MAP_AGRIOPOLIS_DEPT_STORE1F):
         deptStoreFloor = DEPT_STORE_FLOORNUM_1F;
         break;
+    case MAP_NUM(MAP_AGRIOPOLIS_DEPT_STORE2F):
+        deptStoreFloor = DEPT_STORE_FLOORNUM_2F;
+        break;
+    case MAP_NUM(MAP_AGRIOPOLIS_DEPT_STORE3F):
+        deptStoreFloor = DEPT_STORE_FLOORNUM_3F;
+        break;
+    case MAP_NUM(MAP_AGRIOPOLIS_DEPT_STORE4F):
+        deptStoreFloor = DEPT_STORE_FLOORNUM_4F;
+        break;
+    case MAP_NUM(MAP_AGRIOPOLIS_DEPT_STORE5F):
+        deptStoreFloor = DEPT_STORE_FLOORNUM_5F;
+        break;
+    case MAP_NUM(MAP_AGRIOPOLIS_DEPT_STORE_ROOF):
+        deptStoreFloor = DEPT_STORE_FLOORNUM_ROOFTOP;
+        break;
     }
+	}
     VarSet(VAR_DEPT_STORE_FLOOR, deptStoreFloor);
 }
 
@@ -1897,7 +1921,27 @@ u16 GetDeptStoreDefaultFloorChoice(void)
             break;
         }
     }
-
+	if (gSaveBlock1Ptr->dynamicWarp.mapGroup == MAP_GROUP(MAP_AGRIOPOLIS_DEPT_STORE1F))
+    {
+        switch (gSaveBlock1Ptr->dynamicWarp.mapNum)
+        {
+        case MAP_NUM(MAP_AGRIOPOLIS_DEPT_STORE5F):
+            sLilycoveDeptStore_DefaultFloorChoice = 0;
+            break;
+        case MAP_NUM(MAP_AGRIOPOLIS_DEPT_STORE4F):
+            sLilycoveDeptStore_DefaultFloorChoice = 1;
+            break;
+        case MAP_NUM(MAP_AGRIOPOLIS_DEPT_STORE3F):
+            sLilycoveDeptStore_DefaultFloorChoice = 2;
+            break;
+        case MAP_NUM(MAP_AGRIOPOLIS_DEPT_STORE2F):
+            sLilycoveDeptStore_DefaultFloorChoice = 3;
+            break;
+        case MAP_NUM(MAP_AGRIOPOLIS_DEPT_STORE1F):
+            sLilycoveDeptStore_DefaultFloorChoice = 4;
+            break;
+        }
+    }
     return sLilycoveDeptStore_DefaultFloorChoice;
 }
 

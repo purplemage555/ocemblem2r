@@ -1845,6 +1845,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/AgriopolisDeptStore4F/scripts.inc"
 	.include "data/maps/AgriopolisDeptStore5F/scripts.inc"
 	.include "data/maps/AgriopolisDeptStoreRoof/scripts.inc"
+	.include "data/maps/AgriopolisDeptStoreElevator/scripts.inc"
 	.include "data/maps/SafariZoneEntrance/scripts.inc"
 	.include "data/maps/SeleniaPowerPlantOW/scripts.inc"
 

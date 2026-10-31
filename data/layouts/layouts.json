@@ -10522,6 +10522,16 @@
       "border_filepath": "data/layouts/SeleniaPowerPlantOW/border.bin",
       "blockdata_filepath": "data/layouts/SeleniaPowerPlantOW/map.bin",
       "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_AGRIOPOLIS_DEPT_STORE_ELEVATOR",
+      "name": "AgriopolisDeptStoreElevator_Layout",
+      "width": 5,
+      "height": 6,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BattleFrontier",
+      "border_filepath": "data/layouts/AgriopolisDeptStoreElevator/border.bin",
+      "blockdata_filepath": "data/layouts/AgriopolisDeptStoreElevator/map.bin"
     }
   ]
 }

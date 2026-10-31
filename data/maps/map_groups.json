@@ -314,7 +314,8 @@
     "AgriopolisDeptStore3F",
     "AgriopolisDeptStore4F",
     "AgriopolisDeptStore5F",
-    "AgriopolisDeptStoreRoof"
+    "AgriopolisDeptStoreRoof",
+    "AgriopolisDeptStoreElevator"
   ],
   "gMapGroup_IndoorLilycove": [
     "LilycoveCity_CoveLilyMotel_1F",

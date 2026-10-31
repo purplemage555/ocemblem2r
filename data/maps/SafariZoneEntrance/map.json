@@ -116,16 +116,7 @@
       "x": 9,
       "y": 4,
       "elevation": 3,
-      "var": "VAR_TEMP_1",
-      "var_value": "0",
-      "script": "Agriopolis_SafariZoneEntrance_ES_CheckFace"
-    },
-    {
-      "type": "trigger",
-      "x": 9,
-      "y": 4,
-      "elevation": 3,
-      "var": "VAR_TEMP_1",
+      "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "Agriopolis_SafariZoneEntrance_EventScript_EntranceCounterTrigger"
     }
@@ -154,6 +145,22 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "SafariZone_ES_VendoSign"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "LilycoveCity_DepartmentStoreRooftop_EventScript_VendingMachine"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "SafariZone_ES_BallVendingMachine"
     }
   ]
 }

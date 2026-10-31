@@ -318,8 +318,11 @@ const u16 gTrainerPalette_Spiderman[] = INCGFX_U16("graphics/trainers/front_pics
 const u32 gTrainerFrontPic_Superman[] = INCGFX_U32("graphics/trainers/front_pics/superman.png", ".4bpp.smol");
 const u16 gTrainerPalette_Superman[] = INCGFX_U16("graphics/trainers/front_pics/superman.png", ".gbapal");
 
+const u32 gTrainerFrontPic_Knight[] = INCGFX_U32("graphics/trainers/front_pics/knight.png", ".4bpp.smol");
+const u16 gTrainerPalette_Knight[] = INCGFX_U16("graphics/trainers/front_pics/knight.png", ".gbapal");
+
 const u32 gTrainerFrontPic_PeterParker[] = INCGFX_U32("graphics/trainers/front_pics/peter.png", ".4bpp.smol");
-const u16 gTrainerPalette_PeterParker[] = INCGFX_U16("graphics/trainers/front_pics/peter.pal", ".gbapal");
+const u16 gTrainerPalette_PeterParker[] = INCGFX_U16("graphics/trainers/front_pics/peter.png", ".gbapal");
 
 const u16 gTrainerPalette_BlackBeltC[] = INCGFX_U16("graphics/trainers/front_pics/black_belt_c.pal", ".gbapal");
 const u16 gTrainerPalette_CamperA[] = INCGFX_U16("graphics/trainers/front_pics/camper_a.pal", ".gbapal");
@@ -1367,6 +1370,10 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
 	[TRAINER_PIC_SUPERMAN] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Superman, gTrainerPalette_Superman),
+},
+	[TRAINER_PIC_KNIGHT] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Knight, gTrainerPalette_Knight),
 },
 	[TRAINER_PIC_BLACK_BELT_C] =
     {
