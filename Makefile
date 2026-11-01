@@ -134,12 +134,14 @@ ASM_SUBDIR = asm
 DATA_SRC_SUBDIR = src/data
 DATA_ASM_SUBDIR = data
 MID_SUBDIR = sound/songs/midi
+OC_MUS_SUBDIR = sound/songs/oc
 TEST_SUBDIR = test
 
 C_BUILDDIR = $(OBJ_DIR)/$(C_SUBDIR)
 ASM_BUILDDIR = $(OBJ_DIR)/$(ASM_SUBDIR)
 DATA_ASM_BUILDDIR = $(OBJ_DIR)/$(DATA_ASM_SUBDIR)
 MID_BUILDDIR = $(OBJ_DIR)/$(MID_SUBDIR)
+OC_MUS_BUILDDIR = $(OBJ_DIR)/$(OC_MUS_SUBDIR)
 TEST_BUILDDIR = $(OBJ_DIR)/$(TEST_SUBDIR)
 
 SHELL := bash -o pipefail
@@ -324,7 +326,10 @@ DATA_ASM_OBJS := $(patsubst $(DATA_ASM_SUBDIR)/%.s,$(DATA_ASM_BUILDDIR)/%.o,$(DA
 MID_SRCS := $(wildcard $(MID_SUBDIR)/*.mid)
 MID_OBJS := $(patsubst $(MID_SUBDIR)/%.mid,$(MID_BUILDDIR)/%.o,$(MID_SRCS))
 
-OBJS     := $(C_OBJS) $(C_ASM_OBJS) $(ASM_OBJS) $(DATA_ASM_OBJS) $(MID_OBJS)
+OC_MUS_SRCS := $(wildcard $(OC_MUS_SUBDIR)/*.s)
+OC_MUS_OBJS := $(patsubst $(OC_MUS_SUBDIR)/%.s,$(OC_MUS_BUILDDIR)/%.o,$(OC_MUS_SRCS))
+
+OBJS     := $(C_OBJS) $(C_ASM_OBJS) $(ASM_OBJS) $(DATA_ASM_OBJS) $(MID_OBJS) $(OC_MUS_OBJS) 
 OBJS_REL := $(patsubst $(OBJ_DIR)/%,%,$(OBJS))
 
 SUBDIRS  := $(sort $(dir $(OBJS) $(dir $(TEST_OBJS))))
@@ -381,7 +386,7 @@ clean-assets:
 	rm -f $(DATA_ASM_SUBDIR)/layouts/layouts.inc $(DATA_ASM_SUBDIR)/layouts/layouts_table.inc
 	rm -f $(DATA_ASM_SUBDIR)/maps/connections.inc $(DATA_ASM_SUBDIR)/maps/events.inc $(DATA_ASM_SUBDIR)/maps/groups.inc $(DATA_ASM_SUBDIR)/maps/headers.inc $(DATA_SRC_SUBDIR)/map_group_count.h
 	rm -f .map_version
-	find sound -iname '*.bin' -exec rm {} +
+	find sound/direct_sound_samples -iname '*.bin' -exec rm {} +
 	find . \( -iname '*.1bpp' -o -iname '*.4bpp' -o -iname '*.8bpp' -o -iname '*.gbapal' -o -iname '*.lz' -o -iname '*.smol' -o -iname '*.fastSmol' -o -iname '*.smolTM' -o -iname '*.rl' -o -iname '*.latfont' -o -iname '*.hwjpnfont' -o -iname '*.fwjpnfont' \) -exec rm {} +
 	find $(DATA_ASM_SUBDIR)/maps \( -iname 'connections.inc' -o -iname 'events.inc' -o -iname 'header.inc' \) -exec rm {} +
 

@@ -4159,7 +4159,17 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_RG_ENCOUNTER_DEOXYS)      \
     X(MUS_RG_TRAINER_TOWER)         \
     X(MUS_RG_SLOW_PALLET)           \
-    X(MUS_RG_TEACHY_TV_MENU)
+    X(MUS_RG_TEACHY_TV_MENU)		\
+	X(OC_GRASSWALK)       		    \
+    X(OC_POOL)       				\
+    X(OC_ROOF) 				        \
+    X(OC_ULTBAT)    			    \
+    X(OC_ZOMBOSS)		            \
+    X(OC_BRIDGE)			        \
+    X(OC_TINKER)		            \
+    X(OC_PROPELLER)     		    \
+    X(OC_FROZEN)  			        \
+    X(OC_NECROZMA)             
 
 #define SOUND_LIST_SE               \
     X(SE_USE_ITEM)                  \

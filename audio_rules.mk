@@ -4,6 +4,7 @@ CRY_SUBDIR := sound/direct_sound_samples/cries
 
 MID_ASM_DIR := $(MID_SUBDIR)
 CRY_BIN_DIR := $(CRY_SUBDIR)
+OC_MUS_ASM_DIR := $(OC_MUS_SUBDIR)
 SOUND_BIN_DIR := sound
 
 # Needs to recompile for B_NUM_LOW_HEALTH_BEEPS in battle.h
@@ -17,6 +18,8 @@ $(shell mkdir -p $(SPECIAL_OUTDIRS) )
 $(SONG_BUILDDIR)/%.o: $(SONG_SUBDIR)/%.s $(EXPANSION_BATTLE_CONFIG)
 	$(AS) $(ASFLAGS) -I sound -o $@ $<
 $(MID_BUILDDIR)/%.o: $(MID_ASM_DIR)/%.s
+	$(AS) $(ASFLAGS) -I sound -o $@ $<
+$(OC_MUS_BUILDDIR)/%.o: $(OC_MUS_ASM_DIR)/%.s
 	$(AS) $(ASFLAGS) -I sound -o $@ $<
 
 # Compressed cries

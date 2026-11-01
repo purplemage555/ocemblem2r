@@ -20,7 +20,7 @@
 *.latfont
 *.hwjpnfont
 *.fwjpnfont
-sound/**/*.bin
+sound/direct_sound_samples/**/*.bin
 sound/songs/midi/*.s
 tools/agbcc
 tools/compresSmol/

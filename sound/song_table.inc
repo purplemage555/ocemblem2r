@@ -565,6 +565,16 @@ gSongTable::
 	song mus_rg_trainer_tower, MUSIC_PLAYER_BGM, 0
 	song mus_rg_slow_pallet, MUSIC_PLAYER_BGM, 0
 	song mus_rg_teachy_tv_menu, MUSIC_PLAYER_BGM, 0
+	song oc_grasswalk, MUSIC_PLAYER_BGM, 0
+	song oc_pool, MUSIC_PLAYER_BGM, 0
+	song oc_roof, MUSIC_PLAYER_BGM, 0
+	song oc_ultbat, MUSIC_PLAYER_BGM, 0
+	song oc_zomboss, MUSIC_PLAYER_BGM, 0
+	song oc_bridge, MUSIC_PLAYER_BGM, 0
+	song oc_tinker, MUSIC_PLAYER_BGM, 0
+	song oc_propeller, MUSIC_PLAYER_BGM, 0
+	song oc_frozen, MUSIC_PLAYER_BGM, 0
+	song oc_necrozma, MUSIC_PLAYER_BGM, 0
 	song ph_trap_blend, MUSIC_PLAYER_SE2, 2
 	song ph_trap_held, MUSIC_PLAYER_SE2, 2
 	song ph_trap_solo, MUSIC_PLAYER_SE2, 2

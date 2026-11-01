@@ -2,7 +2,7 @@
   "id": "MAP_PIRATE_BRIDGE",
   "name": "PirateBridge",
   "layout": "LAYOUT_PIRATE_BRIDGE",
-  "music": "MUS_RG_ROUTE11",
+  "music": "OC_POOL",
   "region_map_section": "MAPSEC_UNDERGROUND_PATH_2",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

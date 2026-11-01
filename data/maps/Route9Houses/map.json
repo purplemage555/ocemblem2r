@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE9HOUSES",
   "name": "Route9Houses",
   "layout": "LAYOUT_ROUTE9HOUSES",
-  "music": "MUS_ROUTE104",
+  "music": "OC_GRASSWALK",
   "region_map_section": "MAPSEC_ROUTE_9",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

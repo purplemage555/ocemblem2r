@@ -2,7 +2,7 @@
   "id": "MAP_BIG_BRIDGE",
   "name": "BigBridge",
   "layout": "LAYOUT_BIG_BRIDGE",
-  "music": "MUS_ROUTE110",
+  "music": "OC_BRIDGE",
   "region_map_section": "MAPSEC_BOND_BRIDGE",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",

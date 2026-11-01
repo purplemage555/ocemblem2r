@@ -9041,3 +9041,462 @@ DirectSoundWaveData_sd90_classical_whistle::
 	.align 2
 DirectSoundWaveData_sd90_enhanced_delay_shaku::
 	.incbin "sound/direct_sound_samples/sd90_enhanced_delay_shaku.bin"
+	.align 2
+OC_Ins000::
+	.incbin "sound/oc_samples/inst000x00.DirectSound.bin"
+	.align 2
+OC_Ins001::
+	.incbin "sound/oc_samples/inst010x01.DirectSound.bin"
+	.align 2
+OC_Ins002::
+	.incbin "sound/oc_samples/inst020x02.DirectSound.bin"
+	.align 2
+OC_Ins003::
+	.incbin "sound/oc_samples/inst030x03.DirectSound.bin"
+	.align 2
+OC_Ins004::
+	.incbin "sound/oc_samples/inst040x04.DirectSound.bin"
+	.align 2
+OC_Ins005::
+	.incbin "sound/oc_samples/inst050x05.DirectSound.bin"
+	.align 2
+OC_Ins006::
+	.incbin "sound/oc_samples/inst060x06.DirectSound.bin"
+	.align 2
+OC_Ins007::
+	.incbin "sound/oc_samples/inst070x07.DirectSound.bin"
+	.align 2
+OC_Ins008::
+	.incbin "sound/oc_samples/inst080x08.DirectSound.bin"
+	.align 2
+OC_Ins009::
+	.incbin "sound/oc_samples/inst090x09.DirectSound.bin"
+	.align 2
+OC_Ins00A::
+	.incbin "sound/oc_samples/inst0A0x0A.DirectSound.bin"
+	.align 2
+OC_Ins00B::
+	.incbin "sound/oc_samples/inst0B0x0B.DirectSound.bin"
+	.align 2
+OC_Ins00C::
+	.incbin "sound/oc_samples/inst0C0x0C.DirectSound.bin"
+	.align 2
+OC_Ins00D::
+	.incbin "sound/oc_samples/inst0D0x0D.DirectSound.bin"
+	.align 2
+OC_Ins00E::
+	.incbin "sound/oc_samples/inst0E0x0E.DirectSound.bin"
+	.align 2
+OC_Ins00F::
+	.incbin "sound/oc_samples/inst0F0x0F.DirectSound.bin"
+	.align 2
+OC_Ins010::
+	.incbin "sound/oc_samples/inst100x10.DirectSound.bin"
+	.align 2
+OC_Ins011::
+	.incbin "sound/oc_samples/inst110x11.DirectSound.bin"
+	.align 2
+OC_Ins012::
+	.incbin "sound/oc_samples/inst120x12.DirectSound.bin"
+	.align 2
+OC_Ins013::
+	.incbin "sound/oc_samples/inst130x13.DirectSound.bin"
+	.align 2
+OC_Ins014::
+	.incbin "sound/oc_samples/inst140x14.DirectSound.bin"
+	.align 2
+OC_Ins015::
+	.incbin "sound/oc_samples/inst150x15.DirectSound.bin"
+	.align 2
+OC_Ins016::
+	.incbin "sound/oc_samples/inst160x16.DirectSound.bin"
+	.align 2
+OC_Ins017::
+	.incbin "sound/oc_samples/inst170x17.DirectSound.bin"
+	.align 2
+OC_Ins018::
+	.incbin "sound/oc_samples/inst180x18.DirectSound.bin"
+	.align 2
+OC_Ins01A::
+	.incbin "sound/oc_samples/inst1A0x1A.DirectSound.bin"
+	.align 2
+OC_Ins01B::
+	.incbin "sound/oc_samples/inst1B0x1B.DirectSound.bin"
+	.align 2
+OC_Ins01C::
+	.incbin "sound/oc_samples/inst1C0x1C.DirectSound.bin"
+	.align 2
+OC_Ins01D::
+	.incbin "sound/oc_samples/inst1D0x1D.DirectSound.bin"
+	.align 2
+OC_Ins01E::
+	.incbin "sound/oc_samples/inst1E0x1E.DirectSound.bin"
+	.align 2
+OC_Ins01F::
+	.incbin "sound/oc_samples/inst1F0x1F.DirectSound.bin"
+	.align 2
+OC_Ins020::
+	.incbin "sound/oc_samples/inst200x20.DirectSound.bin"
+	.align 2
+OC_Ins021::
+	.incbin "sound/oc_samples/inst210x21.DirectSound.bin"
+	.align 2
+OC_Ins022::
+	.incbin "sound/oc_samples/inst220x22.DirectSound.bin"
+	.align 2
+OC_Ins023::
+	.incbin "sound/oc_samples/inst230x23.DirectSound.bin"
+	.align 2
+OC_Ins024::
+	.incbin "sound/oc_samples/inst240x24.DirectSound.bin"
+	.align 2
+OC_Ins026::
+	.incbin "sound/oc_samples/inst260x26.DirectSound.bin"
+	.align 2
+OC_Ins027::
+	.incbin "sound/oc_samples/inst270x27.DirectSound.bin"
+	.align 2
+OC_Ins028::
+	.incbin "sound/oc_samples/inst280x28.DirectSound.bin"
+	.align 2
+OC_Ins029::
+	.incbin "sound/oc_samples/inst290x29.DirectSound.bin"
+	.align 2
+OC_Ins02A::
+	.incbin "sound/oc_samples/inst2A0x2A.DirectSound.bin"
+	.align 2
+OC_Ins02B::
+	.incbin "sound/oc_samples/inst2B0x2B.DirectSound.bin"
+	.align 2
+OC_Ins02C::
+	.incbin "sound/oc_samples/inst2C0x2C.DirectSound.bin"
+	.align 2
+OC_Ins02D::
+	.incbin "sound/oc_samples/inst2D0x2D.DirectSound.bin"
+	.align 2
+OC_Ins02E::
+	.incbin "sound/oc_samples/inst2E0x2E.DirectSound.bin"
+	.align 2
+OC_Ins02F::
+	.incbin "sound/oc_samples/inst2F0x2F.DirectSound.bin"
+	.align 2
+OC_Ins030::
+	.incbin "sound/oc_samples/inst300x30.DirectSound.bin"
+	.align 2
+OC_Ins031::
+	.incbin "sound/oc_samples/inst310x31.DirectSound.bin"
+	.align 2
+OC_Ins032::
+	.incbin "sound/oc_samples/inst320x32.DirectSound.bin"
+	.align 2
+OC_Ins033::
+	.incbin "sound/oc_samples/inst330x33.DirectSound.bin"
+	.align 2
+OC_Ins034::
+	.incbin "sound/oc_samples/inst340x34.DirectSound.bin"
+	.align 2
+OC_Ins036::
+	.incbin "sound/oc_samples/inst360x36.DirectSound.bin"
+	.align 2
+OC_Ins039::
+	.incbin "sound/oc_samples/inst390x39.DirectSound.bin"
+	.align 2
+OC_Ins03A::
+	.incbin "sound/oc_samples/inst3A0x3A.DirectSound.bin"
+	.align 2
+OC_Ins03B::
+	.incbin "sound/oc_samples/inst3B0x3B.DirectSound.bin"
+	.align 2
+OC_Ins03C::
+	.incbin "sound/oc_samples/inst3C0x3C.DirectSound.bin"
+	.align 2
+OC_Ins03D::
+	.incbin "sound/oc_samples/inst3D0x3D.DirectSound.bin"
+	.align 2
+OC_Ins03E::
+	.incbin "sound/oc_samples/inst3E0x3E.DirectSound.bin"
+	.align 2
+OC_Ins03F::
+	.incbin "sound/oc_samples/inst3F0x3F.DirectSound.bin"
+	.align 2
+OC_Ins040::
+	.incbin "sound/oc_samples/inst400x40.DirectSound.bin"
+	.align 2
+OC_Ins041::
+	.incbin "sound/oc_samples/inst410x41.DirectSound.bin"
+	.align 2
+OC_Ins042::
+	.incbin "sound/oc_samples/inst420x42.DirectSound.bin"
+	.align 2
+OC_Ins043::
+	.incbin "sound/oc_samples/inst430x43.DirectSound.bin"
+	.align 2
+OC_Ins044::
+	.incbin "sound/oc_samples/inst440x44.DirectSound.bin"
+	.align 2
+OC_Ins045::
+	.incbin "sound/oc_samples/inst450x45.DirectSound.bin"
+	.align 2
+OC_Ins046::
+	.incbin "sound/oc_samples/inst460x46.DirectSound.bin"
+	.align 2
+OC_Ins047::
+	.incbin "sound/oc_samples/inst470x47.DirectSound.bin"
+	.align 2
+OC_Ins049::
+	.incbin "sound/oc_samples/inst490x49.DirectSound.bin"
+	.align 2
+OC_Ins04A::
+	.incbin "sound/oc_samples/inst4A0x4A.DirectSound.bin"
+	.align 2
+OC_Ins04B::
+	.incbin "sound/oc_samples/inst4B0x4B.DirectSound.bin"
+	.align 2
+OC_Ins04C::
+	.incbin "sound/oc_samples/inst4C0x4C.DirectSound.bin"
+	.align 2
+OC_Ins04D::
+	.incbin "sound/oc_samples/inst4D0x4D.DirectSound.bin"
+	.align 2
+OC_Ins04E::
+	.incbin "sound/oc_samples/inst4E0x4E.DirectSound.bin"
+	.align 2
+OC_Ins04F::
+	.incbin "sound/oc_samples/inst4F0x4F.DirectSound.bin"
+	.align 2
+OC_Ins050::
+	.incbin "sound/oc_samples/inst500x50.DirectSound.bin"
+	.align 2
+OC_Ins051::
+	.incbin "sound/oc_samples/inst510x51.DirectSound.bin"
+	.align 2
+OC_Ins055::
+	.incbin "sound/oc_samples/inst550x55.DirectSound.bin"
+	.align 2
+OC_Ins056::
+	.incbin "sound/oc_samples/inst560x56.DirectSound.bin"
+	.align 2
+OC_Ins058::
+	.incbin "sound/oc_samples/inst580x58.DirectSound.bin"
+	.align 2
+OC_Ins059::
+	.incbin "sound/oc_samples/inst590x59.DirectSound.bin"
+	.align 2
+OC_Ins05A::
+	.incbin "sound/oc_samples/inst5A0x5A.DirectSound.bin"
+	.align 2
+OC_Ins05B::
+	.incbin "sound/oc_samples/inst5B0x5B.DirectSound.bin"
+	.align 2
+OC_Ins05C::
+	.incbin "sound/oc_samples/inst5C0x5C.DirectSound.bin"
+	.align 2
+OC_Ins05D::
+	.incbin "sound/oc_samples/inst5D0x5D.DirectSound.bin"
+	.align 2
+OC_Ins05E::
+	.incbin "sound/oc_samples/inst5E0x5E.DirectSound.bin"
+	.align 2
+OC_Ins05F::
+	.incbin "sound/oc_samples/inst5F0x5F.DirectSound.bin"
+	.align 2
+OC_Ins062::
+	.incbin "sound/oc_samples/inst620x62.DirectSound.bin"
+	.align 2
+OC_Ins063::
+	.incbin "sound/oc_samples/inst630x63.DirectSound.bin"
+	.align 2
+OC_Ins064::
+	.incbin "sound/oc_samples/inst640x64.DirectSound.bin"
+	.align 2
+OC_Ins065::
+	.incbin "sound/oc_samples/inst650x65.DirectSound.bin"
+	.align 2
+OC_Ins066::
+	.incbin "sound/oc_samples/inst660x66.DirectSound.bin"
+	.align 2
+OC_Ins067::
+	.incbin "sound/oc_samples/inst670x67.DirectSound.bin"
+	.align 2
+OC_Ins068::
+	.incbin "sound/oc_samples/inst680x68.DirectSound.bin"
+	.align 2
+OC_Ins069::
+	.incbin "sound/oc_samples/inst690x69.DirectSound.bin"
+	.align 2
+OC_Ins06A::
+	.incbin "sound/oc_samples/inst6A0x6A.DirectSound.bin"
+	.align 2
+OC_Ins06B::
+	.incbin "sound/oc_samples/inst6B0x6B.DirectSound.bin"
+	.align 2
+OC_Ins06C::
+	.incbin "sound/oc_samples/inst6C0x6C.DirectSound.bin"
+	.align 2
+OC_Ins06D::
+	.incbin "sound/oc_samples/inst6D0x6D.DirectSound.bin"
+	.align 2
+OC_Ins06E::
+	.incbin "sound/oc_samples/inst6E0x6E.DirectSound.bin"
+	.align 2
+OC_Ins06F::
+	.incbin "sound/oc_samples/inst6F0x6F.DirectSound.bin"
+	.align 2
+OC_Ins070::
+	.incbin "sound/oc_samples/inst700x70.DirectSound.bin"
+	.align 2
+OC_Ins074::
+	.incbin "sound/oc_samples/inst740x74.DirectSound.bin"
+	.align 2
+OC_Ins075::
+	.incbin "sound/oc_samples/inst750x75.DirectSound.bin"
+	.align 2
+OC_Ins076::
+	.incbin "sound/oc_samples/inst760x76.DirectSound.bin"
+	.align 2
+OC_Ins077::
+	.incbin "sound/oc_samples/inst770x77.DirectSound.bin"
+	.align 2
+OC_Ins07D::
+	.incbin "sound/oc_samples/inst7D0x7D.DirectSound.bin"
+	.align 2
+OC_Ins07E::
+	.incbin "sound/oc_samples/inst7E0x7E.DirectSound.bin"
+	.align 2
+D1_000::
+	.incbin "sound/oc_samples/drums/D1_000.bin"
+	.align 2
+D1_001::
+	.incbin "sound/oc_samples/drums/D1_001.bin"
+	.align 2
+D1_003::
+	.incbin "sound/oc_samples/drums/D1_003.bin"
+	.align 2
+D1_004::
+	.incbin "sound/oc_samples/drums/D1_004.bin"
+	.align 2
+D1_005::
+	.incbin "sound/oc_samples/drums/D1_005.bin"
+	.align 2
+D1_006::
+	.incbin "sound/oc_samples/drums/D1_006.bin"
+	.align 2
+D1_007::
+	.incbin "sound/oc_samples/drums/D1_007.bin"
+	.align 2
+D1_008::
+	.incbin "sound/oc_samples/drums/D1_008.bin"
+	.align 2
+D1_010::
+	.incbin "sound/oc_samples/drums/D1_006.bin"
+	.align 2
+D1_012::
+	.incbin "sound/oc_samples/drums/D1_012.bin"
+	.align 2
+D1_013::
+	.incbin "sound/oc_samples/drums/D1_013.bin"
+	.align 2
+D1_014::
+	.incbin "sound/oc_samples/drums/D1_014.bin"
+	.align 2
+D1_015::
+	.incbin "sound/oc_samples/drums/D1_015.bin"
+	.align 2
+D1_016::
+	.incbin "sound/oc_samples/drums/D1_016.bin"
+	.align 2
+D1_019::
+	.incbin "sound/oc_samples/drums/D1_019.bin"
+	.align 2
+D1_020::
+	.incbin "sound/oc_samples/drums/D1_020.bin"
+	.align 2
+D1_025::
+	.incbin "sound/oc_samples/drums/D1_025.bin"
+	.align 2
+D1_026::
+	.incbin "sound/oc_samples/drums/D1_026.bin"
+	.align 2
+D1_027::
+	.incbin "sound/oc_samples/drums/D1_027.bin"
+	.align 2
+D1_028::
+	.incbin "sound/oc_samples/drums/D1_028.bin"
+	.align 2
+D1_029::
+	.incbin "sound/oc_samples/drums/D1_029.bin"
+	.align 2
+D1_032::
+	.incbin "sound/oc_samples/drums/D1_032.bin"
+	.align 2
+D1_033::
+	.incbin "sound/oc_samples/drums/D1_033.bin"
+	.align 2
+D1_034::
+	.incbin "sound/oc_samples/drums/D1_034.bin"
+	.align 2
+D1_035::
+	.incbin "sound/oc_samples/drums/D1_035.bin"
+	.align 2
+D1_036::
+	.incbin "sound/oc_samples/drums/D1_036.bin"
+	.align 2
+D1_037::
+	.incbin "sound/oc_samples/drums/D1_037.bin"
+	.align 2
+D1_038::
+	.incbin "sound/oc_samples/drums/D1_038.bin"
+	.align 2
+D1_039::
+	.incbin "sound/oc_samples/drums/D1_039.bin"
+	.align 2
+D1_040::
+	.incbin "sound/oc_samples/drums/D1_040.bin"
+	.align 2
+D1_041::
+	.incbin "sound/oc_samples/drums/D1_041.bin"
+	.align 2
+D1_042::
+	.incbin "sound/oc_samples/drums/D1_042.bin"
+	.align 2
+D1_045::
+	.incbin "sound/oc_samples/drums/D1_045.bin"
+	.align 2
+D1_046::
+	.incbin "sound/oc_samples/drums/D1_046.bin"
+	.align 2
+D1_048::
+	.incbin "sound/oc_samples/drums/D1_048.bin"
+	.align 2
+D1_049::
+	.incbin "sound/oc_samples/drums/D1_049.bin"
+	.align 2
+D1_051::
+	.incbin "sound/oc_samples/drums/D1_051.bin"
+	.align 2
+D1_057::
+	.incbin "sound/oc_samples/drums/D1_057.bin"
+	.align 2
+D1_084::
+	.incbin "sound/oc_samples/drums/D1_084.bin"
+	.align 2
+D1_086::
+	.incbin "sound/oc_samples/drums/D1_086.bin"
+	.align 2
+D2_084::
+	.incbin "sound/oc_samples/drums/D2_084.bin"
+	.align 2
+D2_086::
+	.incbin "sound/oc_samples/drums/D2_086.bin"
+	.align 2
+D2_089::
+	.incbin "sound/oc_samples/drums/D2_089.bin"
+	.align 2
+D2_090::
+	.incbin "sound/oc_samples/drums/D2_090.bin"
+	.align 2
+D2_093::
+	.incbin "sound/oc_samples/drums/D2_093.bin"
+	.align 2
+D2_094::
+	.incbin "sound/oc_samples/drums/D2_094.bin"
