@@ -61,6 +61,75 @@ static const u8* const sTrainerSlides[DIFFICULTY_COUNT][TRAINER_PARTNER(PARTNER_
 {
     [DIFFICULTY_NORMAL] =
     {
+		[TRAINER_OC_EASTFORD_MAPLE]
+		{
+			[TRAINER_SLIDE_OPPONENT_MON_UNAFFECTED] = COMPOUND_STRING("Oops! I forgot Whismur is immune to Growl and Astonish! Silly me!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_DEFENDER_TAKES_FIRST_STAB_MOVE] = COMPOUND_STRING("Wow! You're using Whismur's Same Type Attack Bonus, or STAB for short!{PAUSE_UNTIL_PRESS}"),
+		},
+		[TRAINER_OC_R3_KING]
+		{
+			[TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Let's see how you handle our royal power!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_SELF_LAST_SWITCHIN] = COMPOUND_STRING("You impertinent fool! My Slaking shall obliterate you!{PAUSE_UNTIL_PRESS}"),
+		},
+		[TRAINER_OC_BADGE1]
+		{
+			[TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Wingull may seem weak, but its evolution Pelipper can summon rain!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_DEFENDER_TAKES_FIRST_SUPER_EFFECTIVE_HIT] = COMPOUND_STRING("Wonderful! You seem to have a good grasp on type matchups!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_ATTACKER_LANDS_FIRST_STAB_MOVE] = COMPOUND_STRING("STAB moves are an integral part of battle. Can you resist the tide of my Water types?{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_SELF_LAST_SWITCHIN] = COMPOUND_STRING("Now's your chance, Pearlice! Can you crack my Cloyster's mighty shell?{PAUSE_UNTIL_PRESS}"),
+		},
+		[TRAINER_OC_R4_MAPLE]
+		{
+			[TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("I found Terra here in the tall grass back in Eastford!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_DEFENDER_TAKES_FIRST_SUPER_EFFECTIVE_HIT] = COMPOUND_STRING("Wow! A super effective hit! You seem to know your stuff!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_SELF_LAST_SWITCHIN] = COMPOUND_STRING("Go, Artoria! I think she remembers you!{PAUSE_UNTIL_PRESS}"),
+		},
+		[TRAINER_OC_SPIDERCAVE_ADMIN]
+		{
+			[TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("This Lampent guides me with its spiritual flames.{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_SELF_LAST_SWITCHIN] = COMPOUND_STRING("Do you fear the reaper?{PAUSE_UNTIL_PRESS}"),
+		},
+		[TRAINER_OC_BADGE2]
+		{
+			[TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Magnemite is the quintessential technological Pokémon! Bzzt!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_DEFENDER_TAKES_FIRST_SUPER_EFFECTIVE_HIT] = COMPOUND_STRING("Drat, my technology!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_ATTACKER_LANDS_FIRST_STAB_MOVE] = COMPOUND_STRING("I'm feelin' full of beans! Well, STAB moves, I mean.{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = COMPOUND_STRING("That's electrifying!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_SELF_LAST_SWITCHIN] = COMPOUND_STRING("Feel the current in the air? This is Monad's power!{PAUSE_UNTIL_PRESS}"),
+		},
+		[TRAINER_OC_R7_SPIDEY]
+		{
+			[TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Swadloon's cute, right? I especially love how its evolutionary line weaves using both silk and leaves!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_DEFENDER_TAKES_FIRST_SUPER_EFFECTIVE_HIT] = COMPOUND_STRING("Darn, that hurts…{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_ATTACKER_LANDS_FIRST_STAB_MOVE] = COMPOUND_STRING("Can't forget about Same Type Attack Bonus, or STAB for short!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_SELF_LAST_SWITCHIN] = COMPOUND_STRING("It's just you and me now, Joltik…{PAUSE_UNTIL_PRESS}"),
+		},
+		[TRAINER_OC_B3_ADMIN3]
+		{
+			[TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("You puny Corphish! In this world, it's sink or swim!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_SELF_LAST_SWITCHIN] = COMPOUND_STRING("Crawdaunt! Show this puny Corphish who's boss!{PAUSE_UNTIL_PRESS}"),
+		},
+		[TRAINER_OC_BADGE3]
+		{
+			[TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("My Pokémon are like a volcano: Tough as rocks and fiery like lava!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_DEFENDER_TAKES_FIRST_SUPER_EFFECTIVE_HIT] = COMPOUND_STRING("It's gonna take a lot more than water to douse me!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_ATTACKER_LANDS_FIRST_SUPER_EFFECTIVE_HIT] = COMPOUND_STRING("A blow worthy of a soldier!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_SELF_LAST_SWITCHIN] = COMPOUND_STRING("Septim! Remember your training! Form ranks and charge!{PAUSE_UNTIL_PRESS}"),
+		},
+		[TRAINER_OC_B3_SPIDEY]
+		{
+			[TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Can't be Spider-Man without having my own spider Pokémon!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_DEFENDER_TAKES_FIRST_SUPER_EFFECTIVE_HIT] = COMPOUND_STRING("A super effective move? You're pretty good!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_ATTACKER_LANDS_FIRST_STAB_MOVE] = COMPOUND_STRING("Same Type Attack Bonus, brought to you by your friendly neighborhood Spider-Man!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_SELF_LAST_SWITCHIN] = COMPOUND_STRING("Let's tie 'em up and finish this!{PAUSE_UNTIL_PRESS}"),
+		},
+		[TRAINER_OC_R9_CLARK]
+		{
+			[TRAINER_SLIDE_BEFORE_FIRST_TURN] = COMPOUND_STRING("Oh! Looks like I forgot to change clothes! Pretend you saw nothing, citizen!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_DEFENDER_TAKES_FIRST_SUPER_EFFECTIVE_HIT] = COMPOUND_STRING("You've got guts to use a super effective move against Superman, kid! Keep it up!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_DEFENDER_TAKES_FIRST_STAB_MOVE] = COMPOUND_STRING("Same Type Attack Bonus? That's super!{PAUSE_UNTIL_PRESS}"),
+			[TRAINER_SLIDE_SELF_LAST_SWITCHIN] = COMPOUND_STRING("I always enjoy having my parents' home-cooked beef bourguignon with ketchup…{PAUSE_UNTIL_PRESS}"),
+		}
     },
 };
 
