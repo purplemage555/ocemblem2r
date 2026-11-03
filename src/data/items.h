@@ -11110,8 +11110,8 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
             "A held item that\n"
-            "restores 20 HP in\n"
-            "battle."),
+            "restores 20 HP\n"
+            "in battle."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
@@ -11187,7 +11187,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Figy Berry"),
         .pluralName = ITEM_PLURAL_NAME("Figy Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+        .price = 100,
         .holdEffect = HOLD_EFFECT_CONFUSE_FLAVOR,
         .secondaryId = FLAVOR_SPICY,
         .holdEffectParam = CONFUSE_BERRY_HEAL_FRACTION,
@@ -11207,7 +11207,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Wiki Berry"),
         .pluralName = ITEM_PLURAL_NAME("Wiki Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+        .price = 100,
         .holdEffect = HOLD_EFFECT_CONFUSE_FLAVOR,
         .secondaryId = FLAVOR_DRY,
         .holdEffectParam = CONFUSE_BERRY_HEAL_FRACTION,
@@ -11227,7 +11227,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Mago Berry"),
         .pluralName = ITEM_PLURAL_NAME("Mago Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+        .price = 100,
         .holdEffect = HOLD_EFFECT_CONFUSE_FLAVOR,
         .secondaryId = FLAVOR_SWEET,
         .holdEffectParam = CONFUSE_BERRY_HEAL_FRACTION,
@@ -11247,7 +11247,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Aguav Berry"),
         .pluralName = ITEM_PLURAL_NAME("Aguav Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+        .price = 100,
         .holdEffect = HOLD_EFFECT_CONFUSE_FLAVOR,
         .secondaryId = FLAVOR_BITTER,
         .holdEffectParam = CONFUSE_BERRY_HEAL_FRACTION,
@@ -11267,7 +11267,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Iapapa Berry"),
         .pluralName = ITEM_PLURAL_NAME("Iapapa Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+        .price = 100,
         .holdEffect = HOLD_EFFECT_CONFUSE_FLAVOR,
         .secondaryId = FLAVOR_SOUR,
         .holdEffectParam = CONFUSE_BERRY_HEAL_FRACTION,
@@ -11372,11 +11372,11 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Pomeg Berry"),
         .pluralName = ITEM_PLURAL_NAME("Pomeg Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+        .price = 100,
         .description = COMPOUND_STRING(
             "Makes a Pokémon\n"
-            "friendly but lowers\n"
-            "base HP."),
+            "friendly but\n"
+            "lowers HP EVs."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
@@ -11390,11 +11390,11 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Kelpsy Berry"),
         .pluralName = ITEM_PLURAL_NAME("Kelpsy Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+        .price = 100,
         .description = COMPOUND_STRING(
             "Makes a Pokémon\n"
-            "friendly but lowers\n"
-            "base Attack."),
+            "friendly but\n"
+            "lowers Attack EVs."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
@@ -11408,11 +11408,11 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Qualot Berry"),
         .pluralName = ITEM_PLURAL_NAME("Qualot Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+        .price = 100,
         .description = COMPOUND_STRING(
             "Makes a Pokémon\n"
-            "friendly but lowers\n"
-            "base Defense."),
+            "friendly but\n"
+            "lowers Defense EVs."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
@@ -11426,11 +11426,11 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Hondew Berry"),
         .pluralName = ITEM_PLURAL_NAME("Hondew Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+        .price = 100,
         .description = COMPOUND_STRING(
             "Makes a Pokémon\n"
-            "friendly but lowers\n"
-            "base Sp. Atk."),
+            "friendly but\n"
+            "lowers SpAtk EVs."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
@@ -11444,11 +11444,11 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Grepa Berry"),
         .pluralName = ITEM_PLURAL_NAME("Grepa Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+        .price = 100,
         .description = COMPOUND_STRING(
             "Makes a Pokémon\n"
-            "friendly but lowers\n"
-            "base Sp. Def."),
+            "friendly but\n"
+            "lowers SpDef EVs."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
@@ -11462,11 +11462,11 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Tamato Berry"),
         .pluralName = ITEM_PLURAL_NAME("Tamato Berries"),
-        .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
+        .price = 100,
         .description = COMPOUND_STRING(
             "Makes a Pokémon\n"
-            "friendly but lowers\n"
-            "base Speed."),
+            "friendly but\n"
+            "lowers Speed EVs."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
@@ -13442,7 +13442,7 @@ const struct ItemInfo gItemsInfo[] =
     },
     [ITEM_TM_RAIN_DANCE] =
     {
-        .name = ITEM_NAME("TM00"),
+        .name = ITEM_NAME("TM100"),
         .price = 5000,
         .description = COMPOUND_STRING(
             "Rain Dance"),
