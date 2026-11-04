@@ -8064,7 +8064,7 @@ static void InitMenu(void)
     sStorage->menuWindow.baseBlock = 92;
 }
 
-static const u8 gPCText_Give[] = _("GIVE");
+static const u8 gPCText_Give[] = _("Give");
 
 static const u8 *const sMenuTexts[] =
 {
