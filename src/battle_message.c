@@ -123,7 +123,7 @@ static const u8 sText_LinkPartnerWithdrewPkmn2[] = _("{B_LINK_PARTNER_NAME} with
 static const u8 sText_PkmnSwitchOut[] = _("{B_BUFF1}, switch out! Come back!"); //currently unused, I believe its used for when you switch on a Pokémon in shift mode
 static const u8 sText_PkmnThatsEnough[] = _("{B_BUFF1}, that's enough! Come back!");
 static const u8 sText_PkmnComeBack[] = _("{B_BUFF1}, come back!");
-static const u8 sText_PkmnOkComeBack[] = _("OK, {B_BUFF1}! Come back!");
+static const u8 sText_PkmnOkComeBack[] = _("Okay, {B_BUFF1}! Come back!");
 static const u8 sText_PkmnGoodComeBack[] = _("Good job, {B_BUFF1}! Come back!");
 static const u8 sText_Trainer1WithdrewPkmn[] = _("{B_TRAINER1_NAME_WITH_CLASS} withdrew {B_BUFF1}!");
 static const u8 sText_Trainer2WithdrewPkmn[] = _("{B_TRAINER2_NAME_WITH_CLASS} withdrew {B_BUFF1}!");
@@ -153,7 +153,7 @@ static const u8 sText_Speed[] = _("Speed");
 static const u8 sText_SpAttack[] = _("Sp. Atk");
 static const u8 sText_SpDefense[] = _("Sp. Def");
 static const u8 sText_Accuracy[] = _("accuracy");
-static const u8 sText_Evasiveness[] = _("evasiveness");
+static const u8 sText_Evasiveness[] = _("evasion");
 
 const u8 *const gStatNamesTable[NUM_BATTLE_STATS] =
 {
@@ -176,10 +176,10 @@ const u8 *const gPokeblockWasTooXStringTable[FLAVOR_COUNT] =
 };
 
 static const u8 sText_Someones[] = _("someone's");
-static const u8 sText_Lanettes[] = _("LANETTE's"); //no decapitalize until it is everywhere
-static const u8 sText_Bills[] = _("BILL's");
-static const u8 sText_EnigmaBerry[] = _("ENIGMA BERRY"); //no decapitalize until it is everywhere
-static const u8 sText_BerrySuffix[] = _(" BERRY"); //no decapitalize until it is everywhere
+static const u8 sText_Lanettes[] = _("Lanette's"); //no decapitalize until it is everywhere
+static const u8 sText_Bills[] = _("Bill's");
+static const u8 sText_EnigmaBerry[] = _("Enigma Berry"); //no decapitalize until it is everywhere
+static const u8 sText_BerrySuffix[] = _(" Berry"); //no decapitalize until it is everywhere
 const u8 gText_EmptyString3[] = _("");
 
 static const u8 sText_TwoInGameTrainersDefeated[] = _("You defeated {B_TRAINER1_NAME_WITH_CLASS} and {B_TRAINER2_NAME_WITH_CLASS}!\p");
