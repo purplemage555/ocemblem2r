@@ -18,7 +18,10 @@ OC_R3_ES_LodgeSign::
 Route3N_ES_IceCreamVendor::
 	trainerbattle_single TRAINER_OC_R3_VENDOR, OC_HieloIntro, OC_HieloDefeat, OC_ES_HieloDefeated, NO_MUSIC
 	goto_if_unset FLAG_OC_GOT_VANILLITE, OC_ES_HieloDefeated
-	msgbox OC_HieloPostBattle, MSGBOX_DEFAULT
+	message gText_Route3IceCreamShop
+	waitmessage
+	pokemart Route3IceCreamShop
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
 	release
 	end
 OC_ES_HieloDefeated::
@@ -68,6 +71,10 @@ OC_R3N_ES_Trainer3::
 	trainerbattle_single TRAINER_OC_R3_ELLIOTT, OC_R3N_Trainer3Intro, OC_R3N_Trainer3Defeat
 	msgbox OC_R3N_Trainer3PostBattle, MSGBOX_AUTOCLOSE
 	end
+	.align 2
+Route3IceCreamShop:
+	.2byte ITEM_SELENIACONE
+	pokemartlistend
 OC_R3_Text_RouteSign:
 	.string "Selenia Route 3:\p"
 	.string "A sturdy, lengthy bridge makes\n"
@@ -91,6 +98,9 @@ OC_HieloPostBattle:
 OC_Hielo_TakeVanillite:
 	.string "Great work! Here's your own Vanillite,\n"
 	.string "just like I promised. A deal's a deal!$"
+gText_Route3IceCreamShop:
+	.string "Hey, it's you again!\n"
+	.string "Wanna buy some ice cream?$"
 OC_R3N_Trainer1Intro:
 	.string "Life must be the bubbles\n"
 	.string "if you live under the sea…$"
