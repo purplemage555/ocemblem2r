@@ -48,7 +48,7 @@ const struct SpeciesInfo gSpeciesInfoGenX[] =
         .palette = gMonPalette_Potater,
         .shinyPalette = gMonPalette_Potater,
         .iconSprite = gMonIcon_Potater,
-        .iconPalIndex = 5,
+        .iconPalIndex = 6,
         FOOTPRINT(QuestionMark)
         .levelUpLearnset = sPotaterLevelUpLearnset,
         .teachableLearnset = sPotaterTeachableLearnset,
@@ -105,7 +105,7 @@ const struct SpeciesInfo gSpeciesInfoGenX[] =
         .palette = gMonPalette_Baketater,
         .shinyPalette = gMonPalette_Baketater,
         .iconSprite = gMonIcon_Baketater,
-        .iconPalIndex = 5,
+        .iconPalIndex = 6,
         FOOTPRINT(QuestionMark)
         .levelUpLearnset = sBaketaterLevelUpLearnset,
         .teachableLearnset = sBaketaterTeachableLearnset,
@@ -156,7 +156,7 @@ const struct SpeciesInfo gSpeciesInfoGenX[] =
         .palette = gMonPalette_Toxitater,
         .shinyPalette = gMonPalette_Toxitater,
         .iconSprite = gMonIcon_Toxitater,
-        .iconPalIndex = 5,
+        .iconPalIndex = 6,
         FOOTPRINT(QuestionMark)
         .levelUpLearnset = sToxitaterLevelUpLearnset,
         .teachableLearnset = sToxitaterTeachableLearnset,
