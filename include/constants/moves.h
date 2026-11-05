@@ -920,6 +920,7 @@ enum __attribute__((packed)) Move
 	MOVE_BODY_EDGE = 860,
 	MOVE_GLACIER_SLAM = 861,
 	MOVE_RESET_BOMB = 862,
+	MOVE_SASHIMI_ORDER = 863,
     MOVES_COUNT_GEN9,
 
     // Add any custom moves here, not further down!
