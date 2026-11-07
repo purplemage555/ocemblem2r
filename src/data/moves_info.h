@@ -18530,8 +18530,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Body Press"),
         .description = COMPOUND_STRING(
-            "Does more damage the\n"
-            "higher the user's Defense."),
+            "Does damage based on\n"
+            "the user's Defense."),
         .effect = EFFECT_BODY_PRESS,
         .power = 80,
         .type = TYPE_FIGHTING,
@@ -24035,5 +24035,28 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboMoves = {0},
         .battleAnimScript = gBattleAnimMove_OrderUp,
         .validApprenticeMove = TRUE,
+    },
+	[MOVE_IRON_PRESS] =
+    {
+        .name = COMPOUND_STRING("Iron Press"),
+        .description = COMPOUND_STRING(
+            "Does damage based on\n"
+            "the user's Defense."),
+        .effect = EFFECT_BODY_PRESS,
+        .power = 80,
+        .type = TYPE_FIGHTING,
+        .accuracy = 100,
+        .pp = 10,
+        .target = TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .metronomeBanned = TRUE,
+        .skyBattleBanned = B_EXTRAPOLATED_MOVE_FLAGS,
+        .contestEffect = CONTEST_EFFECT_BETTER_IF_SAME_TYPE,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {0},
+        .battleAnimScript = gBattleAnimMove_HeavySlam,
     },
 };
