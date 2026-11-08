@@ -6846,15 +6846,21 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         }
         break;
 	case ABILITY_SHELLEMENTAL:
-        if (moveType == TYPE_FIRE || moveType == TYPE_ICE)
+        if (moveType == TYPE_ICE)
         {
-            modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
+            modifier = uq4_12_multiply(modifier, UQ_4_12(4.0));
+            if (ctx->updateFlags)
+                RecordAbilityBattle(battlerDef, ctx->abilities[ctx->battlerDef]);
+        }
+		else if (moveType == TYPE_FIRE)
+        {
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.0));
             if (ctx->updateFlags)
                 RecordAbilityBattle(battlerDef, ctx->abilities[ctx->battlerDef]);
         }
 		else
         {
-            modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
+            modifier = uq4_12_multiply(modifier, UQ_4_12(0.25));
             if (ctx->updateFlags)
                 RecordAbilityBattle(battlerDef, ctx->abilities[ctx->battlerDef]);
         }
@@ -7052,10 +7058,6 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
         if (gBattleMons[battlerAtk].volatiles.slowStartTimer > 0 && IsBattleMovePhysical(move))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(0.5));
         break;
-    case ABILITY_SOLAR_POWER:
-        if (IsBattleMoveSpecial(move) && IsBattlerWeatherAffected(ctx->holdEffects[ctx->battlerAtk], ctx->weather, B_WEATHER_SUN))
-            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
-        break;
     case ABILITY_DEFEATIST:
         if (gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 2))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(0.5));
@@ -7154,6 +7156,39 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
         {
             enum Stat atkHighestStat = GetParadoxBoostedStatId(battlerAtk);
             if (gFieldTimers.terrain == B_TERRAIN_ELECTRIC || gBattleMons[battlerAtk].volatiles.boosterEnergyActivated)
+            {
+                if ((IsBattleMovePhysical(move) && atkHighestStat == STAT_ATK) || (IsBattleMoveSpecial(move) && atkHighestStat == STAT_SPATK))
+                    modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+            }
+        }
+        break;
+	case ABILITY_MESOGLACIES:
+        if (!(gBattleMons[battlerAtk].volatiles.transformed))
+        {
+            enum Stat atkHighestStat = GetParadoxBoostedStatId(battlerAtk);
+            if (ctx->weather & B_WEATHER_ICY_ANY || gFieldTimers.terrain == B_TERRAIN_PSYCHIC || gBattleMons[battlerAtk].volatiles.boosterEnergyActivated)
+            {
+                if ((IsBattleMovePhysical(move) && atkHighestStat == STAT_ATK) || (IsBattleMoveSpecial(move) && atkHighestStat == STAT_SPATK))
+                    modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+            }
+        }
+        break;
+	case ABILITY_CENOSOLARIS:
+        if (!(gBattleMons[battlerAtk].volatiles.transformed))
+        {
+            enum Stat atkHighestStat = GetParadoxBoostedStatId(battlerAtk);
+            if (ctx->weather & B_WEATHER_SUN || gFieldTimers.terrain == B_TERRAIN_GRASSY || gBattleMons[battlerAtk].volatiles.boosterEnergyActivated)
+            {
+                if ((IsBattleMovePhysical(move) && atkHighestStat == STAT_ATK) || (IsBattleMoveSpecial(move) && atkHighestStat == STAT_SPATK))
+                    modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+            }
+        }
+        break;
+	case ABILITY_ZONAI_DRIVE:
+        if (!(gBattleMons[battlerAtk].volatiles.transformed))
+        {
+            enum Stat atkHighestStat = GetParadoxBoostedStatId(battlerAtk);
+            if (ctx->weather & B_WEATHER_RAIN || gFieldTimers.terrain == B_TERRAIN_ELECTRIC || gBattleMons[battlerAtk].volatiles.boosterEnergyActivated)
             {
                 if ((IsBattleMovePhysical(move) && atkHighestStat == STAT_ATK) || (IsBattleMoveSpecial(move) && atkHighestStat == STAT_SPATK))
                     modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));

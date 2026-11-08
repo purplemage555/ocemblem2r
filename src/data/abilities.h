@@ -340,14 +340,14 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_MAGNET_PULL] =
     {
         .name = _("Magnet Pull"),
-        .description = COMPOUND_STRING("Traps Steel-type Pokémon."),
+        .description = COMPOUND_STRING("Traps Steel type Pokémon."),
         .aiRating = 9,
     },
 
     [ABILITY_SOUNDPROOF] =
     {
         .name = _("Soundproof"),
-        .description = COMPOUND_STRING("Avoids sound-based moves."),
+        .description = COMPOUND_STRING("Negates sound moves."),
         .aiRating = 4,
         .breakable = TRUE,
     },
@@ -672,7 +672,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_HEATPROOF] =
     {
         .name = _("Heatproof"),
-        .description = COMPOUND_STRING("Halves Fire-type damage."),
+        .description = COMPOUND_STRING("Halves Fire type damage."),
         .aiRating = 5,
         .breakable = TRUE,
     },
@@ -752,7 +752,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_NORMALIZE] =
     {
         .name = _("Normalize"),
-        .description = COMPOUND_STRING("Moves become Normal-type."),
+        .description = COMPOUND_STRING("Moves become Normal type."),
         .aiRating = -1,
     },
 
@@ -885,7 +885,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         #if B_REDIRECT_ABILITY_IMMUNITY >= GEN_4
             "Draws Water to up Sp. Atk."),
         #else
-            "Draws Water-type moves."),
+            "Draws Water type moves."),
         #endif
         .aiRating = 7,
         .breakable = TRUE,
@@ -1289,7 +1289,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_FLOWER_VEIL] =
     {
         .name = _("Flower Veil"),
-        .description = COMPOUND_STRING("Mist for Grass-type allies."),
+        .description = COMPOUND_STRING("Mist for Grass type allies."),
         .aiRating = 0,
         .breakable = TRUE,
     },
@@ -1440,7 +1440,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_DARK_AURA] =
     {
         .name = _("Dark Aura"),
-        .description = COMPOUND_STRING("Ups all Dark-type moves."),
+        .description = COMPOUND_STRING("Ups all Dark type moves."),
         .aiRating = 6,
         .breakable = B_UPDATED_ABILITY_DATA < GEN_8,
     },
@@ -1448,7 +1448,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_FAIRY_AURA] =
     {
         .name = _("Fairy Aura"),
-        .description = COMPOUND_STRING("Ups all Fairy-type moves."),
+        .description = COMPOUND_STRING("Ups all Fairy type moves."),
         .aiRating = 6,
         .breakable = B_UPDATED_ABILITY_DATA < GEN_8,
     },
@@ -1548,7 +1548,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_STEELWORKER] =
     {
         .name = _("Steelworker"),
-        .description = COMPOUND_STRING("Ups Steel-type moves."),
+        .description = COMPOUND_STRING("Ups Steel type moves."),
         .aiRating = 6,
     },
 
@@ -2073,14 +2073,14 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_TRANSISTOR] =
     {
         .name = _("Transistor"),
-        .description = COMPOUND_STRING("Ups Electric-type moves."),
+        .description = COMPOUND_STRING("Ups Electric type moves."),
         .aiRating = 6,
     },
 
     [ABILITY_DRAGONS_MAW] =
     {
         .name = _("Dragon's Maw"),
-        .description = COMPOUND_STRING("Ups Dragon-type moves."),
+        .description = COMPOUND_STRING("Ups Dragon type moves."),
         .aiRating = 6,
     },
 
@@ -2186,7 +2186,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_ROCKY_PAYLOAD] =
     {
         .name = _("Rocky Payload"),
-        .description = COMPOUND_STRING("Powers up Rock-type moves."),
+        .description = COMPOUND_STRING("Powers up Rock type moves."),
         .aiRating = 6,
     },
 
@@ -2518,7 +2518,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_FIRE_MANE] =
     {
         .name = _("Fire Mane"),
-        .description = COMPOUND_STRING("Ups Fire-type moves."),
+        .description = COMPOUND_STRING("Ups Fire type moves."),
     },
 
     [ABILITY_317] =
@@ -2535,7 +2535,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_BOOM_BOX] =
     {
         .name = _("Boom Box"),
-        .description = COMPOUND_STRING("Ups sound by 1.5x and resists."),
+        .description = COMPOUND_STRING("Ups sound by 1.5x and negates it."),
         .aiRating = 2,
         .breakable = TRUE,
     },

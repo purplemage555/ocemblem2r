@@ -33,8 +33,8 @@ const u8 gMarowakAlolaPokedexText[] = _(
 const u8 gEeveePokedexText[] = _(
     "An Eevee has an unstable genetic makeup\n"
     "that suddenly mutates due to its\n"
-    "environment. Radiation from various\n"
-    "Stones causes this Pokémon to evolve.");
+    "environment. Various Stones can cause\n"
+    "it to evolve. 55/55/50/65/45/55");
 
 // Gen 2 families
 const u8 gUnownPokedexText[] = _(
